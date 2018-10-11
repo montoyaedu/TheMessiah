@@ -61,7 +61,8 @@
 	    <b-1 b'-2 dis''-3 fis''-1>8
 		% END BARRÈ
 		\stopTextSpan
-		r2 % (TODO from HERE)
+	    <b-1 g'-0 d''-3 g''-4>4.
+		r8 % (TODO from HERE)
 		|
 	% ##### END MEASURE 4 #####
 
