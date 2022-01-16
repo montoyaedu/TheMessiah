@@ -62,12 +62,15 @@
 		% END BARRÈ
 		\stopTextSpan
 	    <b-1 g'-0 d''-3 g''-4>4.
-		r8 % (TODO from HERE)
+	    <g-1 g'-0 b'-0 b''-4>8
 		|
 	% ##### END MEASURE 4 #####
 
 	% ##### BEGIN MEASURE 5 ##### (TODO)
-	    r1
+	    <c'-3 g'-0 c''-1 e''-0>4.
+	    <a''-4>8
+	    <cis'-3 a'-1 cis''-1 g''-2>4.
+	    <fis''-1>8
 		|
 	% ##### END MEASURE 5 #####
 
