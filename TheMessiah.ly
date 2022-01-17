@@ -3,8 +3,8 @@
 	title = \markup { \sans "The Messiah - Overture" }
 	subtitle = \markup { \sans "for solo guitar"}
 	composer = \markup { \sans "G. F. Händel" }
-	arranger = \markup { \sans "arr. M. Vercesi" }
-	tagline = \markup { \sans { \char ##x00A9 2017 Martino Vercesi } }
+	arranger = \markup { \sans "transcription. @martinovercesi" }
+	tagline = \markup { \sans { \char ##x00A9 2022 Martino Vercesi } }
 }
 {
 	\key e \minor
