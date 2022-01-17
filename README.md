@@ -1,9 +1,9 @@
+![The Messiah Overture](https://montoyaedu.s3.eu-south-1.amazonaws.com/TheMessiah.svg)
+
 ## The Messiah Overture
 
 The following is an image of the resulting result of a lilypond document based on a transcription of the Messiah Overture
 done by [@martinovercesi](https://www.instagram.com/martinovercesi/).
-
-![The Messiah Overture](https://montoyaedu.s3.eu-south-1.amazonaws.com/TheMessiah.svg)
 
 ## Build
 
