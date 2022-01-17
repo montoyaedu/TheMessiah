@@ -11,6 +11,9 @@
 	\set fingeringOrientations = #'(left)
 
 	% ##### BEGIN MEASURE 1 #####
+        \new Voice << { \stemDown
+            <e-0>2
+        }>>
 		<e-0 b-1 g'-0 e''-0>4.
 	    <a-0 e'-3 c''-2>8
 	    <b-1 g'-0 b'-0>4.
