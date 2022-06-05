@@ -1,4 +1,6 @@
-![The Messiah Overture](https://montoyaedu.s3.eu-south-1.amazonaws.com/TheMessiah.svg)
+## First 6 measures
+
+![The Messiah Overture](https://montoyaedu.s3.eu-south-1.amazonaws.com/TheMessiah-ver1.2.svg)
 
 ## The Messiah Overture
 
