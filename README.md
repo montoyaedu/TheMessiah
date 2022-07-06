@@ -1,10 +1,10 @@
+## Transcription manuscript for download
+
+https://montoyaedu.s3.eu-south-1.amazonaws.com/Messiah+Overture+for+guitar.pdf
+
 ## First 6 measures
 
 ![The Messiah Overture](https://montoyaedu.s3.eu-south-1.amazonaws.com/TheMessiah-ver1.2.svg)
-
-## Transcription manuscript
-
-https://montoyaedu.s3.eu-south-1.amazonaws.com/Messiah+Overture+for+guitar.pdf
 
 ## The Messiah Overture
 
