@@ -2,9 +2,9 @@
 
 ![The Messiah Overture](https://montoyaedu.s3.eu-south-1.amazonaws.com/TheMessiah-ver1.2.svg)
 
-## Transacription manuscript
+## Transcription manuscript
 
-![The Messiah Overture](https://montoyaedu.s3.eu-south-1.amazonaws.com/Messiah+Overture+for+guitar.pdf)
+https://montoyaedu.s3.eu-south-1.amazonaws.com/Messiah+Overture+for+guitar.pdf
 
 ## The Messiah Overture
 
