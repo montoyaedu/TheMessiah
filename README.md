@@ -1,7 +1,3 @@
-## Transcription manuscript for download
-
-https://www.ethiclab.it/freetime/
-
 ## The Messiah Overture
 
 The following is an image of the resulting result of a lilypond document based on a transcription of the Messiah Overture
