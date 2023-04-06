@@ -2,7 +2,7 @@
 \header {
   title = \markup { \sans "Händel's Messiah Overture Transcription For Classical Guitar" }
 }
-{
+<<{
   \key e \minor
 <<
   \new Voice = "first" <<
@@ -199,4 +199,11 @@
 >> |
 \break
 }
+\new TabStaff {
+ << e,4. b,4. g4. e'4. >>
+ << a,8 e8 c'8 >>
+ << b,4. g4. b4. >>
+ << b,8. fis8. a8. >>
+}
+>>
 
