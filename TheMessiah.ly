@@ -1,19 +1,15 @@
 \version "2.22.2"
 \header {
-  title = \markup { \sans "The Messiah - Overture" }
-  subtitle = \markup { \sans "for solo guitar"}
-  composer = \markup { \sans "G. F. Händel" }
-  arranger = \markup { \sans "transcription. @martinovercesi" }
-  tagline = \markup { \sans { \char ##x00A9 2017 Martino Vercesi } }
+  title = \markup { \sans "Händel's Messiah Overture Transcription For Classical Guitar" }
 }
 {
   \key e \minor
 <<
   \new Voice = "first" <<
     \set fingeringOrientations = #'(left)
-    { \voiceOne     e''4.   <c''-2>8     b'4.     a'8    }
-    { \voiceTwo   <b-1>4.    <e'-3>8     g'4.   fis'8    }
-    { \voiceThree    g'4.         a8  <b-1>4.      b8    }
+    { \voiceOne     e''4.   <c''-1>8     b'4.     a'8    }
+    { \voiceTwo   <b-3>4.    <e'-2>8     g'4.   fis'8    }
+    { \voiceThree    g'4.         a8  <b-3>4.      b8    }
   >>
   \new Voice= "fourth"
     { \voiceFour  e2         r2           }
@@ -21,27 +17,28 @@
 <<
   \new Voice = "first" <<
     \set fingeringOrientations = #'(left)
-    { \voiceOne  dis''4.   <cis''-2>16 <b'-0>16    <g''-4>4. g''8    }
+    { \voiceOne  dis''4.   <cis''-2>16 <b'-0>16    <g''-4>4.   g''8    }
     { \voiceTwo }
     { \voiceThree }
   >>
   \new Voice= "fourth" <<
     \set fingeringOrientations = #'(left)
-    { \voiceTwo  fis'4.    <e'-1>8             b'4.       b'8    }
-    { \voiceFour b4.       <g-3>8              <fis-2>4.   e8    }
+    { \voiceTwo  fis'4.    <e'-1>8                  b'4.       b'8    }
+    { \voiceFour b4.       <g-3>8                  <fis-2>4.   e8     }
   >>
 >> |
+\break
 <<
   \new Voice = "first" <<
     \set fingeringOrientations = #'(right)
-    { \voiceOne     g''4.    fis''8   fis''4.     e''8   }
-    { \voiceTwo cis''4. cis''8 cis''4. <cis''-3>8 }
+    { \voiceOne     g''4.    fis''8   fis''4.     e''8      }
+    { \voiceTwo     cis''4.  cis''8   cis''4.    <cis''-3>8 }
     { \voiceThree }
   >>
   \new Voice= "fourth" <<
     \set fingeringOrientations = #'(right)
-    { \voiceThree e'4. e'8 r4. <ais'-4>8 }
-    { \voiceFour ais4. ais8 ais4. <fis-1>8 }
+    { \voiceThree   e'4.     e'8      fis'4.   << <fis'>8 <ais'-4>8 >> }
+    { \voiceFour    ais4.    ais8     ais4.    <fis-1>8                }
   >>
 >> |
 <<
@@ -67,8 +64,7 @@
   >>
   \new Voice= "fourth" <<
     \set fingeringOrientations = #'(left)
-    { \voiceTwo c'2 a'4 cis''4 }
-    { \voiceThree c'2 e'4 e'4 }
+    { \voiceThree e'2 << a'4 e'4 >> << cis''4 e'4 >> }
     { \voiceFour c'2 <cis'-3>4 a4 }
   >>
 >> |
@@ -82,8 +78,14 @@
     \set fingeringOrientations = #'(left)
     { \voiceThree <a'-1>4. <fis'-3>8 fis'4. fis'8 }
     { \voiceThree \once \hide d'2 b4. b8 }
-    { \voiceFour d'1 }
+    { \voiceFour d'2 }
   >>
 >> |
 \break
+<<
+>> |
+<<
+>> |
+\break
 }
+
