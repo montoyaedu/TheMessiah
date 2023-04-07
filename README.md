@@ -1,5 +1,8 @@
 # Händel's Messiah Overture Transcription For Classical Guitar
 
+<img width="988" alt="Screenshot 2023-04-07 alle 23 34 30" src="https://user-images.githubusercontent.com/1033682/230682780-d8008548-06b2-4d9a-a318-a46da00c7aca.png">
+
+
 ## Build
 
     lilypond TheMessiah.ly
