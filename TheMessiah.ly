@@ -218,6 +218,7 @@ allegro_moderato = {
   \key e \minor
   % BAR 25
   <<
+  	{ r4 b'4 g'4 fis'8 e'8 }
   >>
   % BAR 26
   <<
