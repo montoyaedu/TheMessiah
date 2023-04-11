@@ -218,7 +218,8 @@ allegro_moderato = {
   \key e \minor
   % BAR 25
   <<
-  	{ r4 b'4 g'4 fis'8 e'8 }
+     \set fingeringOrientations = #'(left)
+  	{ r4 <b'-3>4 <g'-4\2>4 <fis'-3\2>8 e'8\2 }
   >>
   % BAR 26
   <<
