@@ -233,6 +233,350 @@ allegro_moderato = {
   	r1
   >>
   \break
+  % BAR 29
+  <<
+  	r1
+  >>
+  % BAR 30
+  <<
+  	r1
+  >>
+  % BAR 31
+  <<
+  	r1
+  >>
+  % BAR 32
+  <<
+  	r1
+  >>
+  \break
+  % BAR 33
+  <<
+  	r1
+  >>
+  % BAR 34
+  <<
+  	r1
+  >>
+  % BAR 35
+  <<
+  	r1
+  >>
+  % BAR 36
+  <<
+  	r1
+  >>
+  \break
+  % BAR 37
+  <<
+  	r1
+  >>
+  % BAR 38
+  <<
+  	r1
+  >>
+  % BAR 39
+  <<
+  	r1
+  >>
+  % BAR 40
+  <<
+  	r1
+  >>
+  \break
+  % BAR 41
+  <<
+  	r1
+  >>
+  % BAR 42
+  <<
+  	r1
+  >>
+  % BAR 43
+  <<
+  	r1
+  >>
+  % BAR 44
+  <<
+  	r1
+  >>
+  \break
+  % BAR 45
+  <<
+  	r1
+  >>
+  % BAR 46
+  <<
+  	r1
+  >>
+  % BAR 47
+  <<
+  	r1
+  >>
+  % BAR 48
+  <<
+  	r1
+  >>
+  \break
+  % BAR 49
+  <<
+  	r1
+  >>
+  % BAR 50
+  <<
+  	r1
+  >>
+  % BAR 51
+  <<
+  	r1
+  >>
+  % BAR 52
+  <<
+  	r1
+  >>
+  \break
+  % BAR 53
+  <<
+  	r1
+  >>
+  % BAR 54
+  <<
+  	r1
+  >>
+  % BAR 55
+  <<
+  	r1
+  >>
+  % BAR 56
+  <<
+  	r1
+  >>
+  \break
+  % BAR 57
+  <<
+  	r1
+  >>
+  % BAR 58
+  <<
+  	r1
+  >>
+  % BAR 59
+  <<
+  	r1
+  >>
+  % BAR 60
+  <<
+  	r1
+  >>
+  \break
+  % BAR 61
+  <<
+  	r1
+  >>
+  % BAR 62
+  <<
+  	r1
+  >>
+  % BAR 63
+  <<
+  	r1
+  >>
+  % BAR 64
+  <<
+  	r1
+  >>
+  \break
+  % BAR 65
+  <<
+  	r1
+  >>
+  % BAR 66
+  <<
+  	r1
+  >>
+  % BAR 67
+  <<
+  	r1
+  >>
+  % BAR 68
+  <<
+  	r1
+  >>
+  \break
+  % BAR 69
+  <<
+  	r1
+  >>
+  % BAR 70
+  <<
+  	r1
+  >>
+  % BAR 71
+  <<
+  	r1
+  >>
+  % BAR 72
+  <<
+  	r1
+  >>
+  \break
+  % BAR 73
+  <<
+  	r1
+  >>
+  % BAR 74
+  <<
+  	r1
+  >>
+  % BAR 75
+  <<
+  	r1
+  >>
+  % BAR 76
+  <<
+  	r1
+  >>
+  \break
+  % BAR 77
+  <<
+  	r1
+  >>
+  % BAR 78
+  <<
+  	r1
+  >>
+  % BAR 79
+  <<
+  	r1
+  >>
+  % BAR 80
+  <<
+  	r1
+  >>
+  \break
+  % BAR 81
+  <<
+  	r1
+  >>
+  % BAR 82
+  <<
+  	r1
+  >>
+  % BAR 83
+  <<
+  	r1
+  >>
+  % BAR 84
+  <<
+  	r1
+  >>
+  \break
+  % BAR 85
+  <<
+  	r1
+  >>
+  % BAR 86
+  <<
+  	r1
+  >>
+  % BAR 87
+  <<
+  	r1
+  >>
+  % BAR 88
+  <<
+  	r1
+  >>
+  \break
+  % BAR 89
+  <<
+  	r1
+  >>
+  % BAR 90
+  <<
+  	r1
+  >>
+  % BAR 91
+  <<
+  	r1
+  >>
+  % BAR 92
+  <<
+  	r1
+  >>
+  \break
+  % BAR 93
+  <<
+  	r1
+  >>
+  % BAR 94
+  <<
+  	r1
+  >>
+  % BAR 95
+  <<
+  	r1
+  >>
+  % BAR 96
+  <<
+  	r1
+  >>
+  \break
+  % BAR 97
+  <<
+  	r1
+  >>
+  % BAR 98
+  <<
+  	r1
+  >>
+  % BAR 99
+  <<
+  	r1
+  >>
+  % BAR 100
+  <<
+  	r1
+  >>
+  \break
+  % BAR 101
+  <<
+  	r1
+  >>
+  % BAR 102
+  <<
+  	r1
+  >>
+  % BAR 103
+  <<
+  	r1
+  >>
+  % BAR 104
+  <<
+  	r1
+  >>
+  \break
+  % BAR 105
+  <<
+  	r1
+  >>
+  % BAR 106
+  <<
+  	r1
+  >>
+  % BAR 107
+  <<
+  	r1
+  >>
+  % BAR 108
+  <<
+  	r1
+  >>
+  % BAR 109
+  <<
+  	r1
+  >>
+  \break
 }
 
 Piano = #(make-dynamic-script #{ \markup \text "pp" #})
