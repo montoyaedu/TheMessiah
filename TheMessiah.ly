@@ -597,6 +597,7 @@ Forte = #(make-dynamic-script #{ \markup \text "f" #})
         \bar "||"
         \tempo \markup "Allegro Moderato"
         \allegro_moderato
+        \bar "|."
       }
       \new Dynamics {
       	s1\Forte
