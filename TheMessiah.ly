@@ -257,6 +257,7 @@ allegro_moderato = {
       <g'-4\2>8
       )
       <a'-1\1>8
+      \slurDown
       (
       <fis'-3\2>8
       )
@@ -273,12 +274,28 @@ allegro_moderato = {
     {
       <g'-4\2>4
       <e'-1\2>4
-  	  r2
+      <<
+      \new voice {
+      	\stemUp <b'-4\1>2
+        (
+      }
+      \stemDown
+  	  \new voice {
+        <d'-3\3>4
+        <cis'-2\3>8
+        <b-1\3>8
+      }
+      >>
     }
   >>
   % BAR 30
   <<
-  	r1
+    {
+  	  \new voice {
+      	\stemUp <b'>8
+        )
+      }
+    }
   >>
   % BAR 31
   <<
