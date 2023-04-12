@@ -243,15 +243,13 @@ allegro_moderato = {
       <a'-1\1>4
       )
       <e'-1\2>4
-      <a'-1\1>2
-      (
+      <a'-1\1>2~
     }
   >>
   % BAR 28
   <<
     {
   	  <a'-1\1>8
-      )
       <b'-3\1>8
       (
       <g'-4\2>8
@@ -276,8 +274,7 @@ allegro_moderato = {
       <e'-1\2>4
       <<
       \new voice {
-      	\stemUp <b'-4\1>2
-        (
+      	\stemUp <b'-4\1>2~
       }
       \stemDown
   	  \new voice {
@@ -293,7 +290,6 @@ allegro_moderato = {
     {
   	  \new voice {
       	\stemUp <b'>8
-        )
       }
     }
   >>
