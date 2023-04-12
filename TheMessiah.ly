@@ -274,10 +274,11 @@ allegro_moderato = {
       <e'-1\2>4
       <<
       \new voice {
-      	\stemUp <b'-4\1>2~
+        \voiceOne
+      	<b'-4\1>2~
       }
-      \stemDown
   	  \new voice {
+        \voiceTwo
         <d'-3\3>4
         <cis'-2\3>8
         <b-1\3>8
@@ -289,7 +290,8 @@ allegro_moderato = {
   <<
     {
   	  \new voice {
-      	\stemUp <b'>8
+        \voiceOne
+      	<b'>8
       }
     }
   >>
@@ -686,4 +688,3 @@ Forte = #(make-dynamic-script #{ \markup \text "f" #})
     >>
   }
 }
-
