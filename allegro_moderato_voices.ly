@@ -57,6 +57,7 @@ bbb = \relative do'' {
 
 ccc = \relative do' {
     \voiceThree
+    \shiftOff
     \key mi \minor
     \stemDown
     %1
