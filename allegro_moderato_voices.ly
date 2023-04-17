@@ -62,6 +62,8 @@ bbb = \relative do'' {
     red4               fad,                 si                  la8       sol      |
     %10
     la4                fad4~                fad                 mi                 |
+    %11
+    mi                 sold~                la8        si       do4                |
 }
 
 ccc = \relative do' {
@@ -89,6 +91,37 @@ ccc = \relative do' {
     r4                si                     sol                fad8       mi      |
     %10
     fad4              si                     fad                sold               |
+    %11
+    la                mi                     la                 la                 |
+}
+
+ddd = \relative do' {
+    \voiceFour
+    \shiftOff
+    \key mi \minor
+    \stemDown
+    %1
+    r1                                                                             |
+    %2
+    r1                                                                             |
+    %3
+    r1                                                                             |
+    %4
+    r1                                                                             |
+    %5
+    r1                                                                             |
+    %6
+    r1                                                                             |
+    %7
+    r1                                                                             |
+    %8
+    r1                                                                             |
+    %9
+    r1                                                                             |
+    %10
+    r1                                                                             |
+    %11
+    mi4.                          re8         do         si'     la,4              |
 }
 
 allegro_moderato = {
@@ -96,6 +129,7 @@ allegro_moderato = {
   \aaa
   \new Voice \bbb
   \new Voice \ccc
+  \new Voice \ddd
   >>
 }
 
