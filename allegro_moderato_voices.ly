@@ -7,9 +7,18 @@ aaa = \relative do'' {
     %1
     r4                 si'                  sol                 fad8      mi       |
     %2
-    fad4               si,                  fad'                sold \trill        |
+    fad4               si,                  fad'
+    <<
+      sold \trill
+      \new Staff \with {
+        alignAboveContext = "main"
+      } \tuplet 5/4 { sold16 la sold la sold }
+      \new Staff \with {
+        alignAboveContext = "main"
+      } \tuplet 5/4 { sold16 la sold fad sold }
+    >>                                                                             |
     %3
-    la                 mi                   la2~                                   |
+    la4                mi                   la2~                                   |
     %4
     la8      si        sol        la        fad        si       la        si       |
     \break
@@ -97,7 +106,10 @@ allegro_moderato = {
   }
   \score {
     <<
-      \new Staff {
+      \new Staff = "main" \with {
+        instrumentName = "Guitar"
+        \consists Merge_rests_engraver
+      } \relative {
         \tempo \markup "Allegro Moderato"
         \allegro_moderato
         \bar "|."
