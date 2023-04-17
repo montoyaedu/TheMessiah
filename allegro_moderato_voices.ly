@@ -1,9 +1,9 @@
 \version "2.24.0"
 \language "italiano"
-\key mi \minor
 
 aaa = \relative do'' {
     \voiceOne
+    \key mi \minor
     %1
     r4                 si'                  sol                 fad8      mi       |
     %2
@@ -32,6 +32,7 @@ aaa = \relative do'' {
 
 bbb = \relative do'' {
     \voiceTwo
+    \key mi \minor
     %1
     r1                                                                             |
     %2
@@ -42,12 +43,49 @@ bbb = \relative do'' {
     r1                                                                             |
     %5
     r2                                      re4                 do8       si       |
+    %6
+    do4                fad,                 do'                 red                |
+    %7
+    mi                 si                   mi2~                                   |
+    %8
+    mi8      fad       re         mi        dod        fad      mi        fad      |
+    %9
+    red4               fad,                 si                  la8       sol      |
+    %10
+    la4                fad4~                fad                 mi                 |
+}
+
+ccc = \relative do' {
+    \voiceThree
+    \key mi \minor
+    \stemDown
+    %1
+    r1                                                                             |
+    %2
+    r1                                                                             |
+    %3
+    r1                                                                             |
+    %4
+    r1                                                                             |
+    %5
+    r1                                                                             |
+    %6
+    r1                                                                             |
+    %7
+    r1                                                                             |
+    %8
+    r1                                                                             |
+    %9
+    r4                si                     sol                fad8       mi      |
+    %10
+    fad4              si                     fad                sold               |
 }
 
 allegro_moderato = {
   <<
   \aaa
   \new Voice \bbb
+  \new Voice \ccc
   >>
 }
 
