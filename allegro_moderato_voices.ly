@@ -41,6 +41,7 @@ aaa = \relative do'' {
 
 bbb = \relative do'' {
     \voiceTwo
+    \override NoteHead.color = #red
     \key mi \minor
     %1
     s1                                                                             |
@@ -68,6 +69,7 @@ bbb = \relative do'' {
 
 ccc = \relative do' {
     \voiceThree
+    \override NoteHead.color = #darkgreen
     \shiftOff
     \key mi \minor
     \stemDown
