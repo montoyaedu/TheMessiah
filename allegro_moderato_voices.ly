@@ -99,6 +99,7 @@ ccc = \relative do' {
 
 ddd = \relative do' {
     \voiceFour
+    \override NoteHead.color = #blue
     \shiftOff
     \key mi \minor
     \stemDown
