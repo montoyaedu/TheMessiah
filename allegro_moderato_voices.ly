@@ -124,7 +124,7 @@ ddd = \relative do' {
     %10
     s1                                                                             |
     %11
-    mi4.                          re8         do         si'     la,4              |
+    mi4.                          re8         do         si      la4              |
 }
 
 allegro_moderato = {
