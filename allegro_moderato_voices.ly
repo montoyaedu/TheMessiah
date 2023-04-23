@@ -43,15 +43,15 @@ bbb = \relative do'' {
     \voiceTwo
     \key mi \minor
     %1
-    r1                                                                             |
+    s1                                                                             |
     %2
-    r1                                                                             |
+    s1                                                                             |
     %3
-    r1                                                                             |
+    s1                                                                             |
     %4
-    r1                                                                             |
+    s1                                                                             |
     %5
-    r2                                      re4                 do8       si       |
+    s2                                      re4                 do8       si       |
     %6
     do4                fad,                 do'                 red                |
     %7
@@ -72,23 +72,23 @@ ccc = \relative do' {
     \key mi \minor
     \stemDown
     %1
-    r1                                                                             |
+    s1                                                                             |
     %2
-    r1                                                                             |
+    s1                                                                             |
     %3
-    r1                                                                             |
+    s1                                                                             |
     %4
-    r1                                                                             |
+    s1                                                                             |
     %5
-    r1                                                                             |
+    s1                                                                             |
     %6
-    r1                                                                             |
+    s1                                                                             |
     %7
-    r1                                                                             |
+    s1                                                                             |
     %8
-    r1                                                                             |
+    s1                                                                             |
     %9
-    r4                si                     sol                fad8       mi      |
+    s4                si                     sol                fad8       mi      |
     %10
     fad4              si                     fad                sold               |
     %11
@@ -101,25 +101,25 @@ ddd = \relative do' {
     \key mi \minor
     \stemDown
     %1
-    r1                                                                             |
+    s1                                                                             |
     %2
-    r1                                                                             |
+    s1                                                                             |
     %3
-    r1                                                                             |
+    s1                                                                             |
     %4
-    r1                                                                             |
+    s1                                                                             |
     %5
-    r1                                                                             |
+    s1                                                                             |
     %6
-    r1                                                                             |
+    s1                                                                             |
     %7
-    r1                                                                             |
+    s1                                                                             |
     %8
-    r1                                                                             |
+    s1                                                                             |
     %9
-    r1                                                                             |
+    s1                                                                             |
     %10
-    r1                                                                             |
+    s1                                                                             |
     %11
     mi4.                          re8         do         si'     la,4              |
 }
