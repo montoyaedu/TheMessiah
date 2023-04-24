@@ -1,7 +1,7 @@
 \version "2.24.0"
 \language "italiano"
 
-aaa = \relative do'' {
+violinoA = \relative do'' {
     \voiceOne
     \key mi \minor
     %1
@@ -53,7 +53,7 @@ aaa = \relative do'' {
     la         sol      fad       mi       |
 }
 
-bbb = \relative do'' {
+violinoB = \relative do'' {
     \voiceTwo
     \override NoteHead.color = #red
     \key mi \minor
@@ -86,8 +86,8 @@ bbb = \relative do'' {
     do4                |
 }
 
-ccc = \relative do' {
-    \voiceThree
+bassi = \relative do' {
+    \voiceFour
     \override NoteHead.color = #darkgreen
     \shiftOff
     \key mi \minor
@@ -116,8 +116,8 @@ ccc = \relative do' {
     la                mi                     la2~                                  |
 }
 
-ddd = \relative do' {
-    \voiceFour
+viola = \relative do' {
+    \voiceThree
     \override NoteHead.color = #blue
     \shiftOff
     \key mi \minor
@@ -148,10 +148,10 @@ ddd = \relative do' {
 
 allegro_moderato = {
   <<
-  \aaa
-  \new Voice \bbb
-  \new Voice \ccc
-  \new Voice \ddd
+  \violinoA
+  \new Voice \violinoB
+  \new Voice \viola
+  \new Voice \bassi
   >>
 }
 
