@@ -14,16 +14,19 @@ aaa = \relative do'' {
         alignAboveContext = "main"
         \remove Time_signature_engraver
         firstClef = ##f
+        \magnifyStaff #2/3
       } \tuplet 3/4 { sold16 la sold }
       \new Staff \with {
         alignAboveContext = "main"
         \remove Time_signature_engraver
         firstClef = ##f
+        \magnifyStaff #2/3
       } \tuplet 5/4 { sold16 la sold la sold }
       \new Staff \with {
         alignAboveContext = "main"
         \remove Time_signature_engraver
         firstClef = ##f
+        \magnifyStaff #2/3
       } \tuplet 5/4 { sold16 la sold fad sold }
     >>                                                                             |
     %3
