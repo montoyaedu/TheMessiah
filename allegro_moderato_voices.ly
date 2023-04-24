@@ -106,7 +106,7 @@ ccc = \relative do' {
     %10
     fad4              si                     fad                sold               |
     %11
-    la                mi                     la                 la                 |
+    la                mi                     la2~                                  |
 }
 
 ddd = \relative do' {
