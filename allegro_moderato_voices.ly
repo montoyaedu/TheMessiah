@@ -48,7 +48,9 @@ aaa = \relative do'' {
     %10
     mi4                re8        dod       re4                 dod8      si       |
     %11
-    dod4.                         si8       la         sol      fad       mi       |
+    dod4.                         si8       
+    \once \override NoteColumn.force-hshift = #1
+    la         sol      fad       mi       |
 }
 
 bbb = \relative do'' {
@@ -76,7 +78,12 @@ bbb = \relative do'' {
     %10
     la4                fad4~                fad                 mi                 |
     %11
-    mi                 sold~                la8        si       do4                |
+    \stemUp
+    mi                 sold                 la8
+    \once \override NoteColumn.force-hshift = #1
+    si       
+    \once \override NoteColumn.force-hshift = #1
+    do4                |
 }
 
 ccc = \relative do' {
