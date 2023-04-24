@@ -52,9 +52,9 @@ bbb = \relative do'' {
     %4
     s1                                                                             |
     %5
-    s2                                      re4                 do8       si       |
+    s2                                      re4                 dod8      si       |
     %6
-    do4                fad,                 do'                 red                |
+    dod4               fad,                 do'                 red                |
     %7
     mi                 si                   mi2~                                   |
     %8
