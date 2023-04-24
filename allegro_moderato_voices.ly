@@ -12,6 +12,9 @@ aaa = \relative do'' {
       sold \trill
       \new Staff \with {
         alignAboveContext = "main"
+      } \tuplet 3/4 { sold16 la sold }
+      \new Staff \with {
+        alignAboveContext = "main"
       } \tuplet 5/4 { sold16 la sold la sold }
       \new Staff \with {
         alignAboveContext = "main"
