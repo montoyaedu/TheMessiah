@@ -41,7 +41,7 @@ aaa = \relative do'' {
     %7
     sol2~                                   sol8       fad      sol       mi       |
     %8
-    fad4               si~                  si                  la                 |
+    fad4               si~                  si                  lad                |
     \break
     %9
     si8      si,       dod        red       mi2~                                   |
