@@ -14,7 +14,7 @@ violinoA = \relative do' {
     \voiceOne
     \key mi \minor
     %1
-    r4                 si'                  sol                 fad8      mi       |
+    r4                 si'-3                sol\2-4               fad8\2-3    mi       |
     \break
     %2
     fad4\2             si,\3-1              fad'\2                \grace sold32\2 \trill (\grace la sold4\2) |
@@ -22,7 +22,7 @@ violinoA = \relative do' {
     la4                mi                   la2~                                   |
     \break
     %4
-    la8      si        sol        la        fad        si       la        si       |
+    la8      si-3        sol\2-4      la        fad\2        si       la        si       |
     \break
     %5
     sol4               mi\1                 si'2~                                  |
