@@ -66,7 +66,7 @@ violinoA = \relative do'' {
     %10
     mi4                re8        dod       re4                 dod8      si       |
     %11
-    dod4.                         si8       
+    do4.                          si8       
     \once \override NoteColumn.force-hshift = #1
     la         sol      fad       mi       |
 }
