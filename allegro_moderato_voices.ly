@@ -41,7 +41,7 @@ violinoA = \relative do'' {
     la8      si        sol        la        fad        si       la        si       |
     \break
     %5
-    sol4               mi                   si'2~                                  |
+    sol4               mi\1                 si'2~                                  |
     %6
     si4                la8        sol       la4                 sol8      fad      |
     %7
@@ -72,7 +72,9 @@ violinoB = \relative do'' {
     %4
     s1                                                                             |
     %5
-    s2                                      re4                 dod8      si       |
+    r4                 
+    \once \override NoteColumn.force-hshift = #1
+    mi4\3                re                  dod8      si       |
     %6
     dod4               fad,                 do'                 red                |
     %7
