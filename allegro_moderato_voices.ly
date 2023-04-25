@@ -19,7 +19,7 @@ violinoA = \relative do' {
     %2
     fad4\2             si,\3-1              fad'\2                \grace sold32\2 \trill (\grace la sold4\2) |
     %3
-    la4                mi                   la2~                                   |
+    la4-1                 mi\2-1                 la2~-1                                   |
     \break
     %4
     la8      si-3        sol\2-4      la        fad\2        si       la        si       |
