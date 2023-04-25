@@ -17,34 +17,7 @@ violinoA = \relative do' {
     r4                 si'                  sol                 fad8      mi       |
     \break
     %2
-    fad4               si,                  fad'
-    <<
-      sold \trill
-      \new Staff \with {
-        alignAboveContext = "main"
-        \remove Time_signature_engraver
-        firstClef = ##f
-        \magnifyStaff #1/2
-        \override VerticalAxisGroup
-            .default-staff-staff-spacing.basic-distance = #1
-      } { (sold16 la sold8) }
-      \new Staff \with {
-        alignAboveContext = "main"
-        \remove Time_signature_engraver
-        firstClef = ##f
-        \magnifyStaff #1/2
-        \override VerticalAxisGroup
-            .default-staff-staff-spacing.basic-distance = #1
-      } \tuplet 5/4 { (sold16 la sold la sold) }
-      \new Staff \with {
-        alignAboveContext = "main"
-        \remove Time_signature_engraver
-        firstClef = ##f
-        \magnifyStaff #1/2
-        \override VerticalAxisGroup
-            .default-staff-staff-spacing.basic-distance = #1
-      } \tuplet 5/4 { (sold16 la sold fad sold) }
-    >>                                                                             |
+    fad4\2             si,\3-1              fad'\2                \grace sold32\2 \trill (\grace la sold4\2) |
     %3
     la4                mi                   la2~                                   |
     \break
