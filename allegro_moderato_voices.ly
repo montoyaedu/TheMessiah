@@ -7,6 +7,7 @@
   top-margin = 60
   right-margin = 40
   max-systems-per-page = 1
+  print-page-number = false
 }
 
 violinoA = \relative do'' {
