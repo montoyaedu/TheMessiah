@@ -10,7 +10,7 @@
   print-page-number = false
 }
 
-violinoA = \relative do'' {
+violinoA = \relative do' {
     \voiceOne
     \key mi \minor
     %1
@@ -70,7 +70,7 @@ violinoA = \relative do'' {
     la         sol      fad       mi       |
 }
 
-violinoB = \relative do'' {
+violinoB = \relative do' {
     \voiceTwo
     \override NoteHead.color = #red
     \key mi \minor
@@ -106,7 +106,7 @@ violinoB = \relative do'' {
     do4                |
 }
 
-bassi = \relative do' {
+bassi = \relative do {
     \voiceFour
     \override NoteHead.color = #darkgreen
     \shiftOff
@@ -136,7 +136,7 @@ bassi = \relative do' {
     la                mi                     la2~                                  |
 }
 
-viola = \relative do' {
+viola = \relative do {
     \voiceThree
     \override NoteHead.color = #blue
     \shiftOff
@@ -187,11 +187,20 @@ allegro_moderato = {
     <<
       \new Staff = "main" \with {
         instrumentName = "Guitar"
+        \clef "treble_8"
         \consists Merge_rests_engraver
       } \relative {
         \tempo \markup "Allegro moderato"
         \allegro_moderato
         \bar "|."
+      }
+      \new TabStaff \relative {
+      <<
+        \new TabVoice = "one" \violinoA
+        \new TabVoice = "two" \violinoB
+        \new TabVoice = "three" \viola
+        \new TabVoice = "four" \bassi
+      >>
       }
     >>
   }
