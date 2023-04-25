@@ -5,9 +5,7 @@
 
 \paper {
   top-margin = 60
-  bottom-margin = 40
-  left-margin = 10
-  right-margin = 20
+  right-margin = 40
   max-systems-per-page = 1
 }
 
