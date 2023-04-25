@@ -99,6 +99,7 @@ violinoB = \relative do'' {
     la4                fad4~                fad                 mi                 |
     %11
     \stemUp
+    \once \override NoteColumn.force-hshift = #-1
     mi                 sold                 la8
     \once \override NoteColumn.force-hshift = #1
     si       
