@@ -14,20 +14,26 @@ violinoA = \relative do'' {
         alignAboveContext = "main"
         \remove Time_signature_engraver
         firstClef = ##f
-        \magnifyStaff #2/3
+        \magnifyStaff #1/2
+        \override VerticalAxisGroup
+            .default-staff-staff-spacing.basic-distance = #1
       } { (sold16 la sold8) }
       \new Staff \with {
         alignAboveContext = "main"
         \remove Time_signature_engraver
         firstClef = ##f
-        \magnifyStaff #2/3
-      } \tuplet 5/4 { sold16 la sold la sold }
+        \magnifyStaff #1/2
+        \override VerticalAxisGroup
+            .default-staff-staff-spacing.basic-distance = #1
+      } \tuplet 5/4 { (sold16 la sold la sold) }
       \new Staff \with {
         alignAboveContext = "main"
         \remove Time_signature_engraver
         firstClef = ##f
-        \magnifyStaff #2/3
-      } \tuplet 5/4 { sold16 la sold fad sold }
+        \magnifyStaff #1/2
+        \override VerticalAxisGroup
+            .default-staff-staff-spacing.basic-distance = #1
+      } \tuplet 5/4 { (sold16 la sold fad sold) }
     >>                                                                             |
     %3
     la4                mi                   la2~                                   |
