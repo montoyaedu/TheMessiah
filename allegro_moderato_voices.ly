@@ -1,11 +1,22 @@
 \version "2.24.0"
 \language "italiano"
 
+#(set-default-paper-size "a6")
+
+\paper {
+  top-margin = 60
+  bottom-margin = 40
+  left-margin = 10
+  right-margin = 20
+  max-systems-per-page = 1
+}
+
 violinoA = \relative do'' {
     \voiceOne
     \key mi \minor
     %1
     r4                 si'                  sol                 fad8      mi       |
+    \break
     %2
     fad4               si,                  fad'
     <<
@@ -37,6 +48,7 @@ violinoA = \relative do'' {
     >>                                                                             |
     %3
     la4                mi                   la2~                                   |
+    \break
     %4
     la8      si        sol        la        fad        si       la        si       |
     \break
