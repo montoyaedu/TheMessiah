@@ -172,7 +172,7 @@ allegro_moderato = {
         instrumentName = "Guitar"
         \consists Merge_rests_engraver
       } \relative {
-        \tempo \markup "Allegro Moderato"
+        \tempo \markup "Allegro moderato"
         \allegro_moderato
         \bar "|."
       }
