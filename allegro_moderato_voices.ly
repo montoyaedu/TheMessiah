@@ -4,9 +4,10 @@
 #(set-default-paper-size "a6")
 
 \paper {
-  top-margin = 60
+  top-margin = 10
   right-margin = 40
-  max-systems-per-page = 1
+  bottom-margin = 40
+  max-systems-per-page = 2
   print-page-number = false
 }
 
@@ -25,13 +26,16 @@ violinoA = \relative do' {
     \voiceOne
     \key mi \minor
     %1
-    r4                 si'-3                sol\2-4               fad8\2-3    mi       |
+    r4                 si'-3                sol\2-4               fad8\2-3    mi\2-1   |
     \break
     %2
-    fad4\2             si,\3-1              fad'\2                \grace sold32\2 \trill (\grace la sold4\2) |
-    %3
-    \barre #-2
+    \barre #3
+    ^ \markup { \hspace #-2 "IV"}
+    fad4\2-4           si,\3-1              fad'\2-4             
+    \barre #3
     ^ \markup { \hspace #-2 "V"}
+    \grace sold32\2 \trill (\grace la sold4\2) |
+    %3
     la4-1                 mi\2-1                 la2~-1                                   |
     \break
     %4
