@@ -164,7 +164,10 @@ viola = \relative do' {
     %10
     s1                                                                             |
     %11
-    mi4.                          re8         do         si       la4              |
+    mi4.                          re8         
+    \once \override NoteColumn.force-hshift = #1
+    do
+    si       la4              |
 }
 
 allegro_moderato = {
