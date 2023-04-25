@@ -159,7 +159,6 @@ allegro_moderato = {
   \score {
     <<
       \new Staff = "main" \with {
-        instrumentName = "Guitar"
         \clef "treble_8"
         \consists Merge_rests_engraver
       } \relative {
