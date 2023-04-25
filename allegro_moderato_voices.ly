@@ -30,6 +30,8 @@ violinoA = \relative do' {
     %2
     fad4\2             si,\3-1              fad'\2                \grace sold32\2 \trill (\grace la sold4\2) |
     %3
+    \barre #-2
+    ^ \markup { \hspace #-2 "V"}
     la4-1                 mi\2-1                 la2~-1                                   |
     \break
     %4
