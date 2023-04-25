@@ -166,7 +166,8 @@ allegro_moderato = {
 
 \book {
   \header {
-    title = ""
+    title = "        Händel's Messiah Shorts"
+    subtitle = "                    lilypond engraving"
     tagline = ""
   }
   \score {
