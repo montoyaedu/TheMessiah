@@ -39,10 +39,16 @@ violinoA = \relative do' {
     la4-1                 mi\2-1                 la2~-1                                   |
     \break
     %4
-    la8      si-3        sol\2-4      la        fad\2        si       la        si       |
+    la8      si-3        sol\2-4      la-1       fad\2-3      si-4     la-1      si-3     |
     \break
     %5
-    sol4               mi\1                 si'2~                                  |
+    sol4\2-4           
+    \once \override StringNumber.self-alignment-X = #-1.5
+    \once \override StringNumber.staff-padding = #3
+    mi\1-0               
+    \once \override StringNumber.self-alignment-X = #-2.8
+    \once \override StringNumber.staff-padding = #3
+    si'2~\1-4                                |
     %6
     si4                la8        sol       la4                 sol8      fad      |
     %7
@@ -75,7 +81,10 @@ violinoB = \relative do' {
     %5
     r4                 
     \once \override NoteColumn.force-hshift = #1
-    mi4\3                re                  dod8      si       |
+    mi4\3-3              
+    \once \override StringNumber.self-alignment-X = #-3
+    \once \override StringNumber.staff-padding = #-3
+    re\3-3                dod8\3-2    si\3-1       |
     %6
     dod4               fad,                 do'                 red                |
     %7
