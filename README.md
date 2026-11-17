@@ -17,11 +17,29 @@
 
 ## Build
 
+Overture (Grave), ancora nel file unico:
+
     lilypond TheMessiah.ly
-
-## Svg
-
     lilypond -dbackend=svg TheMessiah.ly
+
+Allegro moderato, diviso in contenuto / layer / edizioni:
+
+    make                          # tutti i PDF in build/
+    make png                      # anteprime PNG
+    make svg                      # SVG
+    make build/allegro-a4.pdf     # una sola edizione
+
+| Cartella    | Contenuto                                                        |
+|-------------|------------------------------------------------------------------|
+| `music/`    | solo note, una variabile per voce, una battuta per riga          |
+| `layers/`   | assemblaggio delle voci, colori, interruzioni di sistema         |
+| `lib/`      | funzioni condivise (`\barre`, `\colore`) e partitura comune       |
+| `editions/` | un file per impaginazione: formato carta, titoli, layer scelti   |
+
+Edizioni: `allegro-shorts` (A6 per video, voci colorate), `allegro-a4`
+(stampa, con intavolatura), `allegro-a4-senza-dita` (sola notazione, senza
+diteggiature né numeri di corda). Per una nuova impaginazione basta copiare
+un file in `editions/`.
 
 ## Current Status
 

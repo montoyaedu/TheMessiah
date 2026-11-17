@@ -1,33 +1,16 @@
 \version "2.24.0"
 \language "italiano"
 
-#(set-default-paper-size "a6")
-
-\paper {
-  top-margin = 10
-  right-margin = 40
-  bottom-margin = 40
-  max-systems-per-page = 2
-  print-page-number = false
-}
-
-barre = #(define-music-function (parser location grow) (number?)
-#{
-  \override Arpeggio.stencil = #ly:arpeggio::brew-chord-bracket
-  \once \override Arpeggio.positions  = #(lambda (grob)
-    (let ((iv (ly:arpeggio::calc-positions grob))
-          (grow-hi (max 0 (/ grow 2)))
-          (grow-lo (min 0 (/ grow 2))))
-      (cons (+ (car iv) grow-lo) (+ (cdr iv) grow-hi))))
-  $(make-music 'EventChord 'elements (list (make-music 'ArpeggioEvent)))
-#})
+% Allegro moderato -- SOLO CONTENUTO MUSICALE.
+% Qui vivono note, durate, diteggiature (-3) e corde (\2: servono
+% anche all'intavolatura). Niente \break, colori o formato pagina:
+% quelli stanno in layers/ e editions/.
+% Ogni battuta ha il suo numero (%N) e il controllo "|".
 
 violinoA = \relative do' {
-    \voiceOne
     \key mi \minor
     %1
     r4                 si'-3                sol\2-4               fad8\2-3    mi\2-1   |
-    \break
     %2
     \barre #3
     ^ \markup { \hspace #-2 "IV"}
@@ -37,10 +20,8 @@ violinoA = \relative do' {
     \grace sold32\2 \trill (\grace la sold4\2) |
     %3
     la4-1                 mi\2-1                 la2~-1                                   |
-    \break
     %4
     la8      si-3        sol\2-4      la-1       fad\2-3      si-4     la-1      si-3     |
-    \break
     %5
     sol4\2-4           
     \once \override StringNumber.self-alignment-X = #-1.5
@@ -55,7 +36,6 @@ violinoA = \relative do' {
     sol2~                                   sol8       fad      sol       mi       |
     %8
     fad4               si~                  si                  lad                |
-    \break
     %9
     si8      si,       dod        red       mi2~                                   |
     %10
@@ -67,8 +47,6 @@ violinoA = \relative do' {
 }
 
 violinoB = \relative do' {
-    \voiceTwo
-    \override NoteHead.color = #red
     \key mi \minor
     %1
     s1                                                                             |
@@ -106,11 +84,7 @@ violinoB = \relative do' {
 }
 
 bassi = \relative do {
-    \voiceFour
-    \override NoteHead.color = #darkgreen
-    \shiftOff
     \key mi \minor
-    \stemDown
     %1
     s1                                                                             |
     %2
@@ -136,11 +110,7 @@ bassi = \relative do {
 }
 
 viola = \relative do {
-    \voiceThree
-    \override NoteHead.color = #blue
-    \shiftOff
     \key mi \minor
-    \stemDown
     %1
     s1                                                                             |
     %2
@@ -166,41 +136,4 @@ viola = \relative do {
     \once \override NoteColumn.force-hshift = #1
     do
     si       la4              |
-}
-
-allegro_moderato = {
-  <<
-  \violinoA
-  \new Voice \violinoB
-  \new Voice \viola
-  \new Voice \bassi
-  >>
-}
-
-\book {
-  \header {
-    title = "        Händel's Messiah Shorts"
-    subtitle = "                    lilypond engraving"
-    tagline = ""
-  }
-  \score {
-    <<
-      \new Staff = "main" \with {
-        \clef "treble_8"
-        \consists Merge_rests_engraver
-      } \relative {
-        \tempo \markup "Allegro moderato"
-        \allegro_moderato
-        \bar "|."
-      }
-      \new TabStaff \relative {
-      <<
-        \new TabVoice = "one" \violinoA
-        \new TabVoice = "two" \violinoB
-        \new TabVoice = "three" \viola
-        \new TabVoice = "four" \bassi
-      >>
-      }
-    >>
-  }
 }
