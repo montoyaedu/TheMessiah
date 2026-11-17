@@ -5,7 +5,6 @@
 #(set! paper-alist (cons '("telefono" . (cons (* 90 mm) (* 195 mm))) paper-alist))
 #(set-default-paper-size "telefono")
 coloriVoci = ##t
-\include "../layers/allegro-ritocchi-stampa.ly"
 \include "../lib/tutto.ly"
 \include "../lib/intestazione.ly"
 

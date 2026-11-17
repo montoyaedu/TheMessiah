@@ -29,17 +29,19 @@
 | `lib/`      | funzioni condivise (`\barre`, `\colore`), opzioni e partiture comuni   |
 | `editions/` | un file per impaginazione: formato carta, titoli, layer scelti       |
 
-| Edizione                  | Cosa stampa                                              |
-|---------------------------|----------------------------------------------------------|
-| `overture-a4`             | Grave + Allegro, A4, nero, notazione e intavolatura      |
-| `overture-a4-colori`      | come sopra, una voce per colore                          |
-| `overture-a4-senza-dita`  | sola notazione, senza diteggiature, corde e barré        |
-| `overture-telefono`       | pagina stretta per lo schermo del cellulare              |
-| `allegro-voci-separate`   | le quattro parti d'arco dell'Allegro su righi separati   |
-| `allegro-shorts`          | A6 per video verticali, voci colorate                    |
+| Edizione                   | Cosa stampa                                               |
+|----------------------------|-----------------------------------------------------------|
+| `overture-a4`              | Grave + Allegro, A4, nero, sola notazione con diteggiature |
+| `overture-a4-tab`          | come sopra, con il rigo di intavolatura                   |
+| `overture-a4-colori`       | sola notazione, una voce per colore                       |
+| `overture-a4-senza-dita`   | senza diteggiature, corde e barré                         |
+| `overture-a4-doppio-rigo`  | doppio rigo (violino + basso) ad altezze reali            |
+| `overture-telefono`        | pagina stretta per lo schermo del cellulare               |
+| `allegro-voci-separate`    | le quattro parti d'arco dell'Allegro su righi separati    |
+| `allegro-shorts`           | A6 per video verticali, voci colorate, intavolatura       |
 
-Un'edizione imposta le sue opzioni (`coloriVoci`, breaks, ritocchi) e poi
-include `lib/tutto.ly`. Per una nuova impaginazione basta copiare un file in
+Un'edizione imposta le sue opzioni (`intavolatura`, `coloriVoci`, breaks,
+ritocchi: elenco in `lib/opzioni.ly`) e poi include `lib/tutto.ly`. Per una nuova impaginazione basta copiare un file in
 `editions/`.
 
 `TheMessiah.ly` è la vecchia versione a file unico, tenuta per riferimento:

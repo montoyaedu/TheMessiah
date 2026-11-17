@@ -1,9 +1,11 @@
 \version "2.24.0"
 
-% Video verticali: A6, due sistemi per pagina, voci colorate.
+% Video verticali: A6, due sistemi per pagina, voci colorate, intavolatura.
 
 #(set-default-paper-size "a6")
 coloriVoci = ##t
+intavolatura = ##t
+cordeVociSotto = ##f   % qui le corde si sistemano a mano (ritocchi-shorts)
 \include "../layers/allegro-breaks-shorts.ly"
 \include "../layers/allegro-ritocchi-shorts.ly"
 \include "../lib/tutto.ly"

@@ -1,6 +1,12 @@
 \version "2.24.0"
 
 % Partiture pronte, comuni a tutte le edizioni.
+% Il rigo di intavolatura compare solo se l'edizione imposta
+% intavolatura = ##t  (vedi lib/opzioni.ly).
+
+senzaDita = \layout {
+  \context { \Staff \omit Fingering \omit StringNumber \omit Arpeggio \omit TextScript }
+}
 
 % ---------- solo Allegro ----------
 allegroRigo = \new Staff \with {
@@ -15,7 +21,7 @@ allegroRigo = \new Staff \with {
 allegroScore = \score {
   <<
     \allegroRigo
-    \new TabStaff \allegroIntavolatura
+    \seIntavolatura \new TabStaff \allegroIntavolatura
   >>
 }
 
@@ -28,10 +34,7 @@ allegroScoreVociSeparate = \score {
     \new Staff \with { instrumentName = "Viola"      \clef "treble_8" } \viola
     \new Staff \with { instrumentName = "Bassi"      \clef "treble_8" } \bassi
   >>
-  \layout {
-    indent = 22\mm
-    \context { \Staff \omit Fingering \omit StringNumber \omit Arpeggio \omit TextScript }
-  }
+  \layout { \senzaDita indent = 22\mm }
 }
 
 % ---------- Overture completa: Grave + Allegro ----------
@@ -56,13 +59,36 @@ overtureScore = \score {
   <<
     \overtureRigo
     \overtureDinamiche
-    \new TabStaff { \graveIntavolatura \allegroIntavolatura }
+    \seIntavolatura \new TabStaff { \graveIntavolatura \allegroIntavolatura }
   >>
 }
 
-overtureScoreSoloNote = \score {
+overtureScoreSenzaDita = \score {
   << \overtureRigo \overtureDinamiche >>
-  \layout {
-    \context { \Staff \omit Fingering \omit StringNumber \omit Arpeggio \omit TextScript }
-  }
+  \layout { \senzaDita }
+}
+
+% Doppio rigo "da pianoforte": chiave di violino e chiave di basso,
+% ad altezze reali (un'ottava sotto la scrittura abituale per chitarra).
+overtureScoreDoppioRigo = \score {
+  \new PianoStaff <<
+    \new Staff \with { \consists Merge_rests_engraver } <<
+      {
+        \clef treble
+        \tempo \markup "Grave"
+        \graveRigoSu
+        \bar "||"
+        \tempo \markup "Allegro moderato"
+        \allegroRigoSu
+        \bar "|."
+      }
+      \overtureBreaks
+    >>
+    \overtureDinamiche
+    \new Staff \with { \consists Merge_rests_engraver } {
+      \clef bass
+      \graveRigoGiu
+      \allegroRigoGiu
+    }
+  >>
 }
