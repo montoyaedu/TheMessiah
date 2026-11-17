@@ -28,4 +28,4 @@ allegroRigoGiu = <<
   \new Voice { \voiceTwo \colore #darkgreen \bassi }
 >>
 
-allegroDinamiche = { s1*11\mf }
+allegroDinamiche = { s1\mf s1*10 }

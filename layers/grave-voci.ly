@@ -2,30 +2,29 @@
 
 % Assemblaggio delle voci del Grave.
 
-graveNotazioneUnaVolta = <<
-  \context Voice = "alto"   { \voiceOne \graveAlto }
-  \context Voice = "basso"  { \voiceTwo \colore #blue
-                              \set fingeringOrientations = #'(left) \graveBasso }
-  \context Voice = "pedale" { \voiceFour \colore #darkgreen \gravePedale }
+graveNotazione = <<
+  \context Voice = "alto"  { \voiceOne \graveAlto }
+  \context Voice = "medio" { \voiceFour \colore #blue
+                             \set fingeringOrientations = #'(left) \graveMedio }
+  \context Voice = "basso" { \voiceTwo \colore #darkgreen \graveBasso }
 >>
 
-graveIntavolaturaUnaVolta = <<
+graveIntavolatura = <<
   \new TabVoice { \voiceOne \graveAlto }
+  \new TabVoice { \voiceFour \graveMedio }
   \new TabVoice { \voiceTwo \graveBasso }
-  \new TabVoice { \voiceFour \gravePedale }
 >>
 
-% Doppio rigo: alto sopra; basso e pedale sotto.
-graveRigoSuUnaVolta  = \new Voice { \oneVoice \graveAlto }
-graveRigoGiuUnaVolta = <<
+% Doppio rigo: alto sopra; medio e basso sotto.
+graveRigoSu  = \new Voice { \oneVoice \graveAlto }
+graveRigoGiu = <<
   \new Voice { \voiceOne \colore #blue
-               \set fingeringOrientations = #'(left) \graveBasso }
-  \new Voice { \voiceTwo \colore #darkgreen \gravePedale }
+               \set fingeringOrientations = #'(left) \graveMedio }
+  \new Voice { \voiceTwo \colore #darkgreen \graveBasso }
 >>
-graveRigoSu  = { \graveRigoSuUnaVolta \graveRigoSuUnaVolta }
-graveRigoGiu = { \graveRigoGiuUnaVolta \graveRigoGiuUnaVolta }
 
-% Il Grave si suona due volte: forte, poi piano.
-graveNotazione   = { \graveNotazioneUnaVolta \graveNotazioneUnaVolta }
-graveIntavolatura = { \graveIntavolaturaUnaVolta \graveIntavolaturaUnaVolta }
-graveDinamiche   = { s1*12\f s1*12\pp }
+% Prima volta forte, seconda piano.
+graveDinamiche = {
+  s1_\markup { \dynamic f \italic "  (2ª volta" \dynamic p \italic ")" }
+  s1*12
+}

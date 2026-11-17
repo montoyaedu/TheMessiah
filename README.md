@@ -48,6 +48,17 @@ ritocchi: elenco in `lib/opzioni.ly`) e poi include `lib/tutto.ly`. Per una nuov
 
     lilypond TheMessiah.ly
 
+## Fonti
+
+La trascrizione per chitarra è un lavoro originale; per le note di Händel
+(dominio pubblico) si confrontano:
+
+- la riduzione per pianoforte di T. Tertius Noble e Max Spicker, G. Schirmer
+  1912 (dominio pubblico, IMSLP #11870);
+- la partitura orchestrale in LilyPond delle Éditions Nicolas Sceaux
+  (<https://github.com/nsceaux/nenuvar>, CC BY-SA 4.0), usata solo come
+  riferimento: nessun suo file è copiato in questo repository.
+
 ## Current Status
 
 ```bash
