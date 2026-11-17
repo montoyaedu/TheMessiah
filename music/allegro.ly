@@ -3,8 +3,8 @@
 
 % Allegro moderato -- SOLO CONTENUTO MUSICALE.
 % Qui vivono note, durate, diteggiature (-3) e corde (\2: servono
-% anche all'intavolatura). Niente \break, colori o formato pagina:
-% quelli stanno in layers/ e editions/.
+% anche all'intavolatura). Niente \break, colori, formato pagina o
+% ritocchi di posizione: quelli stanno in layers/ e editions/.
 % Ogni battuta ha il suo numero (%N) e il controllo "|".
 
 violinoA = \relative do' {
@@ -24,11 +24,7 @@ violinoA = \relative do' {
     la8      si-3        sol\2-4      la-1       fad\2-3      si-4     la-1      si-3     |
     %5
     sol4\2-4           
-    \once \override StringNumber.self-alignment-X = #-1.5
-    \once \override StringNumber.staff-padding = #3
     mi\1-0               
-    \once \override StringNumber.self-alignment-X = #-2.8
-    \once \override StringNumber.staff-padding = #3
     si'2~\1-4                                |
     %6
     si4                la8        sol       la4                 sol8      fad      |
@@ -60,8 +56,6 @@ violinoB = \relative do' {
     r4                 
     \once \override NoteColumn.force-hshift = #1
     mi4\3-3              
-    \once \override StringNumber.self-alignment-X = #-3
-    \once \override StringNumber.staff-padding = #-3
     re\3-3                dod8\3-2    si\3-1       |
     %6
     dod4               fad,                 do'                 red                |

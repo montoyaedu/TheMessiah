@@ -1,16 +1,12 @@
 \version "2.24.0"
 
-% Edizione per video verticali: A6, due sistemi per pagina, voci colorate.
+% Video verticali: A6, due sistemi per pagina, voci colorate.
 
 #(set-default-paper-size "a6")
 coloriVoci = ##t
-
-\include "../lib/barre.ly"
-\include "../lib/voci.ly"
-\include "../music/allegro.ly"
-\include "../layers/allegro-voci.ly"
 \include "../layers/allegro-breaks-shorts.ly"
-\include "../lib/allegro-score.ly"
+\include "../layers/allegro-ritocchi-shorts.ly"
+\include "../lib/tutto.ly"
 
 \paper {
   top-margin = 10
