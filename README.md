@@ -64,6 +64,8 @@ Le opzioni di un'edizione (`intavolatura`, `coloriVoci`, ...) sono elencate
 in `lib/opzioni.ly`. `TheMessiah.ly` è la vecchia versione a file unico,
 tenuta per riferimento.
 
+Idee, stato della trascrizione e cose da decidere: vedi [IDEE.md](IDEE.md).
+
 ## Crediti e fonti
 
 La trascrizione per chitarra è di **M. Vercesi**; questo repository la

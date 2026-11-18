@@ -13,3 +13,10 @@ finaleIntavolatura = <<
   \new TabVoice { \voiceFour \voce "finaleMedio" }
   \new TabVoice { \voiceTwo \voce "finaleBasso" }
 >>
+
+% Doppio rigo: alto sopra; medio e basso sotto.
+finaleRigoSu  = \new Voice { \oneVoice \voce "finaleAlto" }
+finaleRigoGiu = <<
+  \new Voice { \voiceOne \colore #blue \voce "finaleMedio" }
+  \new Voice { \voiceTwo \colore #darkgreen \voce "finaleBasso" }
+>>

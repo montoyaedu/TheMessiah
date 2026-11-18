@@ -51,6 +51,18 @@ finaleScore = \score {
 }
 
 % ---------- Overture completa: Grave + Allegro ----------
+
+% Battute dell'Allegro non ancora trascritte, tra l'ultima di
+% music/allegro.ly (38) e la prima di music/allegro-finale.ly (75).
+% Quando la trascrizione avanza, ridurre il numero qui sotto.
+overtureVuoto = {
+  \compressEmptyMeasures
+  \once \override MultiMeasureRest.minimum-length = #45
+  R1*36 ^\markup \italic "battute 39–74 dell'Allegro: da trascrivere"
+  \expandEmptyMeasures
+}
+overtureVuotoMuto = { s1*36 }
+
 overtureRigo = \new Staff \with {
   \clef "treble_8"
   \consists Merge_rests_engraver
@@ -61,12 +73,14 @@ overtureRigo = \new Staff \with {
     \bar "||" \aCapo
     \tempo \markup "Allegro moderato"
     << \allegroNotazione \allegroRitocchi >>
+    \overtureVuoto
+    \finaleNotazione
     \bar "|."
   }
   \overtureBreaks
 >>
 
-overtureDinamiche = \new Dynamics { \graveDinamiche \allegroDinamiche }
+overtureDinamiche = \new Dynamics { \graveDinamiche \allegroDinamiche \overtureVuotoMuto s1*11 }
 
 % Righe dell'armonia sotto il rigo (opzioni gradi / funzioni).
 rigaArmonia = \with {
@@ -86,7 +100,7 @@ overtureScore = \score {
     \overtureRigo
     \overtureArmonia
     \overtureDinamiche
-    \seIntavolatura \new TabStaff { \graveIntavolatura \allegroIntavolatura }
+    \seIntavolatura \new TabStaff { \graveIntavolatura \allegroIntavolatura \overtureVuoto \finaleIntavolatura }
   >>
 }
 
@@ -102,6 +116,8 @@ overtureScoreDoppioRigo = \score {
         \bar "||" \aCapo
         \tempo \markup "Allegro moderato"
         \allegroRigoSu
+        \overtureVuoto
+        \finaleRigoSu
         \bar "|."
       }
       \overtureBreaks
@@ -111,6 +127,8 @@ overtureScoreDoppioRigo = \score {
       \clef bass
       \graveRigoGiu
       \allegroRigoGiu
+      \overtureVuoto
+      \finaleRigoGiu
     }
   >>
 }

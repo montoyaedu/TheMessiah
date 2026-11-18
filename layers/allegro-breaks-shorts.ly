@@ -8,5 +8,5 @@ allegroBreaks = {
   s1   \break   % 4
   s1*4 \break   % 5-8
   s1*3 \break   % 9-11
-  s1*7          % 12-18 (automatiche)
+  s1*27         % 12-38 (automatiche)
 }
