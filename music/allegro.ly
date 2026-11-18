@@ -2,30 +2,25 @@
 \language "italiano"
 
 % Allegro moderato -- SOLO CONTENUTO MUSICALE.
-% Qui vivono note, durate, diteggiature (-3) e corde (\2: servono
-% anche all'intavolatura). Niente \break, colori, formato pagina o
-% ritocchi di posizione: quelli stanno in layers/ e editions/.
+% Qui vivono solo note e durate. Diteggiature, corde e barre' stanno in
+% dita/; \break, colori, formato pagina e ritocchi in layers/ e editions/.
 % Ogni battuta ha il suo numero (%N) e il controllo "|".
 
 violinoA = \relative do' {
     \key mi \minor
     %1
-    r4                 si'-3                sol\2-4               fad8\2-3    mi\2-1   |
+    r4                 si'                sol               fad8    mi   |
     %2
-    \barre #3
-    ^ \markup { \hspace #-2 "IV"}
-    fad4\2-4           si,\3-1              fad'\2-4             
-    \barre #3
-    ^ \markup { \hspace #-2 "V"}
-    \grace sold32\2 \trill (\grace la sold4\2) |
+    fad4           si,              fad'             
+    \grace sold32 \trill (\grace la sold4) |
     %3
-    la4-1                 mi\2-1                 la2~-1                                   |
+    la4                 mi                 la2~                                   |
     %4
-    la8      si-3        sol\2-4      la-1       fad\2-3      si-4     la-1      si-3     |
+    la8      si        sol      la       fad      si     la      si     |
     %5
-    sol4\2-4           
-    mi\1-0               
-    si'2~\1-4                                |
+    sol4           
+    mi               
+    si'2~                                |
     %6
     si4                la8        sol       la4                 sol8      fad      |
     %7
@@ -55,8 +50,8 @@ violinoB = \relative do' {
     %5
     r4                 
     \once \override NoteColumn.force-hshift = #1
-    mi4\3-3              
-    re\3-3                dod8\3-2    si\3-1       |
+    mi4              
+    re                dod8    si       |
     %6
     dod4               fad,                 do'                 red                |
     %7

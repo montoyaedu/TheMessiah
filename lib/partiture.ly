@@ -2,11 +2,8 @@
 
 % Partiture pronte, comuni a tutte le edizioni.
 % Il rigo di intavolatura compare solo se l'edizione imposta
-% intavolatura = ##t  (vedi lib/opzioni.ly).
-
-senzaDita = \layout {
-  \context { \Staff \omit Fingering \omit StringNumber \omit Arpeggio \omit TextScript }
-}
+% intavolatura = ##t  (vedi lib/opzioni.ly). Diteggiature, corde e barre'
+% compaiono solo se l'edizione include un file di dita/ prima di tutto.ly.
 
 % ---------- solo Allegro ----------
 allegroRigo = \new Staff \with {
@@ -34,7 +31,7 @@ allegroScoreVociSeparate = \score {
     \new Staff \with { instrumentName = "Viola"      \clef "treble_8" } \viola
     \new Staff \with { instrumentName = "Bassi"      \clef "treble_8" } \bassi
   >>
-  \layout { \senzaDita indent = 22\mm }
+  \layout { indent = 22\mm }
 }
 
 % Finale dell'Allegro (battute 88-98), da solo, per il confronto col manoscritto.
@@ -77,11 +74,6 @@ overtureScore = \score {
     \overtureDinamiche
     \seIntavolatura \new TabStaff { \graveIntavolatura \allegroIntavolatura }
   >>
-}
-
-overtureScoreSenzaDita = \score {
-  << \overtureRigo \overtureDinamiche >>
-  \layout { \senzaDita }
 }
 
 % Doppio rigo "da pianoforte": chiave di violino e chiave di basso,

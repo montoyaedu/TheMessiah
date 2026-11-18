@@ -3,13 +3,13 @@
 % Assemblaggio del finale dell'Allegro (battute 88-98).
 
 finaleNotazione = <<
-  \context Voice = "alto"  { \voiceOne \finaleAlto }
-  \context Voice = "medio" { \voiceFour \colore #blue \finaleMedio }
-  \context Voice = "basso" { \voiceTwo \colore #darkgreen \finaleBasso }
+  \context Voice = "alto"  { \voiceOne \voce "finaleAlto" }
+  \context Voice = "medio" { \voiceFour \colore #blue \voce "finaleMedio" }
+  \context Voice = "basso" { \voiceTwo \colore #darkgreen \voce "finaleBasso" }
 >>
 
 finaleIntavolatura = <<
-  \new TabVoice { \voiceOne \finaleAlto }
-  \new TabVoice { \voiceFour \finaleMedio }
-  \new TabVoice { \voiceTwo \finaleBasso }
+  \new TabVoice { \voiceOne \voce "finaleAlto" }
+  \new TabVoice { \voiceFour \voce "finaleMedio" }
+  \new TabVoice { \voiceTwo \voce "finaleBasso" }
 >>

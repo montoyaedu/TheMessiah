@@ -41,3 +41,106 @@ cordeSotto =
 seIntavolatura =
 #(define-music-function (m) (ly:music?)
    (if (eq? #t (ly:parser-lookup 'intavolatura)) m #{ #}))
+
+% ---------------------------------------------------------------------
+% \voce "violinoA" -> le note di violinoA piu', se esiste, il layer
+% violinoADita (vedi dita/). I segni scritti sugli spazi del layer
+% (dita, corde) passano alla nota che inizia nello stesso istante; il
+% resto del layer (barre', \override) viene suonato in parallelo nella
+% stessa voce. Un segno che non trova una nota produce un avviso.
+#(define (foglie m grazia)
+   ;; eventi ritmici in ordine di scrittura: lista di (musica . grazia?)
+   (cond
+    ((music-is-of-type? m 'event-chord) (list (cons m grazia)))
+    ((eq? (ly:music-property m 'name) 'GraceMusic)
+     (foglie (ly:music-property m 'element) #t))
+    ((ly:duration? (ly:music-property m 'duration)) (list (cons m grazia)))
+    (else
+     ;; contenitori: prima 'element (es. il corpo di un ritornello),
+     ;; poi 'elements (es. prima e seconda volta)
+     (append
+      (if (ly:music? (ly:music-property m 'element))
+          (foglie (ly:music-property m 'element) grazia)
+          '())
+      (append-map (lambda (e) (foglie e grazia))
+                  (ly:music-property m 'elements))))))
+
+#(define (con-istanti m)
+   ;; lista di (chiave . musica); chiave = (istante numero-di-abbellimento)
+   (let ((pos 0) (g 0) (out '()))
+     (for-each
+      (lambda (f)
+        (let* ((ev (car f))
+               (len (ly:moment-main (ly:music-length ev))))
+          (cond
+           ((cdr f) (set! out (cons (cons (list pos g) ev) out)) (set! g (1+ g)))
+           ((> len 0) (set! out (cons (cons (list pos #f) ev) out))
+                      (set! pos (+ pos len)) (set! g 0)))))
+      (foglie m #f))
+     (reverse out)))
+
+#(define (segni ev)
+   (if (music-is-of-type? ev 'event-chord)
+       (filter (lambda (e) (not (music-is-of-type? e 'rhythmic-event)))
+               (ly:music-property ev 'elements))
+       (ly:music-property ev 'articulations)))
+
+#(define (togli-segni! ev)
+   (if (music-is-of-type? ev 'event-chord)
+       (set! (ly:music-property ev 'elements)
+             (filter (lambda (e) (music-is-of-type? e 'rhythmic-event))
+                     (ly:music-property ev 'elements)))
+       (set! (ly:music-property ev 'articulations) '())))
+
+#(define (aggiungi-segni! nota nuovi)
+   (if (music-is-of-type? nota 'event-chord)
+       (let* ((note (filter (lambda (e) (music-is-of-type? e 'note-event))
+                            (ly:music-property nota 'elements)))
+              (dita (filter (lambda (e) (music-is-of-type? e 'fingering-event)) nuovi))
+              (corde (filter (lambda (e) (music-is-of-type? e 'string-number-event)) nuovi))
+              (altri (filter (lambda (e) (not (or (memq e dita) (memq e corde)))) nuovi))
+              (dai (lambda (lista)
+                     (for-each
+                      (lambda (n s)
+                        (set! (ly:music-property n 'articulations)
+                              (append (ly:music-property n 'articulations) (list s))))
+                      (list-head note (min (length note) (length lista)))
+                      (list-head lista (min (length note) (length lista)))))))
+         (dai dita) (dai corde)
+         (set! (ly:music-property nota 'elements)
+               (append (ly:music-property nota 'elements) altri)))
+       (set! (ly:music-property nota 'articulations)
+             (append (ly:music-property nota 'articulations) nuovi))))
+
+voce =
+#(define-music-function (nome) (string?)
+   (let* ((note (ly:parser-lookup (string->symbol nome)))
+          (layer (ly:parser-lookup (string->symbol (string-append nome "Dita")))))
+     (if (not (ly:music? note))
+         (ly:error "\\voce: la voce ~a non esiste" nome))
+     (if (not (ly:music? layer))
+         note
+         (let* ((note (ly:music-deep-copy note))
+                (resto (ly:music-deep-copy layer))
+                (tabella (make-hash-table)))
+           (for-each
+            (lambda (p)
+              (if (pair? (segni (cdr p)))
+                  (hash-set! tabella (car p) (cdr p))))
+            (con-istanti layer))
+           (for-each
+            (lambda (p)
+              (let ((sorgente (hash-ref tabella (car p))))
+                (if (and sorgente
+                         (or (music-is-of-type? (cdr p) 'note-event)
+                             (music-is-of-type? (cdr p) 'event-chord)))
+                    (begin
+                      (aggiungi-segni! (cdr p) (map ly:music-deep-copy (segni sorgente)))
+                      (hash-remove! tabella (car p))))))
+            (con-istanti note))
+           (hash-for-each
+            (lambda (chiave ev)
+              (ly:music-warning ev (format #f "~aDita: nessuna nota in questo istante" nome)))
+            tabella)
+           (for-each (lambda (p) (togli-segni! (cdr p))) (con-istanti resto))
+           #{ << #note #resto >> #}))))

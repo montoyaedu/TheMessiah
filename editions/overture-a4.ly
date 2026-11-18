@@ -3,6 +3,7 @@
 % Stampa classica: A4, nero, sola notazione con diteggiature.
 
 #(set-default-paper-size "a4")
+\include "../dita/principale.ly"
 \include "../lib/tutto.ly"
 \include "../lib/intestazione.ly"
 

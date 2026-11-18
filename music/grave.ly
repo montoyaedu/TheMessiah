@@ -51,7 +51,7 @@ graveMedio = {
     \key mi \minor
     \repeat volta 2 {
     %1
-    <si,-3>4.          la,8                 si,4.                si,8              |
+    si,4.              la,8                 si,4.                si,8              |
     %2-7
     s1*6
     %8

@@ -8,6 +8,7 @@ intavolatura = ##t
 cordeVociSotto = ##f   % qui le corde si sistemano a mano (ritocchi-shorts)
 \include "../layers/allegro-breaks-shorts.ly"
 \include "../layers/allegro-ritocchi-shorts.ly"
+\include "../dita/principale.ly"
 \include "../lib/tutto.ly"
 
 \paper {

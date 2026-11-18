@@ -25,6 +25,7 @@
 | Cartella    | Contenuto                                                            |
 |-------------|----------------------------------------------------------------------|
 | `music/`    | solo note, una variabile per voce, una battuta per riga              |
+| `dita/`     | diteggiature, corde e barré: un file per diteggiatura, a scelta dell'edizione |
 | `layers/`   | assemblaggio delle voci, dinamiche, interruzioni, ritocchi per formato |
 | `lib/`      | funzioni condivise (`\barre`, `\colore`), opzioni e partiture comuni   |
 | `editions/` | un file per impaginazione: formato carta, titoli, layer scelti       |
@@ -41,7 +42,8 @@
 | `allegro-finale-bozza`     | ultime 11 battute dell'Allegro, dal manoscritto (bozza)   |
 | `allegro-shorts`           | A6 per video verticali, voci colorate, intavolatura       |
 
-Un'edizione imposta le sue opzioni (`intavolatura`, `coloriVoci`, breaks,
+Un'edizione sceglie una diteggiatura (`\include "../dita/principale.ly"`, o
+nessuna), imposta le sue opzioni (`intavolatura`, `coloriVoci`, breaks,
 ritocchi: elenco in `lib/opzioni.ly`) e poi include `lib/tutto.ly`. Per una nuova impaginazione basta copiare un file in
 `editions/`.
 
