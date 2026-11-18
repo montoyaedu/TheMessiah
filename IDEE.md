@@ -91,6 +91,29 @@ le posizioni comuni.
 - **Registro delle letture incerte**: elenco unico dei punti da verificare
   sul manoscritto, generato dai "?" nei file.
 
+## Piano: un passo per volta
+
+Regola di lavoro: ogni passo aggiunge **un solo layer o una sola edizione**,
+si prova prima sul Grave (13 battute, armonia chiara) e finisce con un PDF
+da giudicare. Solo dopo si estende all'Allegro.
+
+Due binari paralleli:
+
+- **Testo** (serve il manoscritto o l'orecchio dell'interprete): correggere
+  le bozze, sciogliere le letture dubbie, copiare le diteggiature.
+- **Strumenti** (si possono costruire subito sulle battute già sicure).
+
+| Passo | Cosa | Binario | Dipende da |
+|-------|------|---------|------------|
+| 1 | Layer di accordi veri per il Grave: sigle jazz e note strutturali colorate | strumenti | niente |
+| 2 | Varianti come layer (manoscritto / esecuzione attuale), provate su una battuta | strumenti | niente |
+| 3 | Correzioni al PDF completo: Grave 3–13 e Allegro 12–38 adattati alla chitarra | testo | lettura dell'interprete |
+| 4 | Bozza delle battute 39–74: il brano diventa intero | testo | passo 3, per sapere come ridurre |
+| 5 | Diteggiatura del maestro M. Vercesi, posizioni alternative, controllo dell'apertura della mano | entrambi | manoscritto leggibile |
+| 6 | Armonia dell'Allegro, cadenze e modulazioni, analisi della fuga | strumenti | passo 1 e testo stabile |
+| 7 | Materiali del metodo: partitura d'archi in chiavi originali, riduzione a gradini, schede di studio | strumenti | passi 4 e 6 |
+| 8 | Pubblicazione automatica dei PDF, ascolto MIDI | strumenti | quando serve |
+
 ## Da decidere
 
 - Sigle funzionali preferite (sP o tG per il VI grado; DD o (D) per la
