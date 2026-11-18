@@ -141,13 +141,27 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 ## Il Messiah oltre l'Overture
 
 - **N. 2, «Comfort ye my people»** (`brani/messiah-comfort-ye/`): battute
-  1–8 in bozza dalla Schirmer. Quattro voci su un rigo: il canto del tenore
+  1–13 in bozza dalla Schirmer. Quattro voci su un rigo: il canto del tenore
   ad altezza reale con il testo sotto, i violini un'ottava sotto, gli
   accordi ribattuti ridotti, il basso a una nota per accordo.
 - Proseguire il recitativo (37 battute) e poi l'aria «Ev'ry valley».
 - **Il canto come voce a sé**: nei brani vocali la linea del cantante resta
   distinta (colore, testo sotto), così si può suonare tutto oppure solo
   accompagnare.
+
+## Esperimenti di "chitarrabilità"
+
+- **Smetana, Vltava (La Moldava)** (`brani/smetana-moldava/`): il tema in mi
+  minore con il canto tutto sulla quarta corda, accordi sulle corde acute a
+  vuoto e bassi a vuoto, alla maniera del Preludio n. 1 di Villa-Lobos.
+  Prime 16 battute fatte a tavolino, da provare sullo strumento.
+  Da fare se funziona: le figure d'onda dell'introduzione, la sezione in mi
+  maggiore, una diteggiatura anche per gli accordi.
+- **Mendelssohn, Elijah, Overture**: da tentare; manca una fonte (lo spartito
+  per canto e pianoforte è su IMSLP ma va scaricato a mano).
+- **Idea generale**: per ogni brano cercare prima la tonalità e la corda che
+  lo rendono "chitarristico" (corde a vuoto come pedale o come accordo), e
+  solo dopo ridurre le parti.
 
 ## Repertorio e studi propri
 

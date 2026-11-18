@@ -40,7 +40,8 @@ comune. La musica è divisa in strati indipendenti:
 Brani:
 
 - `messiah-overture`: Händel, Overture del Messiah, trascrizione di M. Vercesi.
-- `messiah-comfort-ye`: Händel, Messiah n. 2, recitativo «Comfort ye my people», riduzione per chitarra sola (battute 1–8, in bozza).
+- `messiah-comfort-ye`: Händel, Messiah n. 2, recitativo «Comfort ye my people», riduzione per chitarra sola (battute 1–13, in bozza).
+- `smetana-moldava`: Smetana, Vltava, il tema: esperimento con il canto sulla quarta corda.
 - `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93, riduzione per chitarra sola di tutta la partitura (primo movimento e Largo, in bozza).
 
 | Impaginazione | Aspetto                                                              |

@@ -11,7 +11,7 @@
 %                  ridotti a cio' che sta sotto le dita
 %   comfortBasso   il basso, una nota per accordo invece delle crome ribattute
 %
-% STATO: battute 1-8, BOZZA dalla Schirmer 1912 riscontrata con le parti
+% STATO: battute 1-13, BOZZA dalla Schirmer 1912 riscontrata con le parti
 % d'arco. Non ancora provata sulla chitarra.
 
 comfortCanto = {
@@ -29,12 +29,25 @@ comfortCanto = {
     sold16(  fad)      mi8        s4        s2                                     |
     %8  (ad libitum)
     mi'2~                                   mi'8.      si16      si4               |
+    %9
+    s2                                      mi'2~                                  |
+    %10
+    mi'4.                         red'8     mi'4.                         fad'8    |
+    %11
+    red'16(  dod')     si8        s4        s2                                     |
+    %12
+    sold4              lad                  si                   s                 |
+    %13
+    dod'4              red'                 mi'                  s                 |
 }
 
 comfortTesto = \lyricmode {
     Com -- fort ye,
     com -- fort ye my peo -- ple,
     com -- fort ye,
+    com -- fort ye my peo -- ple,
+    saith your God,
+    saith your God.
 }
 
 comfortAlto = {
@@ -56,6 +69,16 @@ comfortAlto = {
     s2                                      <si sold'>8.   <la fad'>16   <sold mi'>4 |
     %8
     s1                                                                             |
+    %9
+    sold8    sold      sold       sold      si         si        si       si       |
+    %10
+    s1                                                                             |
+    %11
+    s2                                      <red' fad'>8.  <dod' mi'>16  <si red'>4 |
+    %12
+    s2                                      fad8.      mi16      red4              |
+    %13
+    s2                                      <sold si>8.    <fad la>16    <mi sold>4 |
 }
 
 comfortMedio = {
@@ -74,6 +97,14 @@ comfortMedio = {
     %6
     mi8      mi        mi         mi        mi         mi        red      red      |
     %7-8
+    s1*2
+    %9
+    <si, mi>8 <si, mi> <si, mi>   <si, mi>  <si, mi>   <si, mi>  <si, mi> <si, mi> |
+    %10
+    <mi si>8 <mi si>   <mi si>    mi        <mi lad>   <mi lad>  <mi lad> <mi lad> |
+    %11
+    fad8     fad       fad        fad       s2                                     |
+    %12-13
     s1*2
 }
 
@@ -96,4 +127,14 @@ comfortBasso = {
     mi8.     mi,16     mi,4                 mi8.       mi,16     mi,4              |
     %8
     r1\fermata                                                                     |
+    %9
+    mi,2                                    sold,                                  |
+    %10
+    dod1                                                                           |
+    %11
+    si,4               r                    si8.       si,16     si,4              |
+    %12
+    mi4                dod                  si,                  r                 |
+    %13
+    la,4               fad,                 mi,                  r                 |
 }

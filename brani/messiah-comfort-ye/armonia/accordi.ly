@@ -1,7 +1,7 @@
 \version "2.24.0"
 \language "italiano"
 
-% ACCORDI di "Comfort ye", battute 1-8.
+% ACCORDI di "Comfort ye", battute 1-13.
 comfortAccordi = \chordmode {
   %1
   mi2                mi2/sold           |
@@ -19,4 +19,14 @@ comfortAccordi = \chordmode {
   mi1                                   |
   %8
   mi1                                   |
+  %9
+  mi2                mi2/sold           |
+  %10
+  dod2:m7            fad2:7/dod         |
+  %11
+  si1                                   |
+  %12
+  mi4      fad4/dod  si2                |
+  %13
+  la4      si4/fad   mi2                |
 }
