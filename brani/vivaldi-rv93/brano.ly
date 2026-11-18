@@ -6,9 +6,11 @@
 \include "../../lib/opzioni.ly"
 \include "../../lib/accordi.ly"
 \include "../../lib/barre.ly"
+\include "music/allegro1.ly"
 \include "music/largo.ly"
 \include "music/largo-chitarra.ly"
 \include "armonia/accordi.ly"
+\include "layers/allegro1-voci.ly"
 \include "layers/largo-voci.ly"
 \include "partiture.ly"
 

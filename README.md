@@ -40,7 +40,7 @@ comune. La musica è divisa in strati indipendenti:
 Brani:
 
 - `messiah-overture`: Händel, Overture del Messiah, trascrizione di M. Vercesi.
-- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93, riduzione per chitarra sola (per ora il Largo, in bozza).
+- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93, riduzione per chitarra sola di tutta la partitura (primo movimento e Largo, in bozza).
 
 | Impaginazione | Aspetto                                                              |
 |---------------|----------------------------------------------------------------------|

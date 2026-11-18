@@ -36,3 +36,19 @@ largoPartituraScore = \score {
   >>
   \layout { indent = 22\mm }
 }
+
+% ---------- I. Allegro, chitarra sola ----------
+allegroUnoChitarraScore = \score {
+  <<
+    \new Staff \with {
+      \clef "treble_8"
+      \consists Merge_rests_engraver
+    } {
+      \tempo \markup "Allegro"
+      \allegroUnoNotazione
+    }
+    \seIntavolatura \new TabStaff \with {
+      stringTunings = #guitar-drop-d-tuning
+    } \allegroUnoIntavolatura
+  >>
+}

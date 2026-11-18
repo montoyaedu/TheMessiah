@@ -5,5 +5,6 @@
 \include "../../../impaginazioni/compatta.ly"
 \include "../brano.ly"
 \include "../intestazione.ly"
+\header { subtitle = "II. Largo" }
 
 \largoPartituraScore

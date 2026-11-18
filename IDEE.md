@@ -108,6 +108,12 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Primo e terzo movimento: forma in due parti con ritornelli, melodia per
     terze su un basso ribattuto di re e la; con la sesta corda in re i bassi
     cadono a vuoto. Il basso ribattuto va semplificato.
+  - **Scopo della riduzione**: la chitarra suona tutto (tutti e soli), non
+    solo la parte del liuto, sulla falsariga della trascrizione del Messiah.
+  - **Primo movimento: bozza grezza fatta** (`music/allegro1.ly`, 51
+    battute): voce principale un'ottava sotto con la seconda voce in
+    bicordi, basso con le crome ribattute ridotte a semiminime. Da adattare
+    alle dita, verificare sull'autografo, armonizzare.
   - **Largo: prima bozza fatta** (`brani/vivaldi-rv93/`): parte del liuto e
     basso ridotto a una nota per accordo, sesta corda in re; partitura
     originale a quattro righi; accordi con sigle e colori. Da fare: le terze
