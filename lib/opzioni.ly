@@ -5,6 +5,11 @@
 %   intavolatura     = ##f   solo notazione; ##t aggiunge il rigo di tablatura
 %   coloriVoci       = ##f   teste di nota nere; ##t una voce per colore
 %   cordeVociSotto   = ##t   numeri di corda delle voci inferiori sotto il rigo
+%   sigle            = ##f   ##t: sigle degli accordi (Em, B7/D#) sopra il rigo
+%   sigleItaliane    = ##f   ##t: sigle con Do Re Mi invece di C D E
+%   coloriAccordo    = ##f   ##t: fondamentale, terza, quinta e settima colorate
+%   provenienza      = ##f   ##t: colora le note che vengono dalle edizioni
+%                            di riferimento e non dalla trascrizione
 %   gradi            = ##f   ##t: riga con l'armonia in numeri romani
 %   funzioni         = ##f   ##t: riga con l'armonia funzionale
 %   trasporto        = (niente)   una nota, es.  trasporto = la :
@@ -23,6 +28,9 @@
 #(predefinito 'cordeVociSotto #t)
 #(predefinito 'sezioniACapo #f)
 #(predefinito 'gradi #f)
+#(predefinito 'sigle #f)
+#(predefinito 'coloriAccordo #f)
+#(predefinito 'provenienza #f)
 #(predefinito 'funzioni #f)
 #(for-each (lambda (nome) (predefinito nome #{ { } #}))
            '(allegroBreaks allegroRitocchi overtureBreaks))
@@ -168,23 +176,27 @@ seIntavolatura =
 
 voce =
 #(define-music-function (nome) (string?)
-   (let* ((note (ly:parser-lookup (string->symbol nome)))
-          (layer (ly:parser-lookup (string->symbol (string-append nome "Dita")))))
-     (if (not (ly:music? note))
+   (let* ((originale (ly:parser-lookup (string->symbol nome)))
+          (layer (ly:parser-lookup (string->symbol (string-append nome "Dita"))))
+          (nome-accordi (ly:parser-lookup 'accordiCorrenti))
+          (accordi (and (string? nome-accordi)
+                        (ly:parser-lookup (string->symbol nome-accordi))))
+          (trasportata (ly:pitch? (ly:parser-lookup 'trasporto))))
+     (if (not (ly:music? originale))
          (ly:error "\\voce: la voce ~a non esiste" nome))
-     (if (ly:pitch? (ly:parser-lookup 'trasporto))
-         ;; trasportata: niente diteggiatura, le corde non varrebbero piu'
-         (begin
-           (set! layer #f)
-           (set! note (ly:music-transpose
-                       (ly:music-deep-copy note)
-                       (ly:pitch-diff (ly:parser-lookup 'trasporto)
-                                      (ly:make-pitch -1 2 0))))))
-     (if (not (ly:music? layer))
-         note
-         (let* ((note (ly:music-deep-copy note))
-                (resto (ly:music-deep-copy layer))
-                (tabella (make-hash-table)))
+     (let ((note (ly:music-deep-copy originale)))
+       ;; 1. note strutturali dell'accordo (prima del trasporto)
+       (if (and (eq? #t (ly:parser-lookup 'coloriAccordo)) (ly:music? accordi))
+           (colora-per-accordo! note accordi))
+       (cond
+        ;; 2a. trasportata: niente diteggiatura, le corde non varrebbero piu'
+        (trasportata (trasporta-se-serve note))
+        ;; 2b. senza layer di diteggiatura
+        ((not (ly:music? layer)) note)
+        ;; 2c. con la diteggiatura
+        (else
+         (let ((resto (ly:music-deep-copy layer))
+               (tabella (make-hash-table)))
            (for-each
             (lambda (p)
               (if (pair? (segni (cdr p)))
@@ -205,4 +217,4 @@ voce =
               (ly:music-warning ev (format #f "~aDita: nessuna nota in questo istante" nome)))
             tabella)
            (for-each (lambda (p) (togli-segni! (cdr p))) (con-istanti resto))
-           #{ << #note #resto >> #}))))
+           #{ << #note #resto >> #}))))))

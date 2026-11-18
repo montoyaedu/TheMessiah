@@ -28,7 +28,7 @@ La musica è divisa in strati indipendenti:
 |------------------|---------------------------------------------------------------------|
 | `music/`         | solo note e durate, una variabile per voce, una battuta per riga    |
 | `dita/`          | diteggiature, corde e barré: un file per diteggiatura               |
-| `armonia/`       | l'armonia battuta per battuta: gradi (numeri romani) e funzioni     |
+| `armonia/`       | l'armonia battuta per battuta: accordi, gradi e funzioni            |
 | `impaginazioni/` | formato pagina, grandezza e densità delle note                      |
 | `fonti/`         | foto del manoscritto                                                |
 | `layers/`        | assemblaggio delle voci, dinamiche, interruzioni, ritocchi          |
@@ -50,7 +50,9 @@ La musica è divisa in strati indipendenti:
 | `overture-classica-colori`      | come sopra, una voce per colore                          |
 | `overture-classica-senza-dita`  | senza diteggiature, corde e barré                        |
 | `overture-classica-doppio-rigo` | doppio rigo (violino + basso) ad altezze reali           |
-| `overture-classica-armonia`     | con gradi e funzioni armoniche sotto il rigo             |
+| `overture-classica-armonia`     | sigle jazz sopra, gradi e funzioni sotto il rigo         |
+| `overture-classica-accordi`     | sigle jazz e note strutturali dell'accordo colorate      |
+| `overture-classica-provenienza` | in colore le note prese dalle edizioni di riferimento    |
 | `overture-classica-armonia-la-minore` | la stessa, trasportata in la minore                |
 | `overture-ariosa`               | note grandi e larghe                                     |
 | `overture-compatta`             | tutto in una pagina                                      |

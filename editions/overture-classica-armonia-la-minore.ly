@@ -5,6 +5,7 @@
 % l'armonia scritta sotto resta identica. Senza diteggiature.
 
 \include "../impaginazioni/classica.ly"
+sigle = ##t
 gradi = ##t
 funzioni = ##t
 trasporto = la

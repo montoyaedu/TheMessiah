@@ -16,6 +16,11 @@ Vercesi e, a partire dallo stesso materiale, un metodo per la chitarra.
   voci separate, senza diteggiature.
 - Armonia del Grave in due scritture (gradi e funzioni) e trasporto in
   un'altra tonalità con l'armonia che resta identica.
+- Layer di accordi veri per il Grave (`armonia/accordi.ly`): sigle jazz
+  sopra il rigo e note strutturali colorate (fondamentale, terza, quinta,
+  settima).
+- Provenienza delle note: in colore quelle prese dalle edizioni di
+  riferimento, in nero quelle della trascrizione (`layers/provenienza.ly`).
 - Foto del manoscritto in `fonti/manoscritto/`.
 
 ## Stato della trascrizione
@@ -105,7 +110,7 @@ Due binari paralleli:
 
 | Passo | Cosa | Binario | Dipende da |
 |-------|------|---------|------------|
-| 1 | Layer di accordi veri per il Grave: sigle jazz e note strutturali colorate | strumenti | niente |
+| 1 | Layer di accordi veri per il Grave: sigle jazz e note strutturali colorate — **fatto**, da giudicare | strumenti | niente |
 | 2 | Varianti come layer (manoscritto / esecuzione attuale), provate su una battuta | strumenti | niente |
 | 3 | Correzioni al PDF completo: Grave 3–13 e Allegro 12–38 adattati alla chitarra | testo | lettura dell'interprete |
 | 4 | Bozza delle battute 39–74: il brano diventa intero | testo | passo 3, per sapere come ridurre |

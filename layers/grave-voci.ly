@@ -1,5 +1,7 @@
 \version "2.24.0"
 
+accordiCorrenti = "graveAccordi"   % layer di accordi usato da \voce qui sotto
+
 % Assemblaggio delle voci del Grave.
 
 graveNotazione = <<

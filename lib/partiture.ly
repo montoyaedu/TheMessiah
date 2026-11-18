@@ -11,7 +11,7 @@ allegroRigo = \new Staff \with {
   \consists Merge_rests_engraver
 } {
   \tempo \markup "Allegro moderato"
-  << \allegroNotazione \allegroRitocchi \allegroBreaks >>
+  << \allegroNotazione \allegroRitocchi \allegroBreaks \allegroProvenienza >>
   \bar "|."
 }
 
@@ -43,7 +43,7 @@ finaleScore = \score {
     } {
       \set Score.currentBarNumber = #88
       \override Score.BarNumber.break-visibility = ##(#f #t #t)
-      \finaleNotazione
+      << \finaleNotazione \finaleProvenienza >>
       \bar "|."
     }
     \seIntavolatura \new TabStaff \finaleIntavolatura
@@ -69,12 +69,12 @@ overtureRigo = \new Staff \with {
 } <<
   {
     \tempo \markup "Grave"
-    \graveNotazione
+    << \graveNotazione \graveProvenienza >>
     \bar "||" \aCapo
     \tempo \markup "Allegro moderato"
-    << \allegroNotazione \allegroRitocchi >>
+    << \allegroNotazione \allegroRitocchi \allegroProvenienza >>
     \overtureVuoto
-    \finaleNotazione
+    << \finaleNotazione \finaleProvenienza >>
     \bar "|."
   }
   \overtureBreaks
@@ -95,8 +95,15 @@ overtureArmonia = <<
     { \graveFunzioni \allegroFunzioni }
 >>
 
+% Sigle degli accordi sopra il rigo (opzione sigle).
+overtureSigle = \seOpzione #'sigle \new ChordNames \with {
+  chordChanges = ##t
+  \override ChordName.font-size = #-0.5
+} { \lingueSigle \conTrasporto \graveAccordi }
+
 overtureScore = \score {
   <<
+    \overtureSigle
     \overtureRigo
     \overtureArmonia
     \overtureDinamiche

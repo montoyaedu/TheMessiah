@@ -3,12 +3,15 @@
 % Un solo \include per le edizioni: funzioni, note, voci, partiture.
 % Le opzioni dell'edizione vanno impostate PRIMA di questo include.
 \include "opzioni.ly"
+\include "accordi.ly"
 \include "barre.ly"
 \include "../music/grave.ly"
 \include "../music/allegro.ly"
 \include "../music/allegro-finale.ly"
+\include "../armonia/accordi.ly"
 \include "../armonia/grave.ly"
 \include "../armonia/allegro.ly"
+\include "../layers/provenienza.ly"
 \include "../layers/grave-voci.ly"
 \include "../layers/allegro-voci.ly"
 \include "../layers/allegro-finale-voci.ly"

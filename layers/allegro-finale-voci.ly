@@ -1,5 +1,7 @@
 \version "2.24.0"
 
+accordiCorrenti = "finaleAccordi"   % layer di accordi usato da \voce qui sotto
+
 % Assemblaggio del finale dell'Allegro (battute 88-98).
 
 finaleNotazione = <<

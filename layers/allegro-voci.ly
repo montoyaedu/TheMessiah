@@ -1,5 +1,7 @@
 \version "2.24.0"
 
+accordiCorrenti = "allegroAccordi"   % layer di accordi usato da \voce qui sotto
+
 % Assemblaggio delle voci dell'Allegro: direzione dei gambi, colori,
 % e la versione per intavolatura. Le note arrivano da music/allegro.ly.
 % Le voci hanno un nome, cosi' i layer di ritocchi possono raggiungerle.
