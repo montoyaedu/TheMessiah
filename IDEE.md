@@ -127,6 +127,22 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 - **Catalogo degli schemi**: una pagina che raccoglie lo stesso schema preso
   da brani diversi e in tonalità diverse.
 
+## Repertorio e studi propri
+
+- **Repertorio da studiare e recuperare**: per ora solo brani di pubblico
+  dominio. Tenere un elenco (`REPERTORIO.md`) con, per ogni brano: autore,
+  se è di pubblico dominio, quale fonte libera esiste, a che punto è.
+- **Fonti già pronte**: Mutopia pubblica molto repertorio per chitarra già
+  in LilyPond con licenza chiara (Sor, Giuliani, Carcassi, Tárrega…). Un
+  brano preso da lì si può dividere negli strati di questo progetto molto
+  più in fretta che partendo da una scansione.
+- **Studi propri**: trascrivere le idee che nascono sulla chitarra come
+  piccoli studi, in `brani/studi/`. Serve un modo rapido per dettarle: per
+  corda e tasto, a parole, o con la foto di un appunto.
+- **Dallo studio allo schema**: ogni studio proprio dichiara quale schema o
+  quale difficoltà allena, così entra nel catalogo degli schemi insieme ai
+  passaggi presi dal repertorio.
+
 ## Piano: un passo per volta
 
 Regola di lavoro: ogni passo aggiunge **un solo layer o una sola edizione**,
