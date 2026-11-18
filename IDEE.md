@@ -96,6 +96,31 @@ le posizioni comuni.
 - **Registro delle letture incerte**: elenco unico dei punti da verificare
   sul manoscritto, generato dai "?" nei file.
 
+## Più brani con la stessa tecnica
+
+Obiettivo: aprire diversi brani, studiarne la struttura e allenare la
+meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
+
+- **Secondo brano proposto**: Vivaldi, Concerto in re maggiore RV 93 (liuto,
+  due violini e basso continuo), in riduzione per chitarra sola.
+  - Largo: breve, melodia su accordi tenuti e basso; il più adatto per
+    cominciare.
+  - Primo e terzo movimento: forma in due parti con ritornelli, melodia per
+    terze su un basso ribattuto di re e la; con la sesta corda in re i bassi
+    cadono a vuoto. Il basso ribattuto va semplificato.
+  - Serve una fonte di dominio pubblico della partitura originale; quella
+    trovata finora è un arrangiamento moderno per trio con pianoforte, utile
+    solo per orientarsi.
+- **Organizzazione**: una cartella per brano (`brani/<nome>/` con le sue
+  note, diteggiature, armonia ed edizioni) e in comune funzioni e
+  impaginazioni. Il Messiah va spostato lì quando arriva il secondo brano.
+- **Schemi ricorrenti come layer**: progressioni, cadenze e formule di
+  accompagnamento etichettate nella musica. Sono poche e tornano in tutti i
+  brani barocchi: riconoscerle è la base per suonare a orecchio, e ognuna
+  corrisponde a una posizione della mano trasportabile.
+- **Catalogo degli schemi**: una pagina che raccoglie lo stesso schema preso
+  da brani diversi e in tonalità diverse.
+
 ## Piano: un passo per volta
 
 Regola di lavoro: ogni passo aggiunge **un solo layer o una sola edizione**,
