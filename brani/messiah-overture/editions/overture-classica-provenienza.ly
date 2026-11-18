@@ -2,11 +2,11 @@
 
 % Colora le note che vengono dalle edizioni di riferimento.
 
-\include "../impaginazioni/classica.ly"
+\include "../../../impaginazioni/classica.ly"
 \include "../dita/principale.ly"
 provenienza = ##t
-\include "../lib/tutto.ly"
-\include "../lib/intestazione.ly"
+\include "../brano.ly"
+\include "../intestazione.ly"
 \header { subtitle = \legendaProvenienza }
 
 \overtureScore

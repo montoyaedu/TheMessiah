@@ -1,5 +1,5 @@
 \version "2.24.0"
-\include "../lib/barre.ly"
+\include "../../../lib/barre.ly"
 
 % DITEGGIATURA "principale": dita (-3), corde (\2) e barre'.
 % Per ogni voce NOME di music/ c'e' qui una variabile NOMEDita con gli

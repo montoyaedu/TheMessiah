@@ -1,6 +1,6 @@
 \version "2.24.0"
 
-% Opzioni che un'edizione puo' impostare PRIMA di \include "../lib/tutto.ly".
+% Opzioni che un'edizione puo' impostare PRIMA di includere il file brano.ly del brano.
 % Valori predefiniti (edizione "classica"):
 %   intavolatura     = ##f   solo notazione; ##t aggiunge il rigo di tablatura
 %   coloriVoci       = ##f   teste di nota nere; ##t una voce per colore

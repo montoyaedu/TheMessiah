@@ -1,52 +1,57 @@
-# make                -> tutte le edizioni di editions/ in PDF, dentro build/
-# make png | make svg -> le stesse in PNG o SVG
-# make build/overture-classica.pdf -> una sola edizione
+# make                          -> tutte le edizioni di tutti i brani, in build/<brano>/
+# make BRANO=messiah-overture   -> solo quel brano
+# make png | make svg           -> le stesse in PNG o SVG
+# make build/messiah-overture/overture-classica.pdf -> una sola edizione
 #
 # Combinazione a scelta, senza creare un file in editions/:
-#   make stampa IMPAGINAZIONE=ariosa DITA=principale TAB=si COLORI=si
+#   make stampa BRANO=messiah-overture IMPAGINAZIONE=ariosa DITA=principale TAB=si COLORI=si
 # IMPAGINAZIONE: un file di impaginazioni/   (classica, compatta, ariosa, telefono)
-# DITA:          un file di dita/, oppure "nessuna"
+# DITA:          un file di brani/<brano>/dita/, oppure "nessuna"
 # TAB, COLORI:   si | no
-# PARTITURA:     overtureScore | overtureScoreDoppioRigo | allegroScore |
-#                allegroScoreVociSeparate | finaleScore
-# Il risultato e' build/stampa-<impaginazione>.pdf
+# PARTITURA:     una partitura definita in brani/<brano>/partiture.ly
+# Il risultato e' build/<brano>/stampa-<impaginazione>.pdf
 
 LILY     = lilypond -dno-point-and-click -I $(CURDIR)
-EDITIONS = $(wildcard editions/*.ly)
-SOURCES  = $(wildcard music/*.ly dita/*.ly armonia/*.ly layers/*.ly lib/*.ly impaginazioni/*.ly)
-NAMES    = $(notdir $(basename $(EDITIONS)))
 
+BRANO         ?= *
 IMPAGINAZIONE ?= classica
 DITA          ?= principale
 TAB           ?= no
 COLORI        ?= no
 PARTITURA     ?= overtureScore
 
+EDITIONS = $(wildcard brani/$(BRANO)/editions/*.ly)
+SOURCES  = $(wildcard lib/*.ly impaginazioni/*.ly brani/*/*.ly brani/*/*/*.ly)
+# brani/<brano>/editions/<edizione>.ly  ->  <brano>/<edizione>
+NAMES    = $(foreach e,$(EDITIONS),$(word 2,$(subst /, ,$(e)))/$(notdir $(basename $(e))))
+
 all: $(NAMES:%=build/%.pdf)
 
-build/%.pdf: editions/%.ly $(SOURCES)
-	@mkdir -p build
+.SECONDEXPANSION:
+build/%.pdf: brani/$$(*D)/editions/$$(*F).ly $(SOURCES)
+	@mkdir -p $(@D)
 	$(LILY) -o build/$* $<
 
-png: $(EDITIONS)
-	@mkdir -p build
-	for f in $(NAMES); do $(LILY) --png -dresolution=110 -o build/$$f editions/$$f.ly; done
+png:
+	for f in $(NAMES); do mkdir -p build/$$(dirname $$f); \
+	  $(LILY) --png -dresolution=110 -o build/$$f brani/$$(dirname $$f)/editions/$$(basename $$f).ly || exit 1; done
 
-svg: $(EDITIONS)
-	@mkdir -p build
-	for f in $(NAMES); do $(LILY) --svg -o build/$$f editions/$$f.ly; done
+svg:
+	for f in $(NAMES); do mkdir -p build/$$(dirname $$f); \
+	  $(LILY) --svg -o build/$$f brani/$$(dirname $$f)/editions/$$(basename $$f).ly || exit 1; done
 
 stampa:
-	@mkdir -p build
+	@test "$(BRANO)" != "*" || { echo "indica il brano: make stampa BRANO=messiah-overture"; exit 1; }
+	@mkdir -p build/$(BRANO)
 	@{ printf '%s\n' '\version "2.24.0"'; \
-	   printf '%s\n' '\include "../impaginazioni/$(IMPAGINAZIONE).ly"'; \
-	   [ "$(DITA)" = nessuna ] || printf '%s\n' '\include "../dita/$(DITA).ly"'; \
+	   printf '%s\n' '\include "../../impaginazioni/$(IMPAGINAZIONE).ly"'; \
+	   [ "$(DITA)" = nessuna ] || printf '%s\n' '\include "../../brani/$(BRANO)/dita/$(DITA).ly"'; \
 	   [ "$(TAB)" != si ] || printf '%s\n' 'intavolatura = ##t'; \
 	   [ "$(COLORI)" != si ] || printf '%s\n' 'coloriVoci = ##t'; \
-	   printf '%s\n' '\include "../lib/tutto.ly"'; \
-	   printf '%s\n' '\include "../lib/intestazione.ly"'; \
-	   printf '%s\n' '\$(PARTITURA)'; } > build/stampa-$(IMPAGINAZIONE).ly
-	$(LILY) -o build/stampa-$(IMPAGINAZIONE) build/stampa-$(IMPAGINAZIONE).ly
+	   printf '%s\n' '\include "../../brani/$(BRANO)/brano.ly"'; \
+	   printf '%s\n' '\include "../../brani/$(BRANO)/intestazione.ly"'; \
+	   printf '%s\n' '\$(PARTITURA)'; } > build/$(BRANO)/stampa-$(IMPAGINAZIONE).ly
+	$(LILY) -o build/$(BRANO)/stampa-$(IMPAGINAZIONE) build/$(BRANO)/stampa-$(IMPAGINAZIONE).ly
 
 clean:
 	rm -rf build

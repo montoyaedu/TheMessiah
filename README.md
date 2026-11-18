@@ -17,23 +17,27 @@
 
 ## Build
 
-    make                               # tutte le edizioni in PDF, dentro build/
-    make png                           # anteprime PNG
-    make build/overture-classica.pdf   # una sola edizione
-    make stampa IMPAGINAZIONE=ariosa DITA=nessuna TAB=si COLORI=si   # combinazione a scelta
+    make                                                # tutte le edizioni di tutti i brani, in build/<brano>/
+    make BRANO=messiah-overture                         # un solo brano
+    make build/messiah-overture/overture-classica.pdf   # una sola edizione
+    make stampa BRANO=messiah-overture IMPAGINAZIONE=ariosa DITA=nessuna TAB=si COLORI=si   # combinazione a scelta
 
-La musica è divisa in strati indipendenti:
+Ogni brano ha la sua cartella in `brani/`; funzioni e impaginazioni sono in
+comune. La musica è divisa in strati indipendenti:
 
-| Cartella         | Contenuto                                                           |
-|------------------|---------------------------------------------------------------------|
-| `music/`         | solo note e durate, una variabile per voce, una battuta per riga    |
-| `dita/`          | diteggiature, corde e barré: un file per diteggiatura               |
-| `armonia/`       | l'armonia battuta per battuta: accordi, gradi e funzioni            |
-| `impaginazioni/` | formato pagina, grandezza e densità delle note                      |
-| `fonti/`         | foto del manoscritto                                                |
-| `layers/`        | assemblaggio delle voci, dinamiche, interruzioni, ritocchi          |
-| `lib/`           | funzioni, opzioni e partiture comuni                                |
-| `editions/`      | ricette: impaginazione + diteggiatura + opzioni + partitura         |
+| Cartella                   | Contenuto                                                      |
+|----------------------------|----------------------------------------------------------------|
+| `brani/<brano>/music/`     | solo note e durate, una variabile per voce, una battuta per riga |
+| `brani/<brano>/dita/`      | diteggiature, corde e barré: un file per diteggiatura          |
+| `brani/<brano>/armonia/`   | l'armonia battuta per battuta: accordi, gradi e funzioni       |
+| `brani/<brano>/layers/`    | assemblaggio delle voci, dinamiche, provenienza, ritocchi      |
+| `brani/<brano>/editions/`  | ricette: impaginazione + diteggiatura + opzioni + partitura    |
+| `brani/<brano>/fonti/`     | foto del manoscritto e altre fonti                             |
+| `brani/<brano>/brano.ly`   | l'unico file che un'edizione include per avere tutto il brano  |
+| `impaginazioni/`           | formato pagina, grandezza e densità delle note (comuni)        |
+| `lib/`                     | funzioni e opzioni comuni a tutti i brani                      |
+
+Brani: `messiah-overture` (Händel, Overture del Messiah).
 
 | Impaginazione | Aspetto                                                              |
 |---------------|----------------------------------------------------------------------|
@@ -62,9 +66,9 @@ La musica è divisa in strati indipendenti:
 | `allegro-finale-bozza`          | ultime 11 battute dell'Allegro, dal manoscritto (bozza)  |
 | `allegro-shorts`                | video verticali, voci colorate, intavolatura             |
 
-Le opzioni di un'edizione (`intavolatura`, `coloriVoci`, ...) sono elencate
-in `lib/opzioni.ly`. `TheMessiah.ly` è la vecchia versione a file unico,
-tenuta per riferimento.
+Le opzioni di un'edizione (`intavolatura`, `coloriVoci`, `sigle`, ...) sono
+elencate in `lib/opzioni.ly`. Per aggiungere un brano: vedi
+[brani/README.md](brani/README.md).
 
 Idee, stato della trascrizione e cose da decidere: vedi [IDEE.md](IDEE.md).
 

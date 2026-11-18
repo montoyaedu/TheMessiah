@@ -2,10 +2,10 @@
 
 % Come overture-classica, una voce per colore.
 
-\include "../impaginazioni/classica.ly"
+\include "../../../impaginazioni/classica.ly"
 \include "../dita/principale.ly"
 coloriVoci = ##t
-\include "../lib/tutto.ly"
-\include "../lib/intestazione.ly"
+\include "../brano.ly"
+\include "../intestazione.ly"
 
 \overtureScore

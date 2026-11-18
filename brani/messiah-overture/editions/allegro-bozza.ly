@@ -3,9 +3,9 @@
 % Bozza di lavoro dell'Allegro: numero su ogni battuta, contato
 % dall'inizio dell'Allegro come nel manoscritto.
 
-\include "../impaginazioni/classica.ly"
+\include "../../../impaginazioni/classica.ly"
 \include "../dita/principale.ly"
-\include "../lib/tutto.ly"
+\include "../brano.ly"
 
 \header {
   title = "Messiah – Overture"

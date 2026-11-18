@@ -8,7 +8,7 @@ Vercesi e, a partire dallo stesso materiale, un metodo per la chitarra.
 
 - Musica divisa in strati indipendenti: note (`music/`), diteggiature
   (`dita/`), armonia (`armonia/`), impaginazioni (`impaginazioni/`),
-  ricette di stampa (`editions/`).
+  ricette di stampa (`editions/`); una cartella per brano in `brani/`.
 - Diteggiatura come layer: più diteggiature possibili per la stessa musica,
   una per file; l'intavolatura segue quella scelta.
 - Impaginazioni a scelta: classica, ariosa, compatta, telefono, shorts.
@@ -111,9 +111,9 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Serve una fonte di dominio pubblico della partitura originale; quella
     trovata finora è un arrangiamento moderno per trio con pianoforte, utile
     solo per orientarsi.
-- **Organizzazione**: una cartella per brano (`brani/<nome>/` con le sue
-  note, diteggiature, armonia ed edizioni) e in comune funzioni e
-  impaginazioni. Il Messiah va spostato lì quando arriva il secondo brano.
+- **Organizzazione** (fatta): una cartella per brano (`brani/<nome>/` con
+  le sue note, diteggiature, armonia ed edizioni) e in comune funzioni e
+  impaginazioni. Il Messiah è in `brani/messiah-overture/`.
 - **Schemi ricorrenti come layer**: progressioni, cadenze e formule di
   accompagnamento etichettate nella musica. Sono poche e tornano in tutti i
   brani barocchi: riconoscerle è la base per suonare a orecchio, e ognuna

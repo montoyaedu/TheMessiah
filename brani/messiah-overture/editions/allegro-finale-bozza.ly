@@ -3,8 +3,8 @@
 % Bozza di lavoro: ultime 11 battute dell'Allegro, dal manoscritto.
 % Un numero su ogni battuta, per il confronto.
 
-\include "../impaginazioni/classica.ly"
-\include "../lib/tutto.ly"
+\include "../../../impaginazioni/classica.ly"
+\include "../brano.ly"
 
 \header {
   title = "Messiah – Overture"

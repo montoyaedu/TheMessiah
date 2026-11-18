@@ -2,10 +2,10 @@
 
 % Schermo del cellulare, voci colorate.
 
-\include "../impaginazioni/telefono.ly"
+\include "../../../impaginazioni/telefono.ly"
 \include "../dita/principale.ly"
 coloriVoci = ##t
-\include "../lib/tutto.ly"
-\include "../lib/intestazione.ly"
+\include "../brano.ly"
+\include "../intestazione.ly"
 
 \overtureScore

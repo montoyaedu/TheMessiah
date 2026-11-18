@@ -2,12 +2,12 @@
 
 % Sigle jazz sopra il rigo e note strutturali dell'accordo colorate.
 
-\include "../impaginazioni/classica.ly"
+\include "../../../impaginazioni/classica.ly"
 \include "../dita/principale.ly"
 sigle = ##t
 coloriAccordo = ##t
-\include "../lib/tutto.ly"
-\include "../lib/intestazione.ly"
+\include "../brano.ly"
+\include "../intestazione.ly"
 \header { subtitle = \legendaAccordo }
 
 \overtureScore

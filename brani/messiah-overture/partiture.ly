@@ -3,7 +3,7 @@
 % Partiture pronte, comuni a tutte le edizioni.
 % Il rigo di intavolatura compare solo se l'edizione imposta
 % intavolatura = ##t  (vedi lib/opzioni.ly). Diteggiature, corde e barre'
-% compaiono solo se l'edizione include un file di dita/ prima di tutto.ly.
+% compaiono solo se l'edizione include un file di dita/ prima di brano.ly.
 
 % ---------- solo Allegro ----------
 allegroRigo = \new Staff \with {

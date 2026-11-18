@@ -2,8 +2,8 @@
 
 % Le quattro parti d'arco su righi separati (per studiare le voci).
 
-\include "../impaginazioni/compatta.ly"
-\include "../lib/tutto.ly"
+\include "../../../impaginazioni/compatta.ly"
+\include "../brano.ly"
 
 \header {
   title = "Messiah – Overture"
