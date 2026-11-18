@@ -13,7 +13,7 @@
 
 LILY     = lilypond -dno-point-and-click -I $(CURDIR)
 EDITIONS = $(wildcard editions/*.ly)
-SOURCES  = $(wildcard music/*.ly dita/*.ly layers/*.ly lib/*.ly impaginazioni/*.ly)
+SOURCES  = $(wildcard music/*.ly dita/*.ly armonia/*.ly layers/*.ly lib/*.ly impaginazioni/*.ly)
 NAMES    = $(notdir $(basename $(EDITIONS)))
 
 IMPAGINAZIONE ?= classica

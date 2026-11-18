@@ -5,6 +5,11 @@
 %   intavolatura     = ##f   solo notazione; ##t aggiunge il rigo di tablatura
 %   coloriVoci       = ##f   teste di nota nere; ##t una voce per colore
 %   cordeVociSotto   = ##t   numeri di corda delle voci inferiori sotto il rigo
+%   gradi            = ##f   ##t: riga con l'armonia in numeri romani
+%   funzioni         = ##f   ##t: riga con l'armonia funzionale
+%   trasporto        = (niente)   una nota, es.  trasporto = la :
+%                            trasporta tutto da mi a quella tonalita';
+%                            le diteggiature non vengono applicate
 %   sezioniACapo     = ##f   ##t: ogni sezione comincia su un rigo nuovo
 %                            (di solito lo decide l'impaginazione)
 %   allegroBreaks    = { }   interruzioni automatiche
@@ -17,6 +22,8 @@
 #(predefinito 'coloriVoci #f)
 #(predefinito 'cordeVociSotto #t)
 #(predefinito 'sezioniACapo #f)
+#(predefinito 'gradi #f)
+#(predefinito 'funzioni #f)
 #(for-each (lambda (nome) (predefinito nome #{ { } #}))
            '(allegroBreaks allegroRitocchi overtureBreaks))
 
@@ -44,6 +51,45 @@ cordeSotto =
 aCapo =
 #(define-music-function () ()
    (if (eq? #t (ly:parser-lookup 'sezioniACapo)) #{ \break #} #{ #}))
+
+% \seOpzione #'gradi musica -> la musica solo se quell'opzione e' ##t.
+seOpzione =
+#(define-music-function (nome m) (symbol? ly:music?)
+   (if (eq? #t (ly:parser-lookup nome)) m #{ #}))
+
+% \armonia \lyricmode { "V^6_5/iv"2 ... } -> compone ogni sigla:
+% base, cifre sopra (^) e sotto (_), e "/grado" per le dominanti secondarie.
+#(define (sigla-armonia str)
+   (let* ((barra (string-index str #\/))
+          (di (if barra (substring str barra) ""))
+          (corpo0 (if barra (substring str 0 barra) str))
+          (chiusa (string-suffix? ")" corpo0))
+          (coda (if chiusa ")" ""))
+          (corpo (if chiusa (substring corpo0 0 (1- (string-length corpo0))) corpo0))
+          (i-su (string-index corpo #\^))
+          (i-giu (string-index corpo #\_))
+          (fine-base (or i-su i-giu (string-length corpo)))
+          (base (substring corpo 0 fine-base))
+          (su (if i-su (substring corpo (1+ i-su) (or i-giu (string-length corpo))) ""))
+          (giu (if i-giu (substring corpo (1+ i-giu)) "")))
+     (make-concat-markup
+      (list base
+            (make-hspace-markup 0.1)
+            (make-combine-markup
+             (make-raise-markup 0.9 (make-fontsize-markup -3 su))
+             (make-lower-markup 0.5 (make-fontsize-markup -3 giu)))
+            coda di))))
+
+armonia =
+#(define-music-function (m) (ly:music?)
+   (music-map
+    (lambda (x)
+      (if (and (music-is-of-type? x 'lyric-event)
+               (string? (ly:music-property x 'text)))
+          (set! (ly:music-property x 'text)
+                (sigla-armonia (ly:music-property x 'text))))
+      x)
+    m))
 
 % \seIntavolatura musica -> la musica solo se intavolatura = ##t.
 seIntavolatura =
@@ -126,6 +172,14 @@ voce =
           (layer (ly:parser-lookup (string->symbol (string-append nome "Dita")))))
      (if (not (ly:music? note))
          (ly:error "\\voce: la voce ~a non esiste" nome))
+     (if (ly:pitch? (ly:parser-lookup 'trasporto))
+         ;; trasportata: niente diteggiatura, le corde non varrebbero piu'
+         (begin
+           (set! layer #f)
+           (set! note (ly:music-transpose
+                       (ly:music-deep-copy note)
+                       (ly:pitch-diff (ly:parser-lookup 'trasporto)
+                                      (ly:make-pitch -1 2 0))))))
      (if (not (ly:music? layer))
          note
          (let* ((note (ly:music-deep-copy note))

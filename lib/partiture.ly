@@ -68,9 +68,23 @@ overtureRigo = \new Staff \with {
 
 overtureDinamiche = \new Dynamics { \graveDinamiche \allegroDinamiche }
 
+% Righe dell'armonia sotto il rigo (opzioni gradi / funzioni).
+rigaArmonia = \with {
+  \override LyricText.self-alignment-X = #LEFT
+  \override LyricText.font-size = #0
+  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1.2
+}
+overtureArmonia = <<
+  \seOpzione #'gradi \new Lyrics \with { \rigaArmonia }
+    { \graveGradi \allegroGradi }
+  \seOpzione #'funzioni \new Lyrics \with { \rigaArmonia \override LyricText.font-series = #'bold }
+    { \graveFunzioni \allegroFunzioni }
+>>
+
 overtureScore = \score {
   <<
     \overtureRigo
+    \overtureArmonia
     \overtureDinamiche
     \seIntavolatura \new TabStaff { \graveIntavolatura \allegroIntavolatura }
   >>
