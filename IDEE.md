@@ -151,12 +151,19 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 
 ## Esperimenti di "chitarrabilità"
 
-- **Smetana, Vltava (La Moldava)** (`brani/smetana-moldava/`): il tema in mi
-  minore con il canto tutto sulla quarta corda, accordi sulle corde acute a
-  vuoto e bassi a vuoto, alla maniera del Preludio n. 1 di Villa-Lobos.
-  Prime 16 battute fatte a tavolino, da provare sullo strumento.
-  Da fare se funziona: le figure d'onda dell'introduzione, la sezione in mi
-  maggiore, una diteggiatura anche per gli accordi.
+- **Smetana, Vltava (La Moldava)** (`brani/smetana-moldava/`): 43 battute a
+  tavolino, da provare sullo strumento. Introduzione: un'onda di semicrome
+  in V posizione con un armonico naturale al posto dei pizzicati; tema in mi
+  minore tutto sulla quarta corda, accordi sulle corde acute a vuoto, bassi
+  a vuoto, alla maniera del Preludio n. 1 di Villa-Lobos; chiusa in armonici
+  al XII tasto.
+  - L'onda dell'introduzione **non** sono le note dei flauti: serve la
+    partitura (IMSLP) per sostituirla con quelle vere.
+  - Da fare se funziona: le due sorgenti che si intrecciano, la sezione in
+    mi maggiore, una diteggiatura per gli accordi tastati.
+- **Armonici come layer d'effetto**: gli armonici naturali disponibili in una
+  posizione (V, VII, XII) sono pochi e fissi; una tabella per posizione dice
+  subito quali "pizzicati" sono possibili senza muovere la mano.
 - **Mendelssohn, Elijah, Overture**: da tentare; manca una fonte (lo spartito
   per canto e pianoforte è su IMSLP ma va scaricato a mano).
 - **Idea generale**: per ogni brano cercare prima la tonalità e la corda che

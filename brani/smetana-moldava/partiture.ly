@@ -11,14 +11,11 @@ moldavaScore = \score {
     \new Staff \with {
       \clef "treble_8"
       \consists Merge_rests_engraver
-      % le corde del canto servono all'intavolatura; sul rigo basta l'avviso
-      \omit StringNumber
     } {
       \tempo \markup "Allegro commodo non agitato"
-      << \moldavaNotazione
-         { \partial 8 s8 s2._\markup \italic "il canto sempre sulla 4ª corda (5ª dove scende sotto il re)" } >>
-      \bar "||"
+      << \moldavaNotazione \moldavaIndicazioni
+         { s2.*8 \bar "||" s2.*16 \bar "||" s2.*9 \bar "||" s2.*10 } >>
+      \bar "|."
     }
-    \seIntavolatura \new TabStaff \moldavaIntavolatura
   >>
 }

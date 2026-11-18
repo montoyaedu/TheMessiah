@@ -1,10 +1,9 @@
 \version "2.24.0"
 
-% Il tema, notazione classica con le corde del canto.
+% Le tre voci in colori diversi: canto rosso, onda e accordi blu, bassi e armonici verdi.
 
 \include "../../../impaginazioni/classica.ly"
-\include "../dita/quarta-corda.ly"
-cordeVociSotto = ##f
+coloriVoci = ##t
 \include "../brano.ly"
 \include "../intestazione.ly"
 
