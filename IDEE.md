@@ -138,6 +138,17 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 - **Catalogo degli schemi**: una pagina che raccoglie lo stesso schema preso
   da brani diversi e in tonalità diverse.
 
+## Il Messiah oltre l'Overture
+
+- **N. 2, «Comfort ye my people»** (`brani/messiah-comfort-ye/`): battute
+  1–8 in bozza dalla Schirmer. Quattro voci su un rigo: il canto del tenore
+  ad altezza reale con il testo sotto, i violini un'ottava sotto, gli
+  accordi ribattuti ridotti, il basso a una nota per accordo.
+- Proseguire il recitativo (37 battute) e poi l'aria «Ev'ry valley».
+- **Il canto come voce a sé**: nei brani vocali la linea del cantante resta
+  distinta (colore, testo sotto), così si può suonare tutto oppure solo
+  accompagnare.
+
 ## Repertorio e studi propri
 
 - **Repertorio da studiare e recuperare**: per ora solo brani di pubblico
