@@ -1,9 +1,10 @@
 \version "2.24.0"
 
-% Stampa classica: A4, nero, sola notazione con diteggiature.
+% Come overture-classica, con il rigo di intavolatura.
 
-#(set-default-paper-size "a4")
+\include "../impaginazioni/classica.ly"
 \include "../dita/principale.ly"
+intavolatura = ##t
 \include "../lib/tutto.ly"
 \include "../lib/intestazione.ly"
 

@@ -5,6 +5,8 @@
 %   intavolatura     = ##f   solo notazione; ##t aggiunge il rigo di tablatura
 %   coloriVoci       = ##f   teste di nota nere; ##t una voce per colore
 %   cordeVociSotto   = ##t   numeri di corda delle voci inferiori sotto il rigo
+%   sezioniACapo     = ##f   ##t: ogni sezione comincia su un rigo nuovo
+%                            (di solito lo decide l'impaginazione)
 %   allegroBreaks    = { }   interruzioni automatiche
 %   allegroRitocchi  = { }   nessun ritocco manuale
 %   overtureBreaks   = { }
@@ -14,6 +16,7 @@
 #(predefinito 'intavolatura #f)
 #(predefinito 'coloriVoci #f)
 #(predefinito 'cordeVociSotto #t)
+#(predefinito 'sezioniACapo #f)
 #(for-each (lambda (nome) (predefinito nome #{ { } #}))
            '(allegroBreaks allegroRitocchi overtureBreaks))
 
@@ -36,6 +39,11 @@ cordeSotto =
           x)
         (ly:music-deep-copy m))
        m))
+
+% \aCapo -> \break, solo se sezioniACapo = ##t.
+aCapo =
+#(define-music-function () ()
+   (if (eq? #t (ly:parser-lookup 'sezioniACapo)) #{ \break #} #{ #}))
 
 % \seIntavolatura musica -> la musica solo se intavolatura = ##t.
 seIntavolatura =

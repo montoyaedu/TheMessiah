@@ -58,7 +58,7 @@ overtureRigo = \new Staff \with {
   {
     \tempo \markup "Grave"
     \graveNotazione
-    \bar "||"
+    \bar "||" \aCapo
     \tempo \markup "Allegro moderato"
     << \allegroNotazione \allegroRitocchi >>
     \bar "|."
@@ -85,7 +85,7 @@ overtureScoreDoppioRigo = \score {
         \clef treble
         \tempo \markup "Grave"
         \graveRigoSu
-        \bar "||"
+        \bar "||" \aCapo
         \tempo \markup "Allegro moderato"
         \allegroRigoSu
         \bar "|."

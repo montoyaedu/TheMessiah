@@ -2,7 +2,7 @@
 
 % Le quattro parti d'arco su righi separati (per studiare le voci).
 
-#(set-default-paper-size "a4")
+\include "../impaginazioni/compatta.ly"
 \include "../lib/tutto.ly"
 
 \header {

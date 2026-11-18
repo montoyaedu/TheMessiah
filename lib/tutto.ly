@@ -11,3 +11,16 @@
 \include "../layers/allegro-voci.ly"
 \include "../layers/allegro-finale-voci.ly"
 \include "partiture.ly"
+
+% La tonalita' viene ripetuta all'inizio di ogni sezione nei file di
+% music/: se non cambia, non va ristampata a meta' o in fondo al rigo.
+\layout {
+  \context {
+    \Staff
+    explicitKeySignatureVisibility = #begin-of-line-visible
+  }
+  \context {
+    \TabStaff
+    explicitKeySignatureVisibility = #begin-of-line-visible
+  }
+}

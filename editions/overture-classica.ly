@@ -1,9 +1,8 @@
 \version "2.24.0"
 
-% Stampa: A4, notazione + intavolatura.
+% Edizione di riferimento: sola notazione con diteggiature, impaginazione da leggio.
 
-#(set-default-paper-size "a4")
-intavolatura = ##t
+\include "../impaginazioni/classica.ly"
 \include "../dita/principale.ly"
 \include "../lib/tutto.ly"
 \include "../lib/intestazione.ly"

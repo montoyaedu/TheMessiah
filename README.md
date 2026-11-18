@@ -17,39 +17,47 @@
 
 ## Build
 
-    make                            # tutti i PDF in build/
-    make png                        # anteprime PNG
-    make svg                        # SVG
-    make build/overture-a4.pdf      # una sola edizione
+    make                               # tutte le edizioni in PDF, dentro build/
+    make png                           # anteprime PNG
+    make build/overture-classica.pdf   # una sola edizione
+    make stampa IMPAGINAZIONE=ariosa DITA=nessuna TAB=si COLORI=si   # combinazione a scelta
 
-| Cartella    | Contenuto                                                            |
-|-------------|----------------------------------------------------------------------|
-| `music/`    | solo note, una variabile per voce, una battuta per riga              |
-| `dita/`     | diteggiature, corde e barré: un file per diteggiatura, a scelta dell'edizione |
-| `layers/`   | assemblaggio delle voci, dinamiche, interruzioni, ritocchi per formato |
-| `lib/`      | funzioni condivise (`\barre`, `\colore`), opzioni e partiture comuni   |
-| `editions/` | un file per impaginazione: formato carta, titoli, layer scelti       |
+La musica è divisa in strati indipendenti:
 
-| Edizione                   | Cosa stampa                                               |
-|----------------------------|-----------------------------------------------------------|
-| `overture-a4`              | Grave + Allegro, A4, nero, sola notazione con diteggiature |
-| `overture-a4-tab`          | come sopra, con il rigo di intavolatura                   |
-| `overture-a4-colori`       | sola notazione, una voce per colore                       |
-| `overture-a4-senza-dita`   | senza diteggiature, corde e barré                         |
-| `overture-a4-doppio-rigo`  | doppio rigo (violino + basso) ad altezze reali            |
-| `overture-telefono`        | pagina stretta per lo schermo del cellulare               |
-| `allegro-voci-separate`    | le quattro parti d'arco dell'Allegro su righi separati    |
-| `allegro-finale-bozza`     | ultime 11 battute dell'Allegro, dal manoscritto (bozza)   |
-| `allegro-shorts`           | A6 per video verticali, voci colorate, intavolatura       |
+| Cartella         | Contenuto                                                           |
+|------------------|---------------------------------------------------------------------|
+| `music/`         | solo note e durate, una variabile per voce, una battuta per riga    |
+| `dita/`          | diteggiature, corde e barré: un file per diteggiatura               |
+| `impaginazioni/` | formato pagina, grandezza e densità delle note                      |
+| `layers/`        | assemblaggio delle voci, dinamiche, interruzioni, ritocchi          |
+| `lib/`           | funzioni, opzioni e partiture comuni                                |
+| `editions/`      | ricette: impaginazione + diteggiatura + opzioni + partitura         |
 
-Un'edizione sceglie una diteggiatura (`\include "../dita/principale.ly"`, o
-nessuna), imposta le sue opzioni (`intavolatura`, `coloriVoci`, breaks,
-ritocchi: elenco in `lib/opzioni.ly`) e poi include `lib/tutto.ly`. Per una nuova impaginazione basta copiare un file in
-`editions/`.
+| Impaginazione | Aspetto                                                              |
+|---------------|----------------------------------------------------------------------|
+| `classica`    | A4 da leggio, circa quattro battute per rigo, margini ampi           |
+| `ariosa`      | A4, note grandi e larghe, per lo studio e la prima vista             |
+| `compatta`    | A4, spaziatura stretta: tutto in una pagina                          |
+| `telefono`    | pagina stretta e alta per lo schermo del cellulare                   |
+| `shorts`      | A6 per video verticali, due sistemi per pagina                       |
 
-`TheMessiah.ly` è la vecchia versione a file unico, tenuta per riferimento:
+| Edizione                        | Cosa stampa                                              |
+|---------------------------------|----------------------------------------------------------|
+| `overture-classica`             | Grave + Allegro, sola notazione con diteggiature         |
+| `overture-classica-tab`         | come sopra, con il rigo di intavolatura                  |
+| `overture-classica-colori`      | come sopra, una voce per colore                          |
+| `overture-classica-senza-dita`  | senza diteggiature, corde e barré                        |
+| `overture-classica-doppio-rigo` | doppio rigo (violino + basso) ad altezze reali           |
+| `overture-ariosa`               | note grandi e larghe                                     |
+| `overture-compatta`             | tutto in una pagina                                      |
+| `overture-telefono`             | per il cellulare, voci colorate                          |
+| `allegro-voci-separate`         | le quattro parti d'arco dell'Allegro su righi separati   |
+| `allegro-finale-bozza`          | ultime 11 battute dell'Allegro, dal manoscritto (bozza)  |
+| `allegro-shorts`                | video verticali, voci colorate, intavolatura             |
 
-    lilypond TheMessiah.ly
+Le opzioni di un'edizione (`intavolatura`, `coloriVoci`, ...) sono elencate
+in `lib/opzioni.ly`. `TheMessiah.ly` è la vecchia versione a file unico,
+tenuta per riferimento.
 
 ## Fonti
 

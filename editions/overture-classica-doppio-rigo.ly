@@ -1,11 +1,10 @@
 \version "2.24.0"
 
-% Stampa: A4, una voce per colore.
+% Doppio rigo (violino + basso) ad altezze reali.
 
-#(set-default-paper-size "a4")
-coloriVoci = ##t
+\include "../impaginazioni/classica.ly"
 \include "../dita/principale.ly"
 \include "../lib/tutto.ly"
 \include "../lib/intestazione.ly"
 
-\overtureScore
+\overtureScoreDoppioRigo
