@@ -157,12 +157,13 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   minore tutto sulla quarta corda, accordi sulle corde acute a vuoto, bassi
   a vuoto, alla maniera del Preludio n. 1 di Villa-Lobos; chiusa in armonici
   al XII tasto.
-  - Introduzione: le battute 1–3 sono lette sulla partitura Eulenburg
-    (in `fonti/`): la figura del primo flauto, l'entrata del secondo una
-    terza sopra, la nota dell'arpa sul battere (resa come armonico) e
-    l'accordo pizzicato (corde acute a vuoto). Le battute 4–8 proseguono la
-    figura liberamente: **da leggere** sulla partitura, che in scansione è
-    faticosa nota per nota.
+  - Introduzione: i due flauti intrecciati delle battute 1–7, letti sulla
+    partitura Eulenburg (in `fonti/`) e riuniti in una sola linea di
+    semicrome su uno schema di due battute (salita, discesa). La prima nota
+    di ogni salita è la nota dell'arpa, resa come armonico. Alla battuta 8
+    si taglia verso il tema.
+  - **Da leggere ancora**: le battute 8–39 dell'originale, dove la figura
+    modula ed entrano clarinetti e archi.
   - Da fare se funziona: le due sorgenti che si intrecciano, la sezione in
     mi maggiore, una diteggiatura per gli accordi tastati.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una

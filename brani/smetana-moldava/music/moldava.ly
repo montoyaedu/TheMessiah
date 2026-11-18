@@ -6,9 +6,8 @@
 % accordatura normale, altezze reali.
 %
 % Sezioni (43 battute):
-%   Intro  8   le sorgenti: la figura dei flauti in V posizione; la prima
-%              nota di ogni figura e' un armonico, l'accordo pizzicato sono
-%              le corde acute a vuoto
+%   Intro  8   le sorgenti: i due flauti intrecciati in una sola linea, in V
+%              posizione; la prima nota di ogni salita e' un armonico
 %   A      8   il tema, tutto sulla quarta corda col pollice; sopra, accordi
 %              sulle corde acute, a vuoto dove l'armonia lo permette
 %   B      8   seconda frase del tema
@@ -19,67 +18,63 @@
 % Tre voci:  moldavaSopra (onda e accordi), moldavaCanto (il tema),
 %            moldavaBasso (armonici dell'introduzione e bassi a vuoto)
 %
-% COSA E' DI SMETANA E COSA NO: il tema (sezioni A, B, Coda) e' il suo,
-% riscontrato con una riduzione pubblica. Dell'introduzione sono sue le
-% battute 1-3, lette sulla partitura Eulenburg (fonti/); le battute 4-8
-% proseguono liberamente la sua figura e vanno sostituite quando saranno
-% lette. Armonia del tema, disposizione e armonici sono dell'esperimento.
+% COSA E' DI SMETANA E COSA NO: l'introduzione (battute 1-7) e' la linea dei
+% due flauti letta sulla partitura; il tema (sezioni A, B, Coda) e' il suo,
+% riscontrato con una riduzione pubblica. Armonia del tema, disposizione,
+% armonici e il taglio alla battuta 8 sono dell'esperimento.
 % Tutto scritto a tavolino, non provato sullo strumento.
 %
 % ARMONICI NATURALI usati (testa a rombo, alla nota che si sente):
 %   VII tasto, 5a corda -> mi      VII tasto, corde 2 e 1 -> fa diesis, si
 %   XII tasto, corde 3-2-1 -> sol, si, mi
 
-% ---------- le sorgenti ----------
-% Battute 1-3: la figura VERA del primo flauto (mi fa# sol fa# sol la | si),
-% l'entrata del secondo flauto una terza sopra (battuta 3), la nota
-% dell'arpa sul battere e l'accordo pizzicato dei violini sull'ultima croma.
-% Sulla chitarra la nota dell'arpa e la prima nota del flauto sono la
-% stessa: si suona come ARMONICO (VII tasto, quinta corda) e il dito che lo
-% ha sfiorato scende subito sul VII tasto della seconda corda.
-% Battute 4-8: NON ancora lette sulla partitura; qui la figura di Smetana
-% e' solo proseguita liberamente fino al levare del tema.
-figuraUno  = { <mi'\harmonic>16 fad' sol' fad' sol' la' }    % primo flauto
-figuraDue  = { sol'16 la' si' la' si' do'' }                 % secondo flauto
-figuraGiu  = { re''16 do'' si' la' sol' fad' }               % (libera) discesa
+% ---------- le sorgenti: i due flauti intrecciati ----------
+% Lette sulla partitura Eulenburg (fonti/), battute 1-7.
+% Il primo flauto comincia da solo (batt. 1-2). Dalla battuta 3 i due flauti
+% si passano la figura ogni mezza battuta: ognuno suona sei semicrome e
+% atterra su una croma, che e' la nota da cui riparte l'altro. Sulla
+% chitarra diventa una sola linea continua, su uno schema di due battute:
+%
+%   salita (I flauto, poi II una terza sopra)   mi fa# sol fa# sol la | sol la si la si do
+%   discesa (I flauto, poi II)                  si do re do si la     | si la sol la sol fa#
+%
+% Tutto in V posizione sulle prime due corde. La nota dell'arpa sul battere
+% e' il mi con cui comincia la figura: si suona come ARMONICO (VII tasto,
+% quinta corda) e lo stesso dito scende poi sul VII tasto della seconda corda.
+% Battuta 8: nell'originale la figura comincia a modulare e l'introduzione
+% dura fino a battuta 39; qui si riusa la discesa e si taglia verso il tema.
+figuraUno     = { <mi'\harmonic>16 fad' sol' fad' sol' la' }   % I flauto
+figuraDue     = { sol'16 la' si' la' si' do'' }                % II flauto, una terza sopra
+figuraTre     = { si'16 do'' re'' do'' si' la' }               % I flauto, la discesa
+figuraQuattro = { si'16 la' sol' la' sol' fad' }               % II flauto
 
 moldavaSopraIntro = {
-    %1
+    %1   il primo flauto da solo
     \figuraUno            si'8-.     r    r                                      |
     %2
     \figuraUno            si'8-.     r    r                                      |
-    %3
+    %3   entra il secondo flauto
     \figuraUno            \figuraDue                                             |
     %4
-    re''8-.    r    r     r4.                                                    |
+    \figuraTre            \figuraQuattro                                         |
     %5
-    \figuraUno            si'8-.     r    r                                      |
-    %6
     \figuraUno            \figuraDue                                             |
+    %6
+    \figuraTre            \figuraQuattro                                         |
     %7
-    \figuraGiu            mi'8-.     r    r                                      |
-    %8
-    \figuraUno            si'8-.     r    r                                      |
+    \figuraUno            \figuraDue                                             |
+    %8   (taglio verso il tema)
+    \figuraTre            si'16 la' sol' la' r8                                  |
 }
 
-% L'accordo pizzicato dei violini: le tre corde acute a vuoto, sull'ultima croma.
+% L'accordo pizzicato dei violini (batt. 1-2): le tre corde acute a vuoto.
 moldavaBassoIntro = {
     %1
     r4.                   r4         <sol si mi'>8                               |
     %2
     r4.                   r4         <sol si mi'>8                               |
-    %3
-    s2.                                                                          |
-    %4
-    r4.                   r4         <sol si mi'>8                               |
-    %5
-    r4.                   r4         <sol si mi'>8                               |
-    %6
-    s2.                                                                          |
-    %7
-    r4.                   r4         <sol si mi'>8                               |
-    %8
-    s2.                                                                          |
+    %3-8
+    s2.*6
 }
 
 moldavaCantoIntro = {
