@@ -35,6 +35,25 @@ violinoA = \relative do' {
     do4.                          si8       
     \once \override NoteColumn.force-hshift = #1
     la         sol      fad       mi       |
+    % ---- battute 12-18: BOZZA GREZZA dalle fonti (Schirmer / parti d'arco),
+    % le quattro parti un'ottava sotto, non ancora adattate alla chitarra
+    % ne' confrontate col manoscritto.
+    \absolute {
+    %12
+    red'4              mi'2                                     red'4              |
+    %13
+    mi'4               si                   s2                                     |
+    %14
+    s1                                                                             |
+    %15
+    s2                                      r8         sol      la        si       |
+    %16
+    do'8     re'       si         do'       la         re'      do'       re'      |
+    %17
+    si4                sol                  s2                                     |
+    %18
+    s1                                                                             |
+    }
 }
 
 violinoB = \relative do' {
@@ -70,6 +89,23 @@ violinoB = \relative do' {
     si       
     \once \override NoteColumn.force-hshift = #1
     do4                |
+    % ---- battute 12-18: bozza grezza
+    \absolute {
+    %12
+    si4.                          do'8      la4                 fad                |
+    %13
+    si4                sol~                 sol8       mi       fad       sol      |
+    %14
+    la8      si        sol        la        fad        si       la        si       |
+    %15
+    sol4               mi8        fad       sol2~                                  |
+    %16
+    sol2                                    fad                                    |
+    %17
+    sol4               re'                  sol'2~                                 |
+    %18
+    sol'2                                   fad'                                   |
+    }
 }
 
 bassi = \relative do {
@@ -96,6 +132,23 @@ bassi = \relative do {
     fad4              si                     fad                sold               |
     %11
     la                mi                     la2~                                  |
+    % ---- battute 12-18: bozza grezza
+    \absolute {
+    %12
+    la,8     si,       sol,       la,       fad,       si,      la,       si,      |
+    %13
+    sol,4              mi,                  mi2~                                   |
+    %14
+    mi2                                     red                                    |
+    %15
+    mi4                s                    s2                                     |
+    %16
+    s1                                                                             |
+    %17
+    s2                                      r8         sol,     la,       si,      |
+    %18
+    do8      re        si,        do        la,        re       do        re       |
+    }
 }
 
 viola = \relative do {
@@ -125,4 +178,15 @@ viola = \relative do {
     \once \override NoteColumn.force-hshift = #1
     do
     si       la4              |
+    % ---- battute 12-18: bozza grezza
+    \absolute {
+    %12
+    fad4               mi                   fad4.                         si,8     |
+    %13-16  (all'unisono con i bassi o col secondo violino: omessa)
+    s1*4
+    %17
+    sol4               si8        la        si         si,      do        re       |
+    %18
+    mi8      fad       re         mi        do4                 la                 |
+    }
 }

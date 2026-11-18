@@ -30,6 +30,7 @@ La musica è divisa in strati indipendenti:
 | `dita/`          | diteggiature, corde e barré: un file per diteggiatura               |
 | `armonia/`       | l'armonia battuta per battuta: gradi (numeri romani) e funzioni     |
 | `impaginazioni/` | formato pagina, grandezza e densità delle note                      |
+| `fonti/`         | foto del manoscritto                                                |
 | `layers/`        | assemblaggio delle voci, dinamiche, interruzioni, ritocchi          |
 | `lib/`           | funzioni, opzioni e partiture comuni                                |
 | `editions/`      | ricette: impaginazione + diteggiatura + opzioni + partitura         |
@@ -55,6 +56,7 @@ La musica è divisa in strati indipendenti:
 | `overture-compatta`             | tutto in una pagina                                      |
 | `overture-telefono`             | per il cellulare, voci colorate                          |
 | `allegro-voci-separate`         | le quattro parti d'arco dell'Allegro su righi separati   |
+| `allegro-bozza`                 | l'Allegro da solo, con il numero su ogni battuta         |
 | `allegro-finale-bozza`          | ultime 11 battute dell'Allegro, dal manoscritto (bozza)  |
 | `allegro-shorts`                | video verticali, voci colorate, intavolatura             |
 
