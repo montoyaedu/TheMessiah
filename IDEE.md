@@ -152,13 +152,17 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 ## Esperimenti di "chitarrabilità"
 
 - **Smetana, Vltava (La Moldava)** (`brani/smetana-moldava/`): 43 battute a
-  tavolino, da provare sullo strumento. Introduzione: un'onda di semicrome
-  in V posizione con un armonico naturale al posto dei pizzicati; tema in mi
+  tavolino, da provare sullo strumento. Introduzione: la figura dei flauti
+  in V posizione, con la prima nota in armonico; tema in mi
   minore tutto sulla quarta corda, accordi sulle corde acute a vuoto, bassi
   a vuoto, alla maniera del Preludio n. 1 di Villa-Lobos; chiusa in armonici
   al XII tasto.
-  - L'onda dell'introduzione **non** sono le note dei flauti: serve la
-    partitura (IMSLP) per sostituirla con quelle vere.
+  - Introduzione: le battute 1–3 sono lette sulla partitura Eulenburg
+    (in `fonti/`): la figura del primo flauto, l'entrata del secondo una
+    terza sopra, la nota dell'arpa sul battere (resa come armonico) e
+    l'accordo pizzicato (corde acute a vuoto). Le battute 4–8 proseguono la
+    figura liberamente: **da leggere** sulla partitura, che in scansione è
+    faticosa nota per nota.
   - Da fare se funziona: le due sorgenti che si intrecciano, la sezione in
     mi maggiore, una diteggiatura per gli accordi tastati.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una

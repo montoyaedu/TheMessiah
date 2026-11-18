@@ -6,9 +6,9 @@
 % accordatura normale, altezze reali.
 %
 % Sezioni (43 battute):
-%   Intro  8   le sorgenti: un'onda di semicrome in V posizione sulle prime
-%              due corde, e al posto dei pizzicati un armonico naturale
-%              all'inizio di ogni battuta
+%   Intro  8   le sorgenti: la figura dei flauti in V posizione; la prima
+%              nota di ogni figura e' un armonico, l'accordo pizzicato sono
+%              le corde acute a vuoto
 %   A      8   il tema, tutto sulla quarta corda col pollice; sopra, accordi
 %              sulle corde acute, a vuoto dove l'armonia lo permette
 %   B      8   seconda frase del tema
@@ -20,48 +20,66 @@
 %            moldavaBasso (armonici dell'introduzione e bassi a vuoto)
 %
 % COSA E' DI SMETANA E COSA NO: il tema (sezioni A, B, Coda) e' il suo,
-% riscontrato con una riduzione pubblica. L'ONDA DELL'INTRODUZIONE NON SONO
-% LE NOTE DEI FLAUTI: e' una figura scritta "alla maniera di", perche' non
-% avevo la partitura. Armonia, disposizione e armonici sono dell'esperimento.
+% riscontrato con una riduzione pubblica. Dell'introduzione sono sue le
+% battute 1-3, lette sulla partitura Eulenburg (fonti/); le battute 4-8
+% proseguono liberamente la sua figura e vanno sostituite quando saranno
+% lette. Armonia del tema, disposizione e armonici sono dell'esperimento.
 % Tutto scritto a tavolino, non provato sullo strumento.
 %
 % ARMONICI NATURALI usati (testa a rombo, alla nota che si sente):
-%   VII tasto, 5a corda -> mi      VII tasto, 6a corda -> si
-%   V tasto, 5a corda   -> la      VII tasto, corde 2 e 1 -> fa diesis, si
+%   VII tasto, 5a corda -> mi      VII tasto, corde 2 e 1 -> fa diesis, si
 %   XII tasto, corde 3-2-1 -> sol, si, mi
-% Nell'introduzione la mano sinistra e' gia' in V-VII posizione per l'onda:
-% lo stesso dito che sta sul VII tasto sfiora la corda grave.
 
-% ---------- l'onda ----------
-ondaMi   = { r16 mi' fad' sol' la' si'   do'' si' la' sol' fad' mi' }
-ondaSi   = { r16 red' mi' fad' sol' la'  si' la' sol' fad' mi' red' }
+% ---------- le sorgenti ----------
+% Battute 1-3: la figura VERA del primo flauto (mi fa# sol fa# sol la | si),
+% l'entrata del secondo flauto una terza sopra (battuta 3), la nota
+% dell'arpa sul battere e l'accordo pizzicato dei violini sull'ultima croma.
+% Sulla chitarra la nota dell'arpa e la prima nota del flauto sono la
+% stessa: si suona come ARMONICO (VII tasto, quinta corda) e il dito che lo
+% ha sfiorato scende subito sul VII tasto della seconda corda.
+% Battute 4-8: NON ancora lette sulla partitura; qui la figura di Smetana
+% e' solo proseguita liberamente fino al levare del tema.
+figuraUno  = { <mi'\harmonic>16 fad' sol' fad' sol' la' }    % primo flauto
+figuraDue  = { sol'16 la' si' la' si' do'' }                 % secondo flauto
+figuraGiu  = { re''16 do'' si' la' sol' fad' }               % (libera) discesa
 
 moldavaSopraIntro = {
-    %1-4
-    \ondaMi | \ondaMi | \ondaMi | \ondaMi |
-    %5-7
-    \ondaSi | \ondaMi | \ondaSi |
+    %1
+    \figuraUno            si'8-.     r    r                                      |
+    %2
+    \figuraUno            si'8-.     r    r                                      |
+    %3
+    \figuraUno            \figuraDue                                             |
+    %4
+    re''8-.    r    r     r4.                                                    |
+    %5
+    \figuraUno            si'8-.     r    r                                      |
+    %6
+    \figuraUno            \figuraDue                                             |
+    %7
+    \figuraGiu            mi'8-.     r    r                                      |
     %8
-    r16 mi' fad' sol' la' si'            do''16 si' la' sol' r8                  |
+    \figuraUno            si'8-.     r    r                                      |
 }
 
+% L'accordo pizzicato dei violini: le tre corde acute a vuoto, sull'ultima croma.
 moldavaBassoIntro = {
-    %1   armonico: VII tasto, quinta corda
-    mi'4.\harmonic        r4.                                                    |
+    %1
+    r4.                   r4         <sol si mi'>8                               |
     %2
-    mi'4.\harmonic        r4.                                                    |
-    %3   V tasto, quinta corda
-    la'4.\harmonic        r4.                                                    |
+    r4.                   r4         <sol si mi'>8                               |
+    %3
+    s2.                                                                          |
     %4
-    mi'4.\harmonic        r4.                                                    |
-    %5   VII tasto, sesta corda
-    si4.\harmonic         r4.                                                    |
+    r4.                   r4         <sol si mi'>8                               |
+    %5
+    r4.                   r4         <sol si mi'>8                               |
     %6
-    mi'4.\harmonic        r4.                                                    |
+    s2.                                                                          |
     %7
-    si4.\harmonic         r4.                                                    |
+    r4.                   r4         <sol si mi'>8                               |
     %8
-    mi'4.\harmonic        r4.                                                    |
+    s2.                                                                          |
 }
 
 moldavaCantoIntro = {

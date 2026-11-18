@@ -5,7 +5,7 @@ moldavaArmoniaA = \chordmode { mi2.:m | mi2.:m | do2./mi | sol2. | la2.:m | mi2.
 
 moldavaArmonia = \chordmode {
   % Intro
-  mi2.:m | mi2.:m | la2.:m | mi2.:m | si2.:7 | mi2.:m | si2.:7 | mi2.:m |
+  mi2.:m | mi2.:m | mi2.:m | mi2.:m | mi2.:m | mi2.:m | mi2.:m | mi2.:m |
   % A
   \moldavaArmoniaA
   % B

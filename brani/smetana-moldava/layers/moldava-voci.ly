@@ -11,14 +11,8 @@ moldavaNotazione = <<
 
 % Indicazioni per l'esecuzione, scritte nel punto in cui servono.
 moldavaIndicazioni = {
-  s2._\markup \italic "V pos. – arm. VII ⑤"   % Intro 1
-  s2.
-  s2._\markup \italic "arm. V ⑤"              % 3
-  s2._\markup \italic "arm. VII ⑤"            % 4
-  s2._\markup \italic "arm. VII ⑥"            % 5
-  s2._\markup \italic "VII ⑤"
-  s2._\markup \italic "VII ⑥"
-  s2._\markup \italic "VII ⑤"
+  s4._\markup \italic "arm. VII ⑤, poi V pos."  s4  s4^\markup \italic "pizz."   % Intro 1
+  s2.*7
   s2._\markup \italic "il canto sulla ④, col pollice"   % A
   s2.*15
   s2.*8
