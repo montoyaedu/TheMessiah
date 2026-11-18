@@ -24,7 +24,7 @@ finaleAlto = {
     %93
     la8      <do' mi'> <si re'>   <do' mi'> si         mi'       re'      mi'      |
     %94
-    do'8     re'       do'        si        la         sol       fad      mi       |
+    do'8     re'       do'        si        la         sol       do'      mi       |
     %95
     <fad si red'>2                          r4                   si                |
     %96
@@ -43,8 +43,12 @@ finaleMedio = {
     si4                si                   s                    red'              | % ? si a vuoto sui primi due quarti
     %91
     la8      la        sold       la        <mi si>2                               | % ? seconda croma
-    %92-96
-    s1*5
+    %92-93
+    s1*2
+    %94
+    s2                                      s4                   fad               |
+    %95-96
+    s1*2
     %97
     mi2                                     red                                    |
     %98
