@@ -5,11 +5,11 @@ Una cartella per brano. Per aggiungerne uno, copiare la struttura di
 
 | File o cartella  | Cosa metterci |
 |------------------|---------------|
-| `music/`         | le note, una variabile per voce (`\\language "italiano"`, una battuta per riga, controllo `|`) |
+| `music/`         | le note, una variabile per voce (`\language "italiano"`, una battuta per riga con il controllo di battuta) |
 | `dita/`          | per ogni voce `NOME` una variabile `NOMEDita` con lo stesso ritmo scritto a spazi |
-| `armonia/`       | accordi (`\\chordmode`), gradi e funzioni |
-| `layers/`        | come le voci si combinano sul rigo (`\\voce "NOME"`), dinamiche, provenienza |
-| `partiture.ly`   | le partiture pronte (`\\score`) che le edizioni stampano |
+| `armonia/`       | accordi (`\chordmode`), gradi e funzioni |
+| `layers/`        | come le voci si combinano sul rigo (`\voce "NOME"`), dinamiche, provenienza |
+| `partiture.ly`   | le partiture pronte (`\score`) che le edizioni stampano |
 | `intestazione.ly`| titolo, autore, trascrittore |
 | `brano.ly`       | include `../../lib/*.ly` e poi tutti i file sopra, in quest'ordine |
 | `editions/`      | una ricetta per ogni stampa: impaginazione, diteggiatura, opzioni, partitura |
