@@ -62,16 +62,20 @@ Le opzioni di un'edizione (`intavolatura`, `coloriVoci`, ...) sono elencate
 in `lib/opzioni.ly`. `TheMessiah.ly` è la vecchia versione a file unico,
 tenuta per riferimento.
 
-## Fonti
+## Crediti e fonti
 
-La trascrizione per chitarra è un lavoro originale; per le note di Händel
-(dominio pubblico) si confrontano:
+La trascrizione per chitarra è di **M. Vercesi**; questo repository la
+incide con LilyPond a partire dal suo manoscritto. Dove il manoscritto non
+è ancora stato letto, le battute sono bozze segnate come tali nei file di
+`music/`.
 
-- la riduzione per pianoforte di T. Tertius Noble e Max Spicker, G. Schirmer
-  1912 (dominio pubblico, IMSLP #11870);
+Per le note di Händel (dominio pubblico) si confrontano:
+
+- l'edizione di riferimento: la riduzione per pianoforte di T. Tertius Noble
+  e Max Spicker, G. Schirmer 1912 (dominio pubblico, IMSLP #11870);
 - la partitura orchestrale in LilyPond delle Éditions Nicolas Sceaux
-  (<https://github.com/nsceaux/nenuvar>, CC BY-SA 4.0), usata solo come
-  riferimento: nessun suo file è copiato in questo repository.
+  (<https://github.com/nsceaux/nenuvar>, CC BY-SA 4.0), usata solo per
+  confronto: nessun suo file è copiato in questo repository.
 
 ## Current Status
 

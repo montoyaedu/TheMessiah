@@ -3,6 +3,6 @@
 \header {
   title = "Messiah – Overture"
   composer = "G. F. Händel"
-  arranger = "trascrizione per chitarra"
+  arranger = "trascrizione per chitarra di M. Vercesi"
   tagline = ""
 }
