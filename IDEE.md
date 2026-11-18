@@ -108,10 +108,15 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Primo e terzo movimento: forma in due parti con ritornelli, melodia per
     terze su un basso ribattuto di re e la; con la sesta corda in re i bassi
     cadono a vuoto. Il basso ribattuto va semplificato.
+  - **Largo: prima bozza fatta** (`brani/vivaldi-rv93/`): parte del liuto e
+    basso ridotto a una nota per accordo, sesta corda in re; partitura
+    originale a quattro righi; accordi con sigle e colori. Da fare: le terze
+    dei violini dove stanno sotto le dita, diteggiature, gradi e funzioni,
+    verifica nota per nota sull'autografo.
   - Fonti di dominio pubblico individuate su IMSLP (pagina "Chamber Concerto
     in D major, RV 93"), ancora da scaricare:
-    - autografo di Torino, ca. 1731, 10 pagine: file #492264 (o #779675,
-      scansione più pesante);
+    - autografo di Torino, ca. 1731, 10 pagine: file #779675, **ricevuto**
+      e messo in `brani/vivaldi-rv93/fonti/`;
     - parti incise da Orhun Orhon nel 2020, dedicate al pubblico dominio:
       liuto #665543, violini I #665541, violini II #665542, bassi #665545.
     - Da evitare: la partitura Ricordi/Malipiero del 1949 (#1003067) e la

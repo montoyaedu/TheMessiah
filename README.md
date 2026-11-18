@@ -37,7 +37,10 @@ comune. La musica è divisa in strati indipendenti:
 | `impaginazioni/`           | formato pagina, grandezza e densità delle note (comuni)        |
 | `lib/`                     | funzioni e opzioni comuni a tutti i brani                      |
 
-Brani: `messiah-overture` (Händel, Overture del Messiah).
+Brani:
+
+- `messiah-overture`: Händel, Overture del Messiah, trascrizione di M. Vercesi.
+- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93, riduzione per chitarra sola (per ora il Largo, in bozza).
 
 | Impaginazione | Aspetto                                                              |
 |---------------|----------------------------------------------------------------------|
