@@ -6,6 +6,8 @@
 \include "barre.ly"
 \include "../music/grave.ly"
 \include "../music/allegro.ly"
+\include "../music/allegro-finale.ly"
 \include "../layers/grave-voci.ly"
 \include "../layers/allegro-voci.ly"
+\include "../layers/allegro-finale-voci.ly"
 \include "partiture.ly"

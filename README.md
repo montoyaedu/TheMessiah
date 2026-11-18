@@ -38,6 +38,7 @@
 | `overture-a4-doppio-rigo`  | doppio rigo (violino + basso) ad altezze reali            |
 | `overture-telefono`        | pagina stretta per lo schermo del cellulare               |
 | `allegro-voci-separate`    | le quattro parti d'arco dell'Allegro su righi separati    |
+| `allegro-finale-bozza`     | ultime 11 battute dell'Allegro, dal manoscritto (bozza)   |
 | `allegro-shorts`           | A6 per video verticali, voci colorate, intavolatura       |
 
 Un'edizione imposta le sue opzioni (`intavolatura`, `coloriVoci`, breaks,

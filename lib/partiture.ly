@@ -37,6 +37,22 @@ allegroScoreVociSeparate = \score {
   \layout { \senzaDita indent = 22\mm }
 }
 
+% Finale dell'Allegro (battute 88-98), da solo, per il confronto col manoscritto.
+finaleScore = \score {
+  <<
+    \new Staff \with {
+      \clef "treble_8"
+      \consists Merge_rests_engraver
+    } {
+      \set Score.currentBarNumber = #88
+      \override Score.BarNumber.break-visibility = ##(#f #t #t)
+      \finaleNotazione
+      \bar "|."
+    }
+    \seIntavolatura \new TabStaff \finaleIntavolatura
+  >>
+}
+
 % ---------- Overture completa: Grave + Allegro ----------
 overtureRigo = \new Staff \with {
   \clef "treble_8"
