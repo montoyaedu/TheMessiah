@@ -161,8 +161,8 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
     sulla partitura Eulenburg (in `fonti/`) e riuniti in una sola linea di
     semicrome. Battute 3–7 a pitch in V posizione, con la nota dell'arpa
     resa come armonico; dalla 8 un'ottava sotto i flauti. Battute 28–35:
-    solo la voce superiore delle terze. Battute 36–39 (archi gravi):
-    ricostruzione libera, da leggere.
+    solo la voce superiore delle terze. Battute 36–39: gli archi, letti
+    sulla partitura (lo schema delle battute 3–4 un'ottava sotto).
   - Il tema parte dalla quinta corda: il si del levare striscia fino al mi
     (VII tasto), come all'inizio del Preludio n. 1; dalla seconda battuta
     passa sulla quarta. Le corde stanno in `dita/villa-lobos.ly`.
@@ -172,7 +172,10 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
     Su una chitarra sola è al limite: serve per studiare la partitura o per
     un duo.
   - **Da leggere ancora**: la sesta inferiore dei flauti nota per nota
-    (28–35), i clarinetti dalla 28, gli archi delle battute 36–39.
+    (28–35), i clarinetti dalla 28.
+  - **Idea dalla partitura**: da battuta 40 gli archi continuano la figura
+    d'onda sotto il tema ("sempre ondeggiante"). Una variante del tema con
+    l'onda al posto degli accordi sarebbe più fedele, se sta sotto le dita.
   - Da fare se funziona: le due sorgenti che si intrecciano, la sezione in
     mi maggiore, una diteggiatura per gli accordi tastati.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una

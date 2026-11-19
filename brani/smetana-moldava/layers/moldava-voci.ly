@@ -19,7 +19,7 @@ moldavaIndicazioni = {
   s2.*19
   s2.^\markup \italic "(i flauti qui vanno per seste)"   % 28
   s2.*7
-  s2.^\markup \italic "(archi gravi: ricostruzione libera)"   % 36
+  s2.^\markup \italic "(viole e violoncelli)"   % 36
   s2.*3
   s2._\markup \italic "il canto col pollice"   % A
   s2.*15

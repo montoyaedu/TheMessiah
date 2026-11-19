@@ -20,7 +20,7 @@
 %
 % COSA E' DI SMETANA E COSA NO: l'introduzione (battute 1-35) e' la linea dei
 % flauti letta sulla partitura, dalla 8 un'ottava sotto; le battute 36-39
-% sono una ricostruzione libera; il tema
+% sono gli archi, letti sulla partitura; il tema
 % (sezioni A, B, Coda) e' il suo, riscontrato con una riduzione pubblica.
 % Armonia del tema, disposizione e armonici sono dell'esperimento. Tutto scritto a tavolino, non provato.
 %
@@ -49,7 +49,7 @@
 % Battute 17-27: stesso gioco, mezza battuta per flauto (i clarinetti che
 % entrano qui con una loro figura discendente non sono trascritti).
 % Battute 28-35: i due flauti vanno insieme per seste; qui c'e' la voce
-% superiore (l'inferiore e' in moldavaSeconda). Battute 36-39: la figura passa agli archi gravi (vedi sotto).
+% superiore (l'inferiore e' in moldavaSeconda). Battute 36-39: la figura passa agli archi (vedi sotto).
 figuraUno     = { <mi'\harmonic>16 fad' sol' fad' sol' la' }   % I flauto
 figuraDue     = { sol'16 la' si' la' si' do'' }                % II flauto, una terza sopra
 figuraTre     = { si'16 do'' re'' do'' si' la' }               % I flauto, la discesa
@@ -126,16 +126,17 @@ moldavaSopraIntro = {
     si16 do' re' do' si do'              re'16 do' si do' re' do'                |
     %35
     si16 do' re' do' si do'              si16 la sol fad mi red                  |
-    %36  i flauti tacciono; la figura passa agli archi nel registro grave.
-    %    Battute 36-39 NON lette nota per nota: qui torna la figura iniziale,
-    %    due ottave sotto, fino al levare del tema.
-    mi,16 fad, sol, fad, sol, la,        sol,16 la, si, la, si, do               |
+    %36  i flauti tacciono; la figura passa agli archi (viole e violoncelli,
+    %    con i secondi violini e i primi violoncelli che si danno il cambio).
+    %    Letto sulla partitura: e' lo schema delle battute 3-4, un'ottava
+    %    sotto i flauti, due volte. Qui e' ad altezza reale.
+    mi16 fad sol fad sol la              sol16 la si la si do'                   |
     %37
-    si,16 do re do si, la,               si,16 la, sol, la, sol, fad,            |
+    si16 do' re' do' si la               si16 la sol la sol fad                  |
     %38
-    mi,16 fad, sol, fad, sol, la,        sol,16 la, si, la, si, do               |
-    %39
-    si,16 do re do si, la,               sol,16 fad, mi, fad, r8                 |
+    mi16 fad sol fad sol la              sol16 la si la si do'                   |
+    %39  (sull'ultima croma entra il levare del tema)
+    si16 do' re' do' si la               si16 la sol la sol fad                  |
 }
 
 % L'accordo pizzicato dei violini (batt. 1-2): le tre corde acute a vuoto.

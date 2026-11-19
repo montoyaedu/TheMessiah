@@ -5,7 +5,7 @@
   subtitle = "esperimento per chitarra sola"
   subsubtitle = \markup \small \normal-text \column {
     \line { \italic "◇ = armonico naturale: sfiorare la corda indicata (⑤, ⑥…) sopra il tasto indicato (V, VII, XII), senza premere." }
-    \line { \italic "Introduzione: i flauti di Smetana (battute 1–35) in una sola linea, dalla 8 un'ottava sotto; 36–39 ricostruite." }
+    \line { \italic "Introduzione: i flauti di Smetana (battute 1–35) in una sola linea, dalla 8 un'ottava sotto; 36–39 dagli archi." }
   }
   composer = "B. Smetana"
   arranger = "alla maniera del Preludio n. 1 di Villa-Lobos"
