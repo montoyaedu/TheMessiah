@@ -2,9 +2,13 @@
 
 accordiCorrenti = "moldavaArmonia"
 
+% Con l'opzione  onda = ##t  sotto il tema c'e' l'onda al posto degli accordi.
+#(define moldava-sopra
+   (if (eq? #t (ly:parser-lookup 'onda)) "moldavaSopraOnda" "moldavaSopra"))
+
 % Il canto ha i gambi in giu' (pollice); onda e accordi in su.
 moldavaNotazione = <<
-  \context Voice = "sopra" { \voiceOne \colore #blue \voce "moldavaSopra" }
+  \context Voice = "sopra" { \voiceOne \colore #blue \voce #moldava-sopra }
   \context Voice = "canto" { \voiceTwo \colore #red \cordeSotto \voce "moldavaCanto" }
   \context Voice = "basso" { \voiceFour \colore #darkgreen \voce "moldavaBasso" }
   % clarinetti e seste dei flauti: solo con l'opzione  seconda = ##t

@@ -173,9 +173,11 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
     un duo.
   - **Da leggere ancora**: la sesta inferiore dei flauti nota per nota
     (28–35), i clarinetti dalla 28.
-  - **Idea dalla partitura**: da battuta 40 gli archi continuano la figura
-    d'onda sotto il tema ("sempre ondeggiante"). Una variante del tema con
-    l'onda al posto degli accordi sarebbe più fedele, se sta sotto le dita.
+  - Variante del tema con l'onda sotto (`onda = ##t`, edizione
+    `moldava-onda`): al posto degli accordi, un arpeggio di semicrome che
+    sale e scende sulle corde acute, con le stesse note e le stesse corde a
+    vuoto. È un adattamento: gli archi di Smetana ("sempre ondeggiante", da
+    battuta 40) hanno una figura per gradi, non ancora trascritta.
   - Da fare se funziona: le due sorgenti che si intrecciano, la sezione in
     mi maggiore, una diteggiatura per gli accordi tastati.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una

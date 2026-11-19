@@ -342,6 +342,84 @@ moldavaSopraAseconda = {
 moldavaBassoAprima   = { mi,2. | }
 moldavaBassoAseconda = { mi,2.~ | mi,2. | }
 
+% ---------- variante: il tema con l'onda sotto (opzione onda = ##t) ----------
+% Nella partitura, da battuta 40 gli archi continuano la figura d'onda sotto
+% il tema ("sempre ondeggiante"). Qui l'onda e' ADATTATA alla chitarra, non
+% trascritta: al posto della figura per gradi degli archi c'e' un arpeggio
+% di semicrome che sale e scende sulle tre corde acute, con le stesse note
+% (e le stesse corde a vuoto) degli accordi della versione normale. La prima
+% semicroma di ogni mezza battuta tace: li' suona il pollice col canto.
+moldavaOndaASette = {
+    %1   corde a vuoto: mi minore
+    r16 sol si mi' si sol                r16 sol si mi' si sol                |
+    %2
+    r16 sol si mi' si sol                r16 sol si mi' si sol                |
+    %3   do maggiore: sol e mi a vuoto, il do e' nel canto
+    r16 sol mi' sol mi' sol              r16 sol mi' sol mi' sol              |
+    %4   sol maggiore
+    r16 sol si sol si sol                r16 sol si sol si sol                |
+    %5   la minore, barre' al V tasto
+    r16 do' mi' la' mi' do'              r16 do' mi' la' mi' do'              |
+    %6
+    r16 sol si mi' si sol                r16 sol si mi' si sol                |
+    %7   si settima
+    r16 la si fad' si la                 r16 la si fad' si la                 |
+}
+moldavaOndaAprima = {
+    r16 sol si mi' si sol                r16 sol si mi' si sol                |
+}
+moldavaOndaB = {
+    %1
+    r16 sol mi' sol mi' sol              r16 sol mi' sol mi' sol              |
+    %2
+    r16 sol si sol si sol                r16 sol si sol si sol                |
+    %3   re maggiore in X posizione, poi in VII
+    r16 fad' la' re'' la' fad'           r16 re' fad' re' fad' re'            |
+    %4
+    r16 sol si sol si sol                r16 sol si sol si sol                |
+    %5   la minore in prima posizione
+    r16 la do' mi' do' la                r16 la do' mi' do' la                |
+    %6
+    r16 sol si mi' si sol                r16 sol si mi' si sol                |
+    %7   si maggiore in VII posizione, poi in IV
+    r16 red' fad' si' fad' red'          r16 si red' si red' si               |
+    %8
+    r16 sol si mi' si sol                r16 sol si mi' si sol                |
+}
+moldavaOndaCoda = {
+    %1   settima diminuita: sol e mi a vuoto
+    r16 sol dod' mi' dod' sol            r16 sol dod' mi' dod' sol            |
+    %2
+    r16 red' fad' si' fad' red'          r16 si red' si red' si               |
+    %3
+    r16 sol dod' mi' dod' sol            r16 sol dod' mi' dod' sol            |
+    %4
+    r16 red' fad' si' fad' red'          r16 si red' si red' si               |
+    %5
+    r16 red' fad' si' fad' red'          r16 si red' si red' si               |
+    %6
+    r16 red' fad' si' fad' red'          r16 red' fad' si' fad' red'          |
+    %7
+    r16 red' fad' si' fad' red'          r16 si red' si red' si               |
+    %8
+    r16 si fad' si fad' si               r16 si fad' si fad' si               |
+    %9   armonici al VII tasto, corde 2 e 1
+    <fad''\harmonic si''\harmonic>4.   r4.                                       |
+}
+moldavaOndaAseconda = {
+    r16 sol si mi' si sol                r16 sol si mi' si sol                   |
+    r4.   <sol'\harmonic si'\harmonic mi''\harmonic>4.\fermata                   |
+}
+
+moldavaSopraOnda = {
+    \key mi \minor  \time 6/8
+    \moldavaSopraIntro
+    \moldavaOndaASette \moldavaOndaAprima
+    \moldavaOndaB
+    \moldavaOndaCoda
+    \moldavaOndaASette \moldavaOndaAseconda
+}
+
 % ---------- il brano intero ----------
 moldavaSopra = {
     \key mi \minor  \time 6/8
