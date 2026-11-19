@@ -204,6 +204,12 @@ il manico; le note sono una delle realizzazioni possibili.
   tema della Moldava) per ottenere uno studio nuovo.
 - Vale già per la Moldava: accordi e onda sotto il tema sono due
   realizzazioni dello stesso schema.
+- **Esempio proposto**: lo Studio n. 1 richiama la scena del Commendatore
+  nel Don Giovanni di Mozart («Don Giovanni, a cenar teco m'invitasti»):
+  settime diminuite che scivolano per semitoni. Mozart è di pubblico
+  dominio: si può scrivere uno studio che applica una formula di arpeggio
+  all'armonia di quella scena. Serve la partitura (IMSLP) per leggere la
+  successione degli accordi.
 - Nota: le opere di Villa-Lobos (morto nel 1959) non sono di pubblico
   dominio; servono come modello di metodo, non come testo da incidere.
 
