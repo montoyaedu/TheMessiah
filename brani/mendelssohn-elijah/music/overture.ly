@@ -2,34 +2,37 @@
 \language "italiano"
 
 % MENDELSSOHN, Elijah -- OVERTURE (fuga in re minore)
-% Primo tentativo per chitarra sola: per ora le prime sei battute, cioe'
+% SCHIZZO per chitarra sola delle prime sette battute: il pedale di la,
 % il soggetto, la sua coda e la risposta alla quinta.
-% Altezze reali, come nello spartito (il soggetto parte nel registro dei
-% violoncelli e sta gia' sulle corde gravi della chitarra).
+% Altezze reali come nello spartito, accordatura normale: tutto sta in
+% prima posizione sulle tre corde gravi, con la, re e mi a vuoto.
 %
-%   elijahSoggetto   la prima voce: soggetto (batt. 1-2) e coda (3-4)
-%   elijahRisposta   la seconda voce: risposta alla quinta (batt. 5-6)
+%   elijahSoggetto   prima voce: soggetto (batt. 2-3) e coda (4-5)
+%   elijahRisposta   seconda voce: risposta alla quinta (batt. 6-7)
+%   elijahBasso      il pedale di la dell'inizio (letto sullo spartito) e,
+%                    sotto la risposta, un basso LIBERO dello schizzo
 %
-% FONTE: spartito per canto e pianoforte Novello (fonti/), pagina 10 del
-% PDF, letto con una griglia delle altezze sul rigo superiore.
-% NON ANCORA LETTI: il pedale di la del basso nelle battute che precedono
-% il soggetto, il raddoppio all'ottava della mano sinistra, e cio' che fa la
-% prima voce mentre entra la risposta (battute 5-6).
+% FONTE: spartito Novello (fonti/), pagina 10 del PDF; rigo superiore letto
+% con una griglia delle altezze.
+% NON LETTI: cio' che accompagna la risposta nello spartito (battute 6-7) e
+% il raddoppio all'ottava della mano sinistra.
 
 elijahSoggetto = {
     \key re \minor
     \time 4/4
     \partial 8
-    la,8                                                                           |
-    %1   il soggetto: sol - do diesis, il tritono
+    s8                                                                             |
+    %1   (pedale)
+    s2                                      s4                  s8        la,8     |
+    %2   il soggetto: sol - do diesis, il tritono
     sib,8(   sol,      dod16      re       mi8)~      mi8      re       r16  re  mi  fa |
-    %2
+    %3
     fa8      sol,      r16  re  mi  fa      fa8        la,      r16  re  mi  fa    |
-    %3   coda
+    %4   coda
     fa8      mi        re         dod       r4                  r8        re8      |
-    %4
+    %5
     fa4                r8         re8       fa4                 r8        re8      |
-    %5-6  DA LEGGERE
+    %6-7
     s1*2
 }
 
@@ -38,12 +41,27 @@ elijahRisposta = {
     \time 4/4
     \partial 8
     s8                                                                             |
-    %1-3
-    s1*3
-    %4   (il levare della risposta non e' stato letto: qui la nota attesa)
+    %1-4
+    s1*4
+    %5   (levare della risposta: nota attesa, non letta)
     s2                                      s4                  s8        mi8      |
-    %5   la risposta, una quinta sopra
+    %6   la risposta, una quinta sopra
     fa8(     re        sold16     la       si8)~      si8      la       r16  la  si  do' |
-    %6
+    %7
     do'8     re        r16  la  si  do'     do'8       mi       r16  la  si  do'   |
+}
+
+elijahBasso = {
+    \key re \minor
+    \time 4/4
+    \partial 8
+    la,8~                                                                          |
+    %1   il pedale di la
+    la,4               r8         la,8~     la,4                r4                 |
+    %2-5
+    s1*4
+    %6   basso libero: mi e la a vuoto
+    r4                 mi,4                 la,2                                   |
+    %7
+    r4                 mi,4                 la,2                                   |
 }

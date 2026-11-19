@@ -41,7 +41,7 @@ Brani:
 
 - `messiah-overture`: Händel, Overture del Messiah, trascrizione di M. Vercesi.
 - `messiah-comfort-ye`: Händel, Messiah n. 2, recitativo «Comfort ye my people», riduzione per chitarra sola (battute 1–13, in bozza).
-- `mendelssohn-elijah`: Mendelssohn, Elijah, Overture: primo tentativo per chitarra sola (battute 1–6).
+- `mendelssohn-elijah`: Mendelssohn, Elijah, Overture: schizzo per chitarra sola (battute 1–7).
 - `smetana-moldava`: Smetana, Vltava: esperimento per chitarra sola (74 battute): i due flauti intrecciati dell'introduzione e il tema alla maniera di Villa-Lobos.
 - `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93, riduzione per chitarra sola di tutta la partitura (primo movimento e Largo, in bozza).
 

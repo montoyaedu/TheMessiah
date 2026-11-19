@@ -3,6 +3,7 @@
 % Notazione classica.
 
 \include "../../../impaginazioni/classica.ly"
+\include "../dita/schizzo.ly"
 \include "../brano.ly"
 \include "../intestazione.ly"
 
