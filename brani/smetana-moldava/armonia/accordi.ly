@@ -8,6 +8,8 @@ moldavaArmonia = \chordmode {
   mi2.:m | mi2.:m | mi2.:m | mi2.:m | mi2.:m | mi2.:m | mi2.:m |
   % 8-16: la figura modula
   re2. | do2. | sol2./si | la2.:m | mi2.:m/sol | si2.:7 | si2. | mi2.:m | mi2.:m |
+  % 17-39: armonia non ancora scritta
+  s2.*23
   % A
   \moldavaArmoniaA
   % B

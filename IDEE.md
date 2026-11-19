@@ -151,22 +151,23 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 
 ## Esperimenti di "chitarrabilità"
 
-- **Smetana, Vltava (La Moldava)** (`brani/smetana-moldava/`): 51 battute a
+- **Smetana, Vltava (La Moldava)** (`brani/smetana-moldava/`): 74 battute a
   tavolino, da provare sullo strumento. Introduzione: la figura dei flauti
   in V posizione, con la prima nota in armonico; tema in mi
   minore tutto sulla quarta corda, accordi sulle corde acute a vuoto, bassi
   a vuoto, alla maniera del Preludio n. 1 di Villa-Lobos; chiusa in armonici
   al XII tasto.
-  - Introduzione: i due flauti intrecciati delle battute 1–16, letti sulla
-    partitura Eulenburg (in `fonti/`) e riuniti in una sola linea di
+  - Introduzione completa, 39 battute come nell'originale: i flauti letti
+    sulla partitura Eulenburg (in `fonti/`) e riuniti in una sola linea di
     semicrome. Battute 3–7 a pitch in V posizione, con la nota dell'arpa
-    resa come armonico; battute 8–16 (la parte che modula) un'ottava sotto i
-    flauti, perché in originale escono dalla tastiera.
+    resa come armonico; dalla 8 un'ottava sotto i flauti. Battute 28–35:
+    solo la voce superiore delle terze. Battute 36–39 (archi gravi):
+    ricostruzione libera, da leggere.
   - Il tema parte dalla quinta corda: il si del levare striscia fino al mi
     (VII tasto), come all'inizio del Preludio n. 1; dalla seconda battuta
     passa sulla quarta. Le corde stanno in `dita/villa-lobos.ly`.
-  - **Da leggere ancora**: le battute 17–39 dell'originale, dove entrano
-    clarinetti e archi.
+  - **Da leggere ancora**: i clarinetti (battute 16–35), la voce inferiore
+    delle terze (28–35), gli archi delle battute 36–39.
   - Da fare se funziona: le due sorgenti che si intrecciano, la sezione in
     mi maggiore, una diteggiatura per gli accordi tastati.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una

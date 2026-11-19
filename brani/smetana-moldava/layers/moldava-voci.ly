@@ -14,7 +14,11 @@ moldavaIndicazioni = {
   s4._\markup \italic "arm. VII ⑤, poi V pos."  s4  s4^\markup \italic "pizz."   % Intro 1
   s2.*6
   s2.^\markup \italic "(un'ottava sotto i flauti)"   % 8
-  s2.*8
+  s2.*19
+  s2.^\markup \italic "(solo la voce superiore dei flauti)"   % 28
+  s2.*7
+  s2.^\markup \italic "(archi gravi: ricostruzione libera)"   % 36
+  s2.*3
   s2._\markup \italic "il canto col pollice"   % A
   s2.*15
   s2.*8

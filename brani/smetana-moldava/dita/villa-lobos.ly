@@ -9,7 +9,7 @@
 
 moldavaCantoDita = {
     % Intro
-    s2.*15
+    s2.*38
     s4.        s4         s8\5                                                   |
     % A
     s2.                                                                          |
