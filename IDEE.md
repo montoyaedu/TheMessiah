@@ -183,8 +183,12 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una
   posizione (V, VII, XII) sono pochi e fissi; una tabella per posizione dice
   subito quali "pizzicati" sono possibili senza muovere la mano.
-- **Mendelssohn, Elijah, Overture**: da tentare; manca una fonte (lo spartito
-  per canto e pianoforte è su IMSLP ma va scaricato a mano).
+- **Mendelssohn, Elijah, Overture** (`brani/mendelssohn-elijah/`): fuga in
+  re minore. Lette le prime sei battute dallo spartito Novello (in
+  `fonti/`): soggetto, coda e risposta alla quinta. Il soggetto parte nel
+  registro dei violoncelli e sta già sulle corde gravi; contiene il tritono
+  sol–do♯. Da fare: il pedale di la che lo precede, le battute seguenti,
+  provare la sesta corda in re.
 - **Idea generale**: per ogni brano cercare prima la tonalità e la corda che
   lo rendono "chitarristico" (corde a vuoto come pedale o come accordo), e
   solo dopo ridurre le parti.
