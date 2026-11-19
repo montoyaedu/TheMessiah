@@ -189,6 +189,24 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   lo rendono "chitarristico" (corde a vuoto come pedale o come accordo), e
   solo dopo ridurre le parti.
 
+## Lo studio come schizzo
+
+Osservazione sui 12 Studi di Villa-Lobos: più che testi fissati, sembrano
+schizzi di come si scrive uno studio sulla chitarra. Uno studio è una
+formula della mano destra più una forma della sinistra che si sposta lungo
+il manico; le note sono una delle realizzazioni possibili.
+
+- **Formula e forma come layer separati**: scrivere uno studio come schema
+  (la formula di arpeggio, la successione di posizioni) e generarne le
+  realizzazioni, invece di fissare una sola stesura.
+- **Lo stesso schema su altro materiale**: applicare una formula a
+  un'armonia presa dal repertorio (la progressione del Largo di Vivaldi, il
+  tema della Moldava) per ottenere uno studio nuovo.
+- Vale già per la Moldava: accordi e onda sotto il tema sono due
+  realizzazioni dello stesso schema.
+- Nota: le opere di Villa-Lobos (morto nel 1959) non sono di pubblico
+  dominio; servono come modello di metodo, non come testo da incidere.
+
 ## Repertorio e studi propri
 
 - **Repertorio da studiare e recuperare**: per ora solo brani di pubblico
