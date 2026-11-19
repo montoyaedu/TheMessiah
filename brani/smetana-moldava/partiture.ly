@@ -14,7 +14,7 @@ moldavaScore = \score {
     } {
       \tempo \markup "Allegro commodo non agitato"
       << \moldavaNotazione \moldavaIndicazioni
-         { s2.*8 \bar "||" s2.*16 \bar "||" s2.*9 \bar "||" s2.*10 } >>
+         { s2.*16 \bar "||" s2.*16 \bar "||" s2.*9 \bar "||" s2.*10 } >>
       \bar "|."
     }
   >>

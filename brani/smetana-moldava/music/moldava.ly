@@ -5,10 +5,10 @@
 % maniera del Preludio n. 1 di Villa-Lobos. Mi minore come l'originale,
 % accordatura normale, altezze reali.
 %
-% Sezioni (43 battute):
-%   Intro  8   le sorgenti: i due flauti intrecciati in una sola linea, in V
-%              posizione; la prima nota di ogni salita e' un armonico
-%   A      8   il tema, tutto sulla quarta corda col pollice; sopra, accordi
+% Sezioni (51 battute):
+%   Intro  16  le sorgenti: i due flauti intrecciati in una sola linea
+%   A      8   il tema col pollice: parte dalla quinta corda (si-mi
+%              strisciando, come nel Preludio n. 1), poi quarta corda; sopra, accordi
 %              sulle corde acute, a vuoto dove l'armonia lo permette
 %   B      8   seconda frase del tema
 %   Coda   9   la cadenza sospesa sulla dominante
@@ -18,31 +18,36 @@
 % Tre voci:  moldavaSopra (onda e accordi), moldavaCanto (il tema),
 %            moldavaBasso (armonici dell'introduzione e bassi a vuoto)
 %
-% COSA E' DI SMETANA E COSA NO: l'introduzione (battute 1-7) e' la linea dei
-% due flauti letta sulla partitura; il tema (sezioni A, B, Coda) e' il suo,
-% riscontrato con una riduzione pubblica. Armonia del tema, disposizione,
-% armonici e il taglio alla battuta 8 sono dell'esperimento.
-% Tutto scritto a tavolino, non provato sullo strumento.
+% COSA E' DI SMETANA E COSA NO: l'introduzione (battute 1-16) e' la linea dei
+% due flauti letta sulla partitura, dalla 8 un'ottava sotto; il tema
+% (sezioni A, B, Coda) e' il suo, riscontrato con una riduzione pubblica.
+% Armonia del tema, disposizione, armonici e il taglio dopo la battuta 16
+% sono dell'esperimento. Tutto scritto a tavolino, non provato.
 %
 % ARMONICI NATURALI usati (testa a rombo, alla nota che si sente):
 %   VII tasto, 5a corda -> mi      VII tasto, corde 2 e 1 -> fa diesis, si
 %   XII tasto, corde 3-2-1 -> sol, si, mi
 
 % ---------- le sorgenti: i due flauti intrecciati ----------
-% Lette sulla partitura Eulenburg (fonti/), battute 1-7.
+% Lette sulla partitura Eulenburg (fonti/), battute 1-16.
 % Il primo flauto comincia da solo (batt. 1-2). Dalla battuta 3 i due flauti
 % si passano la figura ogni mezza battuta: ognuno suona sei semicrome e
 % atterra su una croma, che e' la nota da cui riparte l'altro. Sulla
-% chitarra diventa una sola linea continua, su uno schema di due battute:
+% chitarra diventa una sola linea continua.
 %
-%   salita (I flauto, poi II una terza sopra)   mi fa# sol fa# sol la | sol la si la si do
-%   discesa (I flauto, poi II)                  si do re do si la     | si la sol la sol fa#
+% Battute 3-7, uno schema di due battute:
+%   salita   (I flauto, poi II)   mi fa# sol fa# sol la | sol la si la si do
+%   discesa  (I flauto, poi II)   si do re do si la     | si la sol la sol fa#
+% in V posizione sulle prime due corde. La nota dell'arpa sul battere e' il
+% mi con cui comincia la salita: si suona come ARMONICO (VII tasto, quinta
+% corda) e lo stesso dito scende poi sul VII tasto della seconda corda.
 %
-% Tutto in V posizione sulle prime due corde. La nota dell'arpa sul battere
-% e' il mi con cui comincia la figura: si suona come ARMONICO (VII tasto,
-% quinta corda) e lo stesso dito scende poi sul VII tasto della seconda corda.
-% Battuta 8: nell'originale la figura comincia a modulare e l'introduzione
-% dura fino a battuta 39; qui si riusa la discesa e si taglia verso il tema.
+% Battute 8-16: la figura modula (re, do, sol, la, mi, si, si, mi, mi).
+% I flauti qui salgono fino al re sopra il rigo, fuori dalla tastiera:
+% da battuta 8 TUTTO E' UN'OTTAVA SOTTO i flauti (il fiume si allarga; anche
+% nell'originale a questo punto entrano i clarinetti nel registro grave).
+% Battuta 16: le ultime due semicrome lasciano il posto al levare del tema;
+% nell'originale l'introduzione continua fino a battuta 39.
 figuraUno     = { <mi'\harmonic>16 fad' sol' fad' sol' la' }   % I flauto
 figuraDue     = { sol'16 la' si' la' si' do'' }                % II flauto, una terza sopra
 figuraTre     = { si'16 do'' re'' do'' si' la' }               % I flauto, la discesa
@@ -63,8 +68,24 @@ moldavaSopraIntro = {
     \figuraTre            \figuraQuattro                                         |
     %7
     \figuraUno            \figuraDue                                             |
-    %8   (taglio verso il tema)
-    \figuraTre            si'16 la' sol' la' r8                                  |
+    %8   da qui un'ottava sotto i flauti
+    re'16 mi' fad' mi' fad' sol'         la'16 si' do'' si' do'' re''            |
+    %9
+    do16 re mi re mi fad                 mi16 fad sol fad sol la                 |
+    %10
+    si16 do' re' do' re' mi'             fad'16 sol' la' sol' la' si'            |
+    %11
+    la16 si do' si do' re'               mi'16 fad' sol' fad' sol' la'           |
+    %12
+    sol16 la si la si do'                si16 mi' fad' mi' fad' sol'             |
+    %13
+    fad16 sol la sol la si               dod'16 red' mi' fad' sol' mi'           |
+    %14
+    red'16 mi' fad' mi' red' dod'        si16 dod' red' dod' si lad              |
+    %15
+    si16 do'! re'! do' si la             si16 la sol! la sol fad                 |
+    %16  (le ultime due semicrome, mi sol, cedono al levare del tema)
+    mi16 fad mi fad mi sol               mi'16 red' mi' red' r8                  |
 }
 
 % L'accordo pizzicato dei violini (batt. 1-2): le tre corde acute a vuoto.
@@ -73,14 +94,14 @@ moldavaBassoIntro = {
     r4.                   r4         <sol si mi'>8                               |
     %2
     r4.                   r4         <sol si mi'>8                               |
-    %3-8
-    s2.*6
+    %3-16
+    s2.*14
 }
 
 moldavaCantoIntro = {
-    s2.*7
-    %8   levare del tema
-    s4.                   s4         si,8                                        |
+    s2.*15
+    %16  levare del tema: dal si al mi sulla quinta corda, strisciando
+    s4.                   s4         si,8\glissando                              |
 }
 
 % ---------- A: il tema ----------
@@ -180,7 +201,7 @@ moldavaCantoCoda = {
     %8
     red4.                 si,4.                                                  |
     %9   levare del ritorno
-    r4.                   r4         si,8                                        |
+    r4.                   r4         si,8\glissando                                      |
 }
 moldavaSopraCoda = {
     %1   settima diminuita: sol e mi a vuoto, do diesis sulla seconda corda
