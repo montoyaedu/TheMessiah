@@ -166,8 +166,13 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Il tema parte dalla quinta corda: il si del levare striscia fino al mi
     (VII tasto), come all'inizio del Preludio n. 1; dalla seconda battuta
     passa sulla quarta. Le corde stanno in `dita/villa-lobos.ly`.
-  - **Da leggere ancora**: i clarinetti (battute 16–35), la voce inferiore
-    delle terze (28–35), gli archi delle battute 36–39.
+  - Seconda voce dell'introduzione, come opzione (`seconda = ##t`, edizione
+    `moldava-due-voci`): i clarinetti delle battute 17–27 letti sulla
+    partitura, e la sesta inferiore dei flauti alle battute 28–35, dedotta.
+    Su una chitarra sola è al limite: serve per studiare la partitura o per
+    un duo.
+  - **Da leggere ancora**: la sesta inferiore dei flauti nota per nota
+    (28–35), i clarinetti dalla 28, gli archi delle battute 36–39.
   - Da fare se funziona: le due sorgenti che si intrecciano, la sezione in
     mi maggiore, una diteggiatura per gli accordi tastati.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una

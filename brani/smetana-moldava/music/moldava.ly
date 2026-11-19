@@ -48,8 +48,8 @@
 % nell'originale a questo punto entrano i clarinetti nel registro grave).
 % Battute 17-27: stesso gioco, mezza battuta per flauto (i clarinetti che
 % entrano qui con una loro figura discendente non sono trascritti).
-% Battute 28-35: i due flauti vanno insieme per terze; qui c'e' solo la voce
-% superiore. Battute 36-39: la figura passa agli archi gravi (vedi sotto).
+% Battute 28-35: i due flauti vanno insieme per seste; qui c'e' la voce
+% superiore (l'inferiore e' in moldavaSeconda). Battute 36-39: la figura passa agli archi gravi (vedi sotto).
 figuraUno     = { <mi'\harmonic>16 fad' sol' fad' sol' la' }   % I flauto
 figuraDue     = { sol'16 la' si' la' si' do'' }                % II flauto, una terza sopra
 figuraTre     = { si'16 do'' re'' do'' si' la' }               % I flauto, la discesa
@@ -110,7 +110,7 @@ moldavaSopraIntro = {
     la16 si la sol fad la                fad'16 mi' red' dod' red' fad'          |
     %27
     sol16 la sol fad mi sol              mi'16 red' dod' sid dod' mi'            |
-    %28  da qui i due flauti vanno insieme per terze: qui solo la voce superiore
+    %28  da qui i due flauti vanno insieme per seste: qui la voce superiore
     mi'16 fad' sol' la' si' la'          si'16 do''! re''! do'' si' do''         |
     %29
     la'16 sol' fad' sol' fad' mi'        red'16 mi' fad' mi' re'! do'!           |
@@ -146,6 +146,58 @@ moldavaBassoIntro = {
     r4.                   r4         <sol si mi'>8                               |
     %3-39
     s2.*37
+}
+
+% ---------- la seconda voce dell'introduzione (opzione seconda = ##t) ----------
+% Battute 17-27: i CLARINETTI, letti sulla partitura, un'ottava sotto come i
+% flauti. Rispondono ai flauti per moto contrario di registro: quando il
+% flauto e' in basso il clarinetto e' in alto, e viceversa.
+% Battute 28-35: la voce inferiore dei flauti. Sulla partitura i due flauti
+% procedono per SESTE (non per terze); qui la sesta sotto e' DEDOTTA dalla
+% voce superiore, non letta nota per nota: alterazioni da verificare.
+% (Dalla battuta 29 anche i clarinetti ondeggiano per terze: non trascritti.)
+moldavaSeconda = {
+    \key mi \minor  \time 6/8
+    s2.*16
+    %17
+    mi'16 re' do' re' do' si             do'16 si la si la sol                   |
+    %18
+    re'16 do' si la sol re               re'16 do' si la sol re                  |
+    %19
+    re'16 do' si la sol re               re'16 do' si la sol re                  |
+    %20
+    do'16 si la mi la si                 do'16 re' do' si la mi                  |
+    %21
+    do'16 si la mi la si                 do'16 re' do' si la mi                  |
+    %22
+    mi'16 do' si la sol fad              mi'16 do' si la sol fad                 |
+    %23
+    mi'16 do' si la sol fad              mi'16 do' si la sol fad                 |
+    %24
+    sol16 la sol fad sol la              do'16 si la sol la do'                  |
+    %25
+    si16 la sol fad mi sol               si16 la sol fad sol mi                  |
+    %26
+    do'16 re'! do' si do' la             fad16 mi fad mi fad la                  |
+    %27
+    si16 do' si la si sol                sol16 fad mi red mi sol                 |
+    %28  (seste dedotte)
+    sol16 la si do' re' do'              re'16 mi' fad' mi' re' mi'              |
+    %29
+    do'16 si la si la sol                fad16 sol la sol fad mi                 |
+    %30
+    mi16 fad sol la si do'               re'16 mi' fad' mi' re' mi'              |
+    %31
+    re'16 do' si do' si la               fad16 sol la sol fad mi                 |
+    %32
+    red16 mi fad mi red mi               fad16 mi red mi fad mi                  |
+    %33
+    red16 mi red do si, la,              sol,16 fad, sol, la, si, do             |
+    %34
+    red16 mi fad mi red mi               fad16 mi red mi fad mi                  |
+    %35
+    red16 mi fad mi red mi               red16 do si, la, sol, fad,              |
+    s2.*39
 }
 
 moldavaCantoIntro = {

@@ -7,6 +7,8 @@ moldavaNotazione = <<
   \context Voice = "sopra" { \voiceOne \colore #blue \voce "moldavaSopra" }
   \context Voice = "canto" { \voiceTwo \colore #red \cordeSotto \voce "moldavaCanto" }
   \context Voice = "basso" { \voiceFour \colore #darkgreen \voce "moldavaBasso" }
+  % clarinetti e seste dei flauti: solo con l'opzione  seconda = ##t
+  \seOpzione #'seconda \context Voice = "seconda" { \voiceTwo \colore #(rgb-color 0.55 0.35 0.75) \voce "moldavaSeconda" }
 >>
 
 % Indicazioni per l'esecuzione, scritte nel punto in cui servono.
@@ -15,7 +17,7 @@ moldavaIndicazioni = {
   s2.*6
   s2.^\markup \italic "(un'ottava sotto i flauti)"   % 8
   s2.*19
-  s2.^\markup \italic "(solo la voce superiore dei flauti)"   % 28
+  s2.^\markup \italic "(i flauti qui vanno per seste)"   % 28
   s2.*7
   s2.^\markup \italic "(archi gravi: ricostruzione libera)"   % 36
   s2.*3
