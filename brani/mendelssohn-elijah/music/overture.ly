@@ -2,7 +2,7 @@
 \language "italiano"
 
 % MENDELSSOHN, Elijah -- OVERTURE (fuga in re minore)
-% SCHIZZO per chitarra sola delle prime quattordici battute: il pedale di la,
+% SCHIZZO per chitarra sola delle prime diciassette battute: il pedale di la,
 % il soggetto, la sua coda, la risposta alla quinta col controsoggetto,
 % la terza entrata del soggetto e l'inizio della quarta (dalla battuta 10
 % soprattutto la voce superiore).
@@ -12,13 +12,13 @@
 %   elijahSoggetto   prima voce: soggetto (batt. 2-3), coda (4-5) e
 %                    controsoggetto (6-8)
 %   elijahRisposta   seconda voce: risposta alla quinta (batt. 6-7) e coda (8)
-%   elijahBasso      il pedale di la dell'inizio
+%   elijahBasso      il basso, dove e' stato letto
 %
 % FONTE: spartito Novello (fonti/), pagina 10 del PDF; rigo superiore letto
 % con una griglia delle altezze.
 % OMESSO: il raddoppio all'ottava della mano sinistra.
 % NON LETTI: dalla battuta 10 quasi tutte le voci sotto quella superiore;
-% dalla 15 in poi.
+% dalla 18 in poi.
 % CONTROLLO: la terza entrata (batt. 10-13) e la quarta (batt. 14) hanno
 % gli stessi intervalli del soggetto e della risposta, coda compresa.
 
@@ -95,18 +95,30 @@ elijahTerza = {
     %13
     fa'4               r8         re'8      fa'4                r8        re'8     |
     %14  quarta entrata: la risposta, un'ottava sopra
-    fa'8(    re'       sold'16    la'      si'8)~     si'8     la'      r16  la'  si'  do'' |
+    fa'8(    re'       sold'16    la'      si'8)~     si'8     la'      r16  la'  si'  do'' |    %15
+    do''8    re'       r16  la'  si'  do''  do''8      mi'      r16  la'  si'  do'' |
+    %16  coda; poi la linea sale (le semicrome sono una lettura incerta)
+    do''8    si'       la'        sold'     la'8       si'      do''16  do''  re''  mi'' |
+    %17  lo stesso disegno una terza sopra
+    mi''8    re''      do''       si'       do''8      re''     mi''16  mi''  fa''  sol'' |
 }
 
 elijahBasso = {
     \key re \minor
     \time 4/4
     \partial 8
-    la,8~                                                                          |
-    %1   il pedale di la
-    la,4               r8         la,8~     la,4                r4                 |
-    %2-8
-    s1*7
+    la,8(                                                                          |
+    %1   non un pedale: il semitono la - si bemolle, due volte. E' lo stesso
+    %    semitono con cui comincia il soggetto.
+    sib,4)             r8         la,8(     sib,4)              r4                 |
+    %2-3  (nello spartito il basso raddoppia il soggetto all'ottava: omesso)
+    s1*2
+    %4   sotto la pausa della coda, il basso scende: re do si bemolle la
+    s2                                      re8        do       sib,      la,      |
+    %5   sol diesis sotto il fa: settima diminuita
+    sold,8   r8        sold,4               r4                  sold,4             |
+    %6-8
+    s1*3
     %9   (i levari in croma del basso non sono leggibili: omessi)
     sol,4              r4                   sol,4               r4                 |
     %10  NON LETTO
@@ -115,4 +127,10 @@ elijahBasso = {
     sol,4              sol,                 la,                 sib,               |
     %12-14  NON LETTO
     s1*3
+    %15  (lettura incerta: nello spartito qui il basso ha due voci)
+    re4                re                   la,4                r8        la,8     |
+    %16
+    mi4                r8         re8       do8        si,      la,       sol,     |
+    %17
+    fa,4.                         fa8       mi8        re       do        do       |
 }

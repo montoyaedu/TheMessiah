@@ -3,7 +3,7 @@
 
 % MENDELSSOHN, Elijah -- INTRODUZIONE: recitativo di Elia (Grave, re minore)
 % Dodici battute che precedono l'Overture e finiscono sul la da cui parte
-% il pedale della fuga.
+% il semitono la - si bemolle che apre la fuga.
 %
 %   elijahVoce       la linea di Elia (basso), ad altezza reale: da cantare,
 %                    oppure da suonare come melodia
@@ -13,7 +13,7 @@
 % FONTE: spartito Novello (fonti/), pagina 9 del PDF. La voce e' letta nota
 % per nota con una griglia delle altezze. Il basso NON e' la riduzione
 % dell'accompagnamento: sono le note gravi degli accordi, lette nelle
-% battute 1-5 e 11-12 (pedali di re e di la) e DEDOTTE dalla voce e da una
+% battute 1-5 e 11-12 (re, si bemolle, poi il pedale di la) e DEDOTTE dalla voce e da una
 % vista d'insieme nelle battute 7-10. Da verificare.
 
 elijahVoce = {
@@ -59,8 +59,8 @@ elijahRecBasso = {
     re2                                     re4                 re4                |
     %2
     re1                                                                            |
-    %3
-    re1                                                                            |
+    %3   sotto "Lord" l'armonia cambia: si bemolle maggiore (letto)
+    sib,1                                                                          |
     %4   pedale di la
     la,1~                                                                          |
     %5
