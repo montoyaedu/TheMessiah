@@ -183,15 +183,20 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
 - **Armonici come layer d'effetto**: gli armonici naturali disponibili in una
   posizione (V, VII, XII) sono pochi e fissi; una tabella per posizione dice
   subito quali "pizzicati" sono possibili senza muovere la mano.
-- **Mendelssohn, Elijah, Overture** (`brani/mendelssohn-elijah/`): fuga in
-  re minore. Lette le prime sei battute dallo spartito Novello (in
-  `fonti/`): soggetto, coda e risposta alla quinta. Il soggetto parte nel
-  registro dei violoncelli e sta già sulle corde gravi; contiene il tritono
-  sol–do♯. Schizzo per chitarra delle prime otto battute, con il pedale
-  di la: accordatura normale, tutto in prima posizione, corde in
-  `dita/schizzo.ly`. Sotto la risposta c'è il controsoggetto letto sullo
-  spartito, con il basso che scende per semitoni. Da fare: dalla battuta 9,
-  dove entra la terza voce.
+- **Mendelssohn, Elijah** (`brani/mendelssohn-elijah/`), dallo spartito
+  Novello (in `fonti/`):
+  - Introduzione: il recitativo di Elia, 12 battute. La voce col testo, da
+    cantare o da suonare, e un basso sotto (pedali di re e di la letti,
+    battute 7–10 dedotte).
+  - Overture, fuga in re minore: schizzo delle prime dieci battute, in
+    prima posizione: pedale di la, soggetto, coda, risposta col
+    controsoggetto e la terza entrata del soggetto un'ottava sopra.
+  - Da fare: l'accompagnamento vero del recitativo, le voci sotto la terza
+    entrata, dalla battuta 11 in poi; provare la sesta corda in re per il
+    recitativo.
+- **Cantare e suonare**: nei brani vocali la voce è una linea a sé col
+  testo; un'edizione potrebbe togliere la voce dal rigo della chitarra e
+  lasciare solo l'accompagnamento per chi canta.
 - **Idea generale**: per ogni brano cercare prima la tonalità e la corda che
   lo rendono "chitarristico" (corde a vuoto come pedale o come accordo), e
   solo dopo ridurre le parti.

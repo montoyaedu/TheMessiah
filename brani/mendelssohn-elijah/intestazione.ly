@@ -2,7 +2,7 @@
 
 \header {
   title = "Elijah"
-  subtitle = "Overture – schizzo per chitarra sola (battute 1–8)"
+  subtitle = "Introduzione e Overture – schizzo per chitarra sola"
   composer = "F. Mendelssohn"
   tagline = ""
 }

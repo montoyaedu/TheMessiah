@@ -4,6 +4,7 @@
 \include "../../lib/opzioni.ly"
 \include "../../lib/accordi.ly"
 \include "../../lib/barre.ly"
+\include "music/recitativo.ly"
 \include "music/overture.ly"
 \include "layers/overture-voci.ly"
 \include "partiture.ly"
