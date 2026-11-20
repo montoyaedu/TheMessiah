@@ -26,7 +26,7 @@ elijahVoce = {
     %3
     re'4.                         re'8      re'4                fa8.      sol16    |
     %4
-    la4                la4                  r4                  re8       re16(  mi) |
+    la4                la4                  r8        re8       re8(      mi) |
     %5
     fa4.                          fa8       mi4.\fermata                  la,8     |
     %6
@@ -67,10 +67,10 @@ elijahRecBasso = {
     la,2.\fermata                                               r4                 |
     %6   (la voce da sola)
     R1                                                                             |
-    %7   settima di dominante di sol, col do al basso  (dedotto)
-    do1                                                                            |
-    %8   (dedotto)
-    sib,2                                   la,2                                   |
+    %7   do, poi fa diesis a meta' battuta (letto dal revisore)
+    do2(                                    fad,2)                                 |
+    %8   sol, poi do diesis (letto dal revisore, sicurezza media)
+    sol,2                                   dod2                                   |
     %9   (dedotto)
     re2                                     sold,2~                                |
     %10

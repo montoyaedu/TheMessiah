@@ -19,8 +19,9 @@
 % OMESSO: il raddoppio all'ottava della mano sinistra.
 % NON LETTI: dalla battuta 10 quasi tutte le voci sotto quella superiore;
 % dalla 18 in poi.
-% RITMO del secondo tempo del soggetto: croma + due semicrome (corretto:
-% prima era scritto al contrario).
+% RITMO del soggetto: sul secondo tempo croma + due semicrome; la nota
+% d'arrivo viene RIBATTUTA sul terzo tempo (non legata). Controllato da un
+% revisore indipendente, battuta per battuta, sullo spartito.
 % CONTROLLO: la terza entrata (batt. 10-13) e la quarta (batt. 14) hanno
 % gli stessi intervalli del soggetto e della risposta, coda compresa.
 
@@ -32,7 +33,7 @@ elijahSoggetto = {
     %1   (pedale)
     s2                                      s4                  s8        la,8     |
     %2   il soggetto: sol - do diesis, il tritono
-    sib,8(   sol,      dod8     re16     mi16)~      mi8      re       r16  re  mi  fa |
+    sib,8(   sol,      dod8     re16     mi16)      mi8(     re)       r16  re  mi  fa |
     %3
     fa8      sol,      r16  re  mi  fa      fa8        la,      r16  re  mi  fa    |
     %4   coda
@@ -63,7 +64,7 @@ elijahRisposta = {
     %    soggetto, nell'altra voce: la risposta e' tonale)
     s1                                                                             |
     %6   la risposta, una quinta sopra
-    fa8(     re        sold8    la16     si16)~      si8      la       r16  la  si  do' |
+    fa8(     re        sold8    la16     si16)      si8(     la)       r16  la  si  do' |
     %7
     do'8     re        r16  la  si  do'     do'8       mi       r16  la  si  do'   |
     %8   coda della risposta
@@ -94,15 +95,15 @@ elijahTerza = {
     %9   (nello spartito anche il la a meta' battuta appartiene a questa linea)
     s4                 s8         la8       s4                  s8        la8      |
     %10  il soggetto
-    sib8(    sol       dod'8    re'16    mi'16)~     mi'8     re'      r16  re'  mi'  fa' |
+    sib8(    sol       dod'8    re'16    mi'16)     mi'8(    re')      r16  re'  mi'  fa' |
     %11
     fa'8     sol       r16  re'  mi'  fa'   fa'8       la       r16  re'  mi'  fa' |
     %12  coda (la seconda meta' e' una lettura meno sicura)
-    fa'8     mi'       re'        dod'      re'8       do'!     sib       re'      |
+    fa'8     mi'       re'        dod'      re'8       do'!     sib       <la re'> |
     %13
     fa'4               r8         re'8      fa'4                r8        re'8     |
     %14  quarta entrata: la risposta, unottava sopra
-    fa8(    re       sold8   la16    si16)~     si8     la      r16  la  si  do' |
+    fa8(    re       sold8   la16    si16)     si8(    la)      r16  la  si  do' |
     %15
     do'8    re       r16  la  si  do'  do'8      mi      r16  la  si  do' |
     %16  coda; poi la linea sale (le semicrome sono una lettura incerta)
@@ -127,8 +128,8 @@ elijahBasso = {
     sold,8   r8        sold,4               r4                  sold,4             |
     %6-8
     s1*3
-    %9   (i levari in croma del basso non sono leggibili: omessi)
-    sol,4              r4                   sol,4               r4                 |
+    %9   (i re in croma sono un'ottava sopra lo spartito)
+    sol,4              r8         re8       sol,4               r8        re8      |
     %10  NON LETTO
     s1                                                                             |
     %11
@@ -139,8 +140,8 @@ elijahBasso = {
     si,4               r8         la,8      si,4                r8        la,8     |
     %14  (lettura incerta)
     sold,8   fa,       mi,        r8        r8         mi8      fa        mi       |
-    %15  (lettura incerta: nello spartito qui il basso ha due voci)
-    re4                re                   la,4                r8        la,8     |
+    %15  (la voce inferiore del basso; il re in croma e' un'ottava sopra)
+    re4                r8         re8       la,4                r8        la,8     |
     %16
     mi4                r8         re8       do8        si,      la,       sol,     |
     %17
