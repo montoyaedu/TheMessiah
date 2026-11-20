@@ -176,8 +176,8 @@ elijahBasso = {
     s1*3
     %9   (i re in croma sono un'ottava sopra lo spartito)
     sol,4              r8         re8       sol,4               r8        re8      |
-    %10  (ritmo letto; le ultime due note, sotto il rigo, sono DEDOTTE)
-    sol,8    sib,      la,4                 la,4                r8        la,8     |
+    %10  (le ultime due note sono re sotto il rigo: qui un'ottava sopra)
+    sol,8    sib,      la,4                 re4                 r8        re8      |
     %11
     sol,4              sol,                 la,                 sib,               |
     %12  (lettura incerta; il re e' un'ottava sopra lo spartito)
@@ -211,7 +211,7 @@ elijahBasso = {
     %25
     fad4 fa4 mi4 do'8 la8 |
     %26
-    re'4 mi4 r8 do'8 re'4 |
+    re'4 mi4 r8 dod'8 re'4 |
     %27
     fa'8 re'8 r8 mi8 fad8 do'8 si la |
     %28
@@ -231,9 +231,9 @@ elijahBasso = {
     %35
     si16 si do' re' fa'16 fa' mi' re' mi'8-. mi'-. si8 si |
     %36
-    do'8 do' mi8 mi fa8 fa mi8 mi |
+    r8 do8 mi,4 r8 fa,8 mi,4 |   % la voce piu' bassa, sincopata
     %37
-    fa8 fa la,8 la, sib,8 sib, sib4~ |
+    r8 fa,8 la,4 r8 sib,8 sib,4~ |   % (la e si bemolle un'ottava sopra lo spartito)
     %38
-    sib8 sib, sib4~ sib8 sib, sib4 |
+    sib,8 sib, sib4~ sib8 sib, sib4 |
 }

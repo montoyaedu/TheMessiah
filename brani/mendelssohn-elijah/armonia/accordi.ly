@@ -52,7 +52,7 @@ elijahAccordi = \chordmode {
   %9
   sol1:m                                |
   %10  terza entrata
-  la2:7               re2:m/la          |
+  la2:7               re2:m             |
   %11
   sol2:m              la2:7             |
   %12
