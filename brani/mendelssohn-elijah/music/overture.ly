@@ -332,7 +332,7 @@ elijahBasso = {
     %43
     si,8 red8 la,8 sol,16 fad,16 fad,8 sol,8 r16 sol,16 fad,16 mi,16 |
     %44
-    mi,8 re8 r16 sold,16 fa,16 mi,16 mi,8 do8 r16 sol,16 fad,16 mi,16 |
+    mi,8 re8 r16 sold,16 fad,16 mi,16 mi,8 do8 r16 sol,16 fad,16 mi,16 |
     %45
     mi,8 fad,8 sol,8 la,8 sol,8 la,8 si,8 do8 |
     %46
