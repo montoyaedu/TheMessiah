@@ -73,6 +73,41 @@ elijahAccordi = \chordmode {
   sib2                do2:7             |
   %20
   fa2                 fa2/do            |
-  %21-38  accordi non ancora scritti
-  s1*18
+  % ---- 21-38: IPOTESI ricavate da due sole voci (canto e basso)
+  %21
+  fa2/la              fa4       sol4:7/si |
+  %22
+  do4.       la8:7/dod   re4:m    do4:7/mi |
+  %23
+  fa1/la                                |
+  %24  il soggetto in la minore
+  re4:m/fa   mi4:7    la2:m             |
+  %25
+  re4:7/fad  re4:m/fa   la2:m/mi        |
+  %26
+  re4:m      mi4:7    la4:7/dod  re4:m  |
+  %27
+  re4:m      mi4      si2:7/fad         |
+  %28
+  mi2:7/sold          la2:m             |
+  %29
+  re4.:m     mi8:7    la2:m             |
+  %30
+  la2                 re2:m/la          |
+  %31  il soggetto nel basso
+  la2:7               re2:m             |
+  %32
+  sol1:m/re                             |
+  %33  il soggetto in sol minore
+  re2:7               sol2:m            |
+  %34
+  sol4:7/si  do4:m    sol4:7/si  do4:m  |
+  %35
+  sol2:7/si           do2/mi            |
+  %36
+  do4        do4:7/mi   fa4     do4:7/mi |
+  %37
+  fa4        fa4:7/la   sib2            |
+  %38
+  sib1                                  |
 }
