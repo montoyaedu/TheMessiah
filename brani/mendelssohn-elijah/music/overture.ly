@@ -281,7 +281,7 @@ elijahInterna = {
     %35
     s1 |
     %36
-    r4 mi8 mi8 fa8 fa8 mi8 mi8 |
+    s4 mi8 mi8 fa8 fa8 mi8 mi8 |
     %37
     s1 |
     %38
