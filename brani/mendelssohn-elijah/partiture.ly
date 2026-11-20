@@ -9,7 +9,7 @@ elijahScore = \score {
       \omit StringNumber     % le corde servono all'intavolatura
     } {
       \tempo \markup "Moderato, ma poco a poco con più di fuoco" 4 = 92
-      \elijahNotazione
+      << \elijahNotazione \elijahDinamiche >>
       \bar "||"
     }
     \seIntavolatura \new TabStaff \elijahIntavolatura

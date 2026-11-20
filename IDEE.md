@@ -195,6 +195,10 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Da fare: l'accompagnamento vero del recitativo, le voci sotto la terza
     entrata (battute 10–17), dalla battuta 18 in poi; provare la sesta corda in re per il
     recitativo.
+- **Registro e dinamica**: quando un'entrata è troppo acuta per stare sotto
+  le dita insieme al basso, si abbassa di un'ottava e il registro si rende
+  con la dinamica (forte per l'acuto). Fatto per la quarta entrata
+  dell'Overture di Elijah (battute 14–17).
 - **Cantare e suonare**: nei brani vocali la voce è una linea a sé col
   testo; un'edizione potrebbe togliere la voce dal rigo della chitarra e
   lasciare solo l'accompagnamento per chi canta.

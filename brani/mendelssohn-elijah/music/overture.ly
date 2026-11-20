@@ -101,14 +101,14 @@ elijahTerza = {
     fa'8     mi'       re'        dod'      re'8       do'!     sib       re'      |
     %13
     fa'4               r8         re'8      fa'4                r8        re'8     |
-    %14  quarta entrata: la risposta, un'ottava sopra
-    fa'8(    re'       sold'8   la'16    si'16)~     si'8     la'      r16  la'  si'  do'' |
+    %14  quarta entrata: la risposta, unottava sopra
+    fa8(    re       sold8   la16    si16)~     si8     la      r16  la  si  do' |
     %15
-    do''8    re'       r16  la'  si'  do''  do''8      mi'      r16  la'  si'  do'' |
+    do'8    re       r16  la  si  do'  do'8      mi      r16  la  si  do' |
     %16  coda; poi la linea sale (le semicrome sono una lettura incerta)
-    do''8    si'       la'        sold'     la'8       si'      do''16  do''  re''  mi'' |
+    do'8    si       la        sold     la8       si      do'16  do'  re'  mi' |
     %17  lo stesso disegno una terza sopra
-    mi''8    re''      do''       si'       do''8      re''     mi''16  mi''  fa''  sol'' |
+    mi'8    re'      do'       si       do'8      re'     mi'16  mi'  fa'  sol' |
 }
 
 elijahBasso = {
@@ -133,8 +133,12 @@ elijahBasso = {
     s1                                                                             |
     %11
     sol,4              sol,                 la,                 sib,               |
-    %12-14  NON LETTO
-    s1*3
+    %12  (lettura incerta; il re e' un'ottava sopra lo spartito)
+    la,4               r4                   r8         re8      sol,      la,      |
+    %13  si naturale
+    si,4               r8         la,8      si,4                r8        la,8     |
+    %14  (lettura incerta)
+    sold,8   fa,       mi,        r8        r8         mi8      fa        mi       |
     %15  (lettura incerta: nello spartito qui il basso ha due voci)
     re4                re                   la,4                r8        la,8     |
     %16

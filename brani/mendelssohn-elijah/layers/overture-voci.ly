@@ -16,6 +16,17 @@ elijahIntavolatura = <<
   \new TabVoice { \voiceThree \voce "elijahTerza" }
 >>
 
+% Dinamiche: dove un'entrata e' stata abbassata d'ottava, il forte ne
+% simula il registro acuto.
+elijahDinamiche = {
+  \partial 8 s8\pp
+  s1*9
+  s1\mf                                   % 10: terza entrata
+  s1*3
+  s1\f^\markup \italic "(8ª bassa)"       % 14: quarta entrata, abbassata
+  s1*3
+}
+
 % ---------- Introduzione: recitativo ----------
 elijahRecNotazione = <<
   \context Voice = "elia"     { \voiceOne \colore #red \voce "elijahVoce" }
