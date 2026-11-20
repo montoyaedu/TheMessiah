@@ -1,6 +1,6 @@
 \version "2.24.0"
 
-accordiCorrenti = "elijahAccordi"   % (non ancora scritti)
+accordiCorrenti = "elijahAccordi"   % layer di accordi usato da \voce qui sotto
 
 elijahNotazione = <<
   \context Voice = "risposta" { \voiceOne \colore #red \voce "elijahRisposta" }
@@ -32,6 +32,8 @@ elijahDinamiche = {
 }
 
 % ---------- Introduzione: recitativo ----------
+accordiCorrenti = "elijahRecAccordi"
+
 elijahRecNotazione = <<
   \context Voice = "elia"     { \voiceOne \colore #red \voce "elijahVoce" }
   \context Voice = "recbasso" { \voiceTwo \colore #darkgreen \voce "elijahRecBasso" }

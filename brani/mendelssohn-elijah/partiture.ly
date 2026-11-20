@@ -3,6 +3,8 @@
 elijahScore = \score {
   \header { piece = "Overture" }
   <<
+    \seOpzione #'sigle \new ChordNames \with { chordChanges = ##t \override ChordName.font-size = #-0.5 }
+      { \lingueSigle \conTrasporto \elijahAccordi }
     \new Staff \with {
       \clef "treble_8"
       \consists Merge_rests_engraver
@@ -19,6 +21,8 @@ elijahScore = \score {
 % Introduzione: la voce di Elia col testo e un basso sotto.
 elijahRecScore = \score {
   <<
+    \seOpzione #'sigle \new ChordNames \with { chordChanges = ##t \override ChordName.font-size = #-0.5 }
+      { \lingueSigle \conTrasporto \elijahRecAccordi }
     \new Staff \with {
       \clef "treble_8"
       \consists Merge_rests_engraver

@@ -192,6 +192,10 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
     battute: il semitono la–si♭ del basso, soggetto, coda, risposta col controsoggetto,
     terza entrata un'ottava sopra e inizio della quarta. Dalla battuta 10
     c'è soprattutto la voce superiore.
+  - Layer di accordi (`armonia/accordi.ly`) per recitativo e Overture 1–20:
+    sigle in stile jazz e note strutturali colorate (edizioni
+    `elijah-sigle`, `elijah-accordi`). Gli accordi sono dedotti dalle voci
+    trascritte, non letti: da verificare all'ascolto.
   - Da fare: l'accompagnamento vero del recitativo, le voci sotto la terza
     entrata (battute 10–20), dalla battuta 21 in poi; provare la sesta corda in re per il
     recitativo.

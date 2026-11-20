@@ -6,5 +6,6 @@
 \include "../../lib/barre.ly"
 \include "music/recitativo.ly"
 \include "music/overture.ly"
+\include "armonia/accordi.ly"
 \include "layers/overture-voci.ly"
 \include "partiture.ly"
