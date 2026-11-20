@@ -2,7 +2,7 @@
 \language "italiano"
 
 % MENDELSSOHN, Elijah -- OVERTURE (fuga in re minore)
-% SCHIZZO per chitarra sola delle prime venti battute: il pedale di la,
+% SCHIZZO per chitarra sola delle prime 38 battute (dalla 21 bozza grezza): il pedale di la,
 % il soggetto, la sua coda, la risposta alla quinta col controsoggetto,
 % la terza entrata del soggetto e l'inizio della quarta (dalla battuta 10
 % soprattutto la voce superiore).
@@ -18,7 +18,7 @@
 % con una griglia delle altezze.
 % OMESSO: il raddoppio all'ottava della mano sinistra.
 % NON LETTI: dalla battuta 10 quasi tutte le voci sotto quella superiore;
-% dalla 21 in poi (pagina seguente dello spartito).
+% dalla 39 in poi (pagina 12 dello spartito).
 % RITMO del soggetto: sul secondo tempo croma + due semicrome; la nota
 % d'arrivo viene RIBATTUTA sul terzo tempo (non legata). Controllato da un
 % revisore indipendente, battuta per battuta, sullo spartito.
@@ -117,6 +117,45 @@ elijahTerza = {
     fa'8     re'       sol'16  re'  do'  sib   sib8     la       mib'4~             |
     %20
     mib'8    re'       fa'4~                fa'8       do'      la        fa'      |
+    % ---- battute 21-38 (pagina 11 dello spartito): BOZZA GREZZA.
+    % La linea piu' alta, letta da un lettore separato con la griglia e
+    % abbassata di un'ottava; senza legature di frase. Non adattata alle dita.
+    %21
+    fa'8 mi' fa' sol' do'8 mib' re' fa' |
+    %22
+    mi'8 sib la sol' fa' re' sib' mib' |
+    %23
+    fa'4 r8 mi'8 fa'4 r8 mi'8 |
+    %24
+    fa'8 re' sold'8 la'16 si' si'8 la' r16 la'16 si' do'' |
+    %25
+    do''8 re' r16 la'16 si' do'' do''8 mi' r16 la'16 si' do'' |
+    %26
+    do''8 si' la' sold' la'8 sol' fa' dod' |
+    %27
+    re'8 do' si mi' red'4. red'8 |
+    %28
+    re'8 fa' mi' re' do'8 mi' re' do' |
+    %29
+    do'8 si la sold la16-. do-. re-. mi-. fa-. fa-. mi-. re-. |
+    %30
+    dod16-. la-. si-. dod'-. re'-. re'-. dod'-. si-. la-. do'-. re'-. mi'-. fa'-. fa'-. mi'-. re'-. |
+    %31
+    sol'16-. sol'-. fa'-. mi'-. sib'-. sib'-. la'-. sol'-. sol'8 fad' r8 do'8 |
+    %32
+    re'4 r8 dod'8 re'4 r8 sol'8 |
+    %33
+    mib'8 do' fad'8 sol'16 la' la'8 sol' fa'8 mib' |
+    %34
+    re'8 la'8 fa'8 si16 do' re'16 re' do' si mib'16 mib' re' do' |
+    %35
+    fa'8 re' si8 do'16 re' re'8 do' fa'16-. fa'-. mi'-. re'-. |
+    %36
+    sol'16-. do'-. do'-. do'-. reb'-. reb'-. do'-. sib-. la-. fa'-. sol'-. la'-. sib'-. sib'-. la'-. sol'-. |
+    %37
+    do''16-. fa'-. fa'-. fa'-. solb'-. solb'-. fa'-. mib'-. re'-. sib-. do'-. re'-. mib'-. mib'-. re'-. do'-. |
+    %38
+    re'16-. re'-. mib'-. fa'-. solb'-. solb'-. fa'-. mib'-. re'-. fa'-. la'-. sib'-. do''-. do''-. sib'-. la'-. |
 }
 
 elijahBasso = {
@@ -159,4 +198,42 @@ elijahBasso = {
     re8(     sib,      mi8     fa16     sol16)     sol8(    fa)       r16  fa  sol  la |
     %20
     la8      sib,      r16  fa  sol  la     la8        do       r16  fa  sol  la   |
+    % ---- battute 21-38: BOZZA GREZZA, all'altezza dello spartito (nelle
+    % ottave, la nota superiore). Soggetto nel basso alla battuta 31.
+    %21
+    la8 sol fa mi fa8 la, sib, si, |
+    %22
+    do4. dod8 re8 fa mi sib |
+    %23
+    la4 r8 sib8 la4 r8 do8 |
+    %24
+    fa4 mi4~ mi8 do'8 la sol |
+    %25
+    fad4 fa4 mi4 do'8 la8 |
+    %26
+    re'4 mi4 r8 do'8 re'4 |
+    %27
+    fa'8 re'8 r8 mi8 fad8 do'8 si la |
+    %28
+    sold4 r8 mi8 la8 sol fa mi |
+    %29
+    re4. mi8 la,4 r8 sold,8 |
+    %30
+    la,4 r8 sold,8 la,4 r8 la,8 |
+    %31
+    sib,8 sol, dod8 re16 mi mi8 re sol16 si la sol |
+    %32
+    re8 re' sol sib re8 re sol, sib, |
+    %33
+    re8 r8 r4 r16 sol,16 la, sib, do16 do sib, la, |
+    %34
+    si,16 si, do re mib16 mib re do si,16 sol la si do'16 do' re' mib' |
+    %35
+    si16 si do' re' fa'16 fa' mi' re' mi'8-. mi'-. si8 si |
+    %36
+    do'8 do' mi8 mi fa8 fa mi8 mi |
+    %37
+    fa8 fa la,8 la, sib,8 sib, sib4~ |
+    %38
+    sib8 sib, sib4~ sib8 sib, sib4 |
 }

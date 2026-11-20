@@ -12,4 +12,7 @@ Lette finora, con una griglia delle altezze:
   coda e risposta, il controsoggetto, il basso sotto la coda (battute 4–5),
   le battute 8 e 9; la voce superiore delle battute 10–20; la voce di mezzo
   delle battute 11 e 13; il basso delle battute 10–20. Non letto: le
-  voci interne dalla battuta 10, e dalla 21 (pagina 11).
+  voci interne dalla battuta 10, e dalla 39 (pagina 12).
+- Overture (pagina 11): voce superiore e basso delle battute 21–38, letti
+  da un lettore separato; diversi punti incerti, elencati nei commenti di
+  `music/overture.ly` solo in parte.

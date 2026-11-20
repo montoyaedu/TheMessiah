@@ -188,7 +188,7 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Introduzione: il recitativo di Elia, 12 battute. La voce col testo, da
     cantare o da suonare, e un basso sotto (pedali di re e di la letti,
     battute 7–10 dedotte).
-  - Overture, fuga in re minore: schizzo delle prime venti
+  - Overture, fuga in re minore: schizzo delle prime 38 (dalla 21 bozza grezza)
     battute: il semitono la–si♭ del basso, soggetto, coda, risposta col controsoggetto,
     terza entrata un'ottava sopra e inizio della quarta. Dalla battuta 10
     c'è soprattutto la voce superiore.
@@ -197,7 +197,7 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
     `elijah-sigle`, `elijah-accordi`). Gli accordi sono dedotti dalle voci
     trascritte, non letti: da verificare all'ascolto.
   - Da fare: l'accompagnamento vero del recitativo, le voci sotto la terza
-    entrata (battute 10–20), dalla battuta 21 in poi; provare la sesta corda in re per il
+    entrata (battute 10–38), dalla battuta 39 in poi; provare la sesta corda in re per il
     recitativo.
 - **Registro e dinamica**: quando un'entrata è troppo acuta per stare sotto
   le dita insieme al basso, si abbassa di un'ottava. Le dinamiche sono per voce: il canto in
