@@ -71,8 +71,8 @@ elijahRisposta = {
     do'8     si        la         sold      la8        sol4               <fad la>8 |
     %9
     sib4               r4                   sib4                r4                 |
-    %10
-    s1                                                                             |
+    %10  voce interna sotto il soggetto (lettura incerta)
+    s4                 la8        la        fa4                 s4                 |
     %11  voce di mezzo: scende per semitoni (lettura meno sicura)
     si4                sib                  la                  sold               |
     %12  NON LETTO
@@ -130,8 +130,8 @@ elijahBasso = {
     s1*3
     %9   (i re in croma sono un'ottava sopra lo spartito)
     sol,4              r8         re8       sol,4               r8        re8      |
-    %10  NON LETTO
-    s1                                                                             |
+    %10  (ritmo letto; le ultime due note, sotto il rigo, sono DEDOTTE)
+    sol,8    sib,      la,4                 la,4                r8        la,8     |
     %11
     sol,4              sol,                 la,                 sib,               |
     %12  (lettura incerta; il re e' un'ottava sopra lo spartito)

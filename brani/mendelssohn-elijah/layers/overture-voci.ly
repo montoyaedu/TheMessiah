@@ -16,14 +16,15 @@ elijahIntavolatura = <<
   \new TabVoice { \voiceThree \voce "elijahTerza" }
 >>
 
-% Dinamiche: dove un'entrata e' stata abbassata d'ottava, il forte ne
-% simula il registro acuto.
+% Dinamiche per voce. Dalla terza entrata il canto in semicrome resta
+% pianissimo, come i violini, mentre il basso esce in mezzoforte.
 elijahDinamiche = {
   \partial 8 s8\pp
   s1*9
-  s1\mf                                   % 10: terza entrata
+  s1^\markup { \dynamic pp \italic "il canto, come violini" }
+    _\markup { \dynamic mf \italic "il basso" }                % 10: terza entrata
   s1*3
-  s1\f^\markup \italic "(8ª bassa)"       % 14: quarta entrata, abbassata
+  s1^\markup \italic "(8ª bassa, sempre pp)"                   % 14: quarta entrata
   s1*3
 }
 
