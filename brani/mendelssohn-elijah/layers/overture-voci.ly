@@ -26,6 +26,9 @@ elijahDinamiche = {
   s1*3
   s1^\markup \italic "(8ª bassa, sempre pp)"                   % 14: quarta entrata
   s1*3
+  s1*2
+  s1_\markup { \dynamic mf \italic "il soggetto nel basso" }   % 19
+  s1
 }
 
 % ---------- Introduzione: recitativo ----------

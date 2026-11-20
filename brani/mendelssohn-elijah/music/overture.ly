@@ -2,7 +2,7 @@
 \language "italiano"
 
 % MENDELSSOHN, Elijah -- OVERTURE (fuga in re minore)
-% SCHIZZO per chitarra sola delle prime diciassette battute: il pedale di la,
+% SCHIZZO per chitarra sola delle prime venti battute: il pedale di la,
 % il soggetto, la sua coda, la risposta alla quinta col controsoggetto,
 % la terza entrata del soggetto e l'inizio della quarta (dalla battuta 10
 % soprattutto la voce superiore).
@@ -18,7 +18,7 @@
 % con una griglia delle altezze.
 % OMESSO: il raddoppio all'ottava della mano sinistra.
 % NON LETTI: dalla battuta 10 quasi tutte le voci sotto quella superiore;
-% dalla 18 in poi.
+% dalla 21 in poi (pagina seguente dello spartito).
 % RITMO del soggetto: sul secondo tempo croma + due semicrome; la nota
 % d'arrivo viene RIBATTUTA sul terzo tempo (non legata). Controllato da un
 % revisore indipendente, battuta per battuta, sullo spartito.
@@ -110,6 +110,13 @@ elijahTerza = {
     do'8    si       la        sold     la8       si      do'16  do'  re'  mi' |
     %17  lo stesso disegno una terza sopra
     mi'8    re'      do'       si       do'8      re'     mi'16  mi'  fa'  sol' |
+    %18  voce superiore degli accordi (nello spartito un'ottava sopra;
+    %    il si naturale e' una lettura incerta)
+    fa'8     re'       si         do'       fa'8       re'      si        do'      |
+    %19
+    fa'8     re'       sol'16  re'  do'  sib   sib8     la       mib'4~             |
+    %20
+    mib'8    re'       fa'4~                fa'8       do'      la        fa'      |
 }
 
 elijahBasso = {
@@ -146,4 +153,10 @@ elijahBasso = {
     mi4                r8         re8       do8        si,      la,       sol,     |
     %17
     fa,4.                         fa8       mi8        re       do        do       |
+    %18
+    re4                r8         do8       re4                 r8        do8      |
+    %19  IL SOGGETTO NEL BASSO, una terza sopra la prima entrata
+    re8(     sib,      mi8     fa16     sol16)     sol8(    fa)       r16  fa  sol  la |
+    %20
+    la8      sib,      r16  fa  sol  la     la8        do       r16  fa  sol  la   |
 }
