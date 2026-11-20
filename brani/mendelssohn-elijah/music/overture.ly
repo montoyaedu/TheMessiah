@@ -223,11 +223,11 @@ elijahBasso = {
     %30
     la,4 r8 sold,8 la,4 r8 la,8 |
     %31
-    sib,8 sol, dod8 re16 mi mi8 re sol16 si la sol |
+    sib,8 sol, dod8 re16 mi mi8 re sol16 sib la sol |
     %32
     re8 re' sol sib re8 re sol, sib, |
     %33
-    re8 r8 r4 r16 sol,16 la, sib, do16 do sib, la, |
+    re8 r8 r4 r16 sol,16 la, si, do16 do si, la, |
     %34
     si,16 si, do re mib16 mib re do si,16 sol, la, si, do16 do re mib |   % (seconda meta' un'ottava sotto)
     %35
@@ -238,4 +238,52 @@ elijahBasso = {
     r8 fa,8 la,4 r8 sib,8 sib,4~ |   % (la e si bemolle un'ottava sopra lo spartito)
     %38
     sib,8 sib, sib4~ sib8 sib, sib4 |
+}
+
+% Voce interna delle battute 21-38, letta sullo spartito da un lettore
+% separato (una linea per battuta, tra canto e basso) e abbassata di
+% un'ottava come il canto. C'e' solo dove un controllo automatico la trova
+% compatibile a coppie con canto e basso; le altre battute sono vuote.
+elijahInterna = {
+    \key re \minor
+    \time 4/4
+    \partial 8
+    s8 |
+    s1*20
+    %21
+    sib4. do'16 sib16 la8 do'8 sib8 lab8 |
+    %22
+    sol8 sol4 la8 sib8 si8 do'8 re'8 |
+    %23
+    s1 |
+    %24
+    s1 |
+    %25
+    s1 |
+    %26
+    mi'8 re'8 do'8 si8 la8 sib8 la8 sol8 |
+    %27
+    s1 |
+    %28
+    s1 |
+    %29
+    s1 |
+    %30
+    r8 la8 sold4 r8 la8 sold8 la8 |
+    %31
+    s1 |
+    %32
+    s1 |
+    %33
+    s1 |
+    %34
+    re'4. r8 sol8 sol8 fad8 sol8 |
+    %35
+    s1 |
+    %36
+    r4 mi8 mi8 fa8 fa8 mi8 mi8 |
+    %37
+    s1 |
+    %38
+    s1 |
 }

@@ -6,14 +6,14 @@ elijahNotazione = <<
   \context Voice = "risposta" { \voiceOne \colore #red \voce "elijahRisposta" }
   \context Voice = "soggetto" { \voiceTwo \colore #blue \voce "elijahSoggetto" }
   \context Voice = "basso"    { \voiceFour \colore #darkgreen \voce "elijahBasso" }
-  \context Voice = "terza"    { \voiceThree \colore #(rgb-color 0.8 0.45 0) \voce "elijahTerza" }
+  \context Voice = "terza"    { \voiceThree \colore #(rgb-color 0.8 0.45 0) \voce "elijahTerza" }  \context Voice = "interna"  { \voiceTwo \colore #blue \voce "elijahInterna" }
 >>
 
 elijahIntavolatura = <<
   \new TabVoice { \voiceOne \voce "elijahRisposta" }
   \new TabVoice { \voiceTwo \voce "elijahSoggetto" }
   \new TabVoice { \voiceFour \voce "elijahBasso" }
-  \new TabVoice { \voiceThree \voce "elijahTerza" }
+  \new TabVoice { \voiceThree \voce "elijahTerza" }  \new TabVoice { \voiceTwo \voce "elijahInterna" }
 >>
 
 % Dinamiche per voce. Dalla terza entrata il canto in semicrome resta
