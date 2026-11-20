@@ -188,11 +188,12 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Introduzione: il recitativo di Elia, 12 battute. La voce col testo, da
     cantare o da suonare, e un basso sotto (pedali di re e di la letti,
     battute 7–10 dedotte).
-  - Overture, fuga in re minore: schizzo delle prime dieci battute, in
-    prima posizione: pedale di la, soggetto, coda, risposta col
-    controsoggetto e la terza entrata del soggetto un'ottava sopra.
+  - Overture, fuga in re minore: schizzo delle prime quattordici
+    battute: pedale di la, soggetto, coda, risposta col controsoggetto,
+    terza entrata un'ottava sopra e inizio della quarta. Dalla battuta 10
+    c'è soprattutto la voce superiore.
   - Da fare: l'accompagnamento vero del recitativo, le voci sotto la terza
-    entrata, dalla battuta 11 in poi; provare la sesta corda in re per il
+    entrata (battute 10–14), dalla battuta 15 in poi; provare la sesta corda in re per il
     recitativo.
 - **Cantare e suonare**: nei brani vocali la voce è una linea a sé col
   testo; un'edizione potrebbe togliere la voce dal rigo della chitarra e

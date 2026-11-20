@@ -2,9 +2,10 @@
 \language "italiano"
 
 % MENDELSSOHN, Elijah -- OVERTURE (fuga in re minore)
-% SCHIZZO per chitarra sola delle prime dieci battute: il pedale di la,
+% SCHIZZO per chitarra sola delle prime quattordici battute: il pedale di la,
 % il soggetto, la sua coda, la risposta alla quinta col controsoggetto,
-% e la terza entrata del soggetto (solo la voce superiore).
+% la terza entrata del soggetto e l'inizio della quarta (dalla battuta 10
+% soprattutto la voce superiore).
 % Altezze reali come nello spartito, accordatura normale: tutto sta in
 % prima posizione sulle tre corde gravi, con la, re e mi a vuoto.
 %
@@ -16,9 +17,10 @@
 % FONTE: spartito Novello (fonti/), pagina 10 del PDF; rigo superiore letto
 % con una griglia delle altezze.
 % OMESSO: il raddoppio all'ottava della mano sinistra.
-% NON LETTI: alla battuta 10 le due voci sotto il soggetto; dalla 11 in poi.
-% CONTROLLO: la terza entrata (batt. 10) ha gli stessi intervalli del
-% soggetto e della risposta, e conferma la lettura di entrambi.
+% NON LETTI: dalla battuta 10 quasi tutte le voci sotto quella superiore;
+% dalla 15 in poi.
+% CONTROLLO: la terza entrata (batt. 10-13) e la quarta (batt. 14) hanno
+% gli stessi intervalli del soggetto e della risposta, coda compresa.
 
 elijahSoggetto = {
     \key re \minor
@@ -54,8 +56,9 @@ elijahRisposta = {
     s8                                                                             |
     %1-4
     s1*4
-    %5   (levare della risposta: nota attesa, non letta)
-    s2                                      s4                  s8        mi8      |
+    %5   (il levare della risposta e' il re con cui finisce la coda del
+    %    soggetto, nell'altra voce: la risposta e' tonale)
+    s1                                                                             |
     %6   la risposta, una quinta sopra
     fa8(     re        sold16     la       si8)~      si8      la       r16  la  si  do' |
     %7
@@ -63,6 +66,13 @@ elijahRisposta = {
     do'8     si        la         sold      la8        sol4               <fad la>8 |    %9
     sib4               r4                   sib4                r4                 |
     %10
+    s1                                                                             |    %11  voce di mezzo: scende per semitoni (lettura meno sicura)
+    si4                sib                  la                  sold               |
+    %12  NON LETTO
+    s1                                                                             |
+    %13  (lettura meno sicura)
+    sold8    re'       sold       la        r8         re'      sold      la       |
+    %14  NON LETTO
     s1                                                                             |
 }
 
@@ -78,7 +88,14 @@ elijahTerza = {
     %9   (nello spartito anche il la a meta' battuta appartiene a questa linea)
     s4                 s8         la8       s4                  s8        la8      |
     %10  il soggetto
-    sib8(    sol       dod'16     re'      mi'8)~     mi'8     re'      r16  re'  mi'  fa' |
+    sib8(    sol       dod'16     re'      mi'8)~     mi'8     re'      r16  re'  mi'  fa' |    %11
+    fa'8     sol       r16  re'  mi'  fa'   fa'8       la       r16  re'  mi'  fa' |
+    %12  coda (la seconda meta' e' una lettura meno sicura)
+    fa'8     mi'       re'        dod'      re'8       do'!     sib       re'      |
+    %13
+    fa'4               r8         re'8      fa'4                r8        re'8     |
+    %14  quarta entrata: la risposta, un'ottava sopra
+    fa'8(    re'       sold'16    la'      si'8)~     si'8     la'      r16  la'  si'  do'' |
 }
 
 elijahBasso = {
@@ -94,4 +111,8 @@ elijahBasso = {
     sol,4              r4                   sol,4               r4                 |
     %10  NON LETTO
     s1                                                                             |
+    %11
+    sol,4              sol,                 la,                 sib,               |
+    %12-14  NON LETTO
+    s1*3
 }

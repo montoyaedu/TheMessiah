@@ -27,7 +27,7 @@ elijahRispostaDita = {
     \partial 8
     s8                                                                             |
     s1*4
-    s2                                      s4                  s8        s8\4     |
+    s1                                                                             |
     %6
     s8\4     s\4       s16\3      s\3      s8\3       s8       s\3      s16  s\3  s\3  s\2 |
     %7
