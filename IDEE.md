@@ -188,11 +188,11 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Introduzione: il recitativo di Elia, 12 battute. La voce col testo, da
     cantare o da suonare, e un basso sotto (pedali di re e di la letti,
     battute 7–10 dedotte).
-  - Overture, fuga in re minore: schizzo delle prime 38 (dalla 21 bozza grezza)
+  - Overture, fuga in re minore: schizzo delle prime 38 (dalla 21 solo canto e basso)
     battute: il semitono la–si♭ del basso, soggetto, coda, risposta col controsoggetto,
     terza entrata un'ottava sopra e inizio della quarta. Dalla battuta 10
     c'è soprattutto la voce superiore.
-  - Layer di accordi (`armonia/accordi.ly`) per recitativo e Overture 1–20:
+  - Layer di accordi (`armonia/accordi.ly`) per recitativo e Overture 1–38:
     sigle in stile jazz e note strutturali colorate (edizioni
     `elijah-sigle`, `elijah-accordi`). Gli accordi sono dedotti dalle voci
     trascritte, non letti: da verificare all'ascolto.

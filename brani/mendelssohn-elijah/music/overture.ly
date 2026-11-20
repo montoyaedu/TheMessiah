@@ -2,7 +2,7 @@
 \language "italiano"
 
 % MENDELSSOHN, Elijah -- OVERTURE (fuga in re minore)
-% SCHIZZO per chitarra sola delle prime 38 battute (dalla 21 bozza grezza): il pedale di la,
+% SCHIZZO per chitarra sola delle prime 38 battute (dalla 21 solo canto e basso): il pedale di la,
 % il soggetto, la sua coda, la risposta alla quinta col controsoggetto,
 % la terza entrata del soggetto e l'inizio della quarta (dalla battuta 10
 % soprattutto la voce superiore).
@@ -117,9 +117,9 @@ elijahTerza = {
     fa'8     re'       sol'16  re'  do'  sib   sib8     la       mib'4~             |
     %20
     mib'8    re'       fa'4~                fa'8       do'      la        fa'      |
-    % ---- battute 21-38 (pagina 11 dello spartito): BOZZA GREZZA.
+    % ---- battute 21-38 (pagina 11 dello spartito).
     % La linea piu' alta, letta da un lettore separato con la griglia e
-    % abbassata di un'ottava; senza legature di frase. Non adattata alle dita.
+    % abbassata di un'ottava; senza legature di frase.
     %21
     fa'8 mi' fa' sol' do'8 mib' re' fa' |
     %22
@@ -198,8 +198,10 @@ elijahBasso = {
     re8(     sib,      mi8     fa16     sol16)     sol8(    fa)       r16  fa  sol  la |
     %20
     la8      sib,      r16  fa  sol  la     la8        do       r16  fa  sol  la   |
-    % ---- battute 21-38: BOZZA GREZZA, all'altezza dello spartito (nelle
-    % ottave, la nota superiore). Soggetto nel basso alla battuta 31.
+    % ---- battute 21-38: all'altezza dello spartito (nelle ottave, la nota
+    % superiore), salvo dove indicato. Ogni coppia canto-basso e' stata
+    % verificata con un controllo automatico: il basso sta sotto il canto e
+    % le due note stanno sotto le dita (entro quattro tasti, o corda a vuoto). Soggetto nel basso alla battuta 31.
     %21
     la8 sol fa mi fa8 la, sib, si, |
     %22
@@ -211,9 +213,9 @@ elijahBasso = {
     %25
     fad4 fa4 mi4 do'8 la8 |
     %26
-    re'4 mi4 r8 dod'8 re'4 |
+    re4 mi4 r8 dod8 re4 |   % (un'ottava sotto lo spartito)
     %27
-    fa'8 re'8 r8 mi8 fad8 do'8 si la |
+    fa8 re8 r8 mi8 fad8 do'8 si la |   % (le prime due un'ottava sotto)
     %28
     sold4 r8 mi8 la8 sol fa mi |
     %29
@@ -227,9 +229,9 @@ elijahBasso = {
     %33
     re8 r8 r4 r16 sol,16 la, sib, do16 do sib, la, |
     %34
-    si,16 si, do re mib16 mib re do si,16 sol la si do'16 do' re' mib' |
+    si,16 si, do re mib16 mib re do si,16 sol, la, si, do16 do re mib |   % (seconda meta' un'ottava sotto)
     %35
-    si16 si do' re' fa'16 fa' mi' re' mi'8-. mi'-. si8 si |
+    si,16 si, do re fa16 fa mi re mi8-. mi-. si,8 si, |   % (un'ottava sotto)
     %36
     r8 do8 mi,4 r8 fa,8 mi,4 |   % la voce piu' bassa, sincopata
     %37
