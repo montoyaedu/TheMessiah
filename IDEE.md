@@ -187,10 +187,11 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   re minore. Lette le prime sei battute dallo spartito Novello (in
   `fonti/`): soggetto, coda e risposta alla quinta. Il soggetto parte nel
   registro dei violoncelli e sta già sulle corde gravi; contiene il tritono
-  sol–do♯. Schizzo per chitarra delle prime sette battute, con il pedale
+  sol–do♯. Schizzo per chitarra delle prime otto battute, con il pedale
   di la: accordatura normale, tutto in prima posizione, corde in
-  `dita/schizzo.ly`. Il basso sotto la risposta è libero. Da fare: leggere
-  l'accompagnamento della risposta, le battute seguenti.
+  `dita/schizzo.ly`. Sotto la risposta c'è il controsoggetto letto sullo
+  spartito, con il basso che scende per semitoni. Da fare: dalla battuta 9,
+  dove entra la terza voce.
 - **Idea generale**: per ogni brano cercare prima la tonalità e la corda che
   lo rendono "chitarristico" (corde a vuoto come pedale o come accordo), e
   solo dopo ridurre le parti.

@@ -15,7 +15,12 @@ elijahSoggettoDita = {
     s8\4     s\4       s\4        s\5       s4                  s8        s8\4     |
     %5
     s4\4               s8         s8\4      s4\4                s8        s8\4     |
-    s1*2
+    %6
+    s4                 s8\4       s\4       s4\5                s8\5      s\6      |
+    %7
+    s4\6               s\6                  s\6                 s\4                |
+    %8
+    s4\4               s8         s8\4      s4\5                s8\4      s        |
 }
 
 elijahRispostaDita = {
@@ -26,5 +31,6 @@ elijahRispostaDita = {
     %6
     s8\4     s\4       s16\3      s\3      s8\3       s8       s\3      s16  s\3  s\3  s\2 |
     %7
-    s8\2     s\4       s16  s\3  s\3  s\2   s8\2       s\4      s16  s\3  s\3  s\2 |
+    s8\2     s\4       s16  s\3  s\3  s\2   s8\2       s\4      s16  s\3  s\3  s\2 |    %8
+    s8\2     s\2       s\3        s\3       s8\3       s4\3               s8\4\3   |
 }
