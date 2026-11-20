@@ -12,7 +12,7 @@ elijahScore = \score {
     } {
       \tempo \markup "Moderato, ma poco a poco con più di fuoco" 4 = 92
       << \elijahNotazione \elijahDinamiche >>
-      \bar "||"
+      \bar "|."
     }
     \seIntavolatura \new TabStaff \elijahIntavolatura
   >>

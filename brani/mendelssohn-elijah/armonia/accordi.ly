@@ -109,5 +109,6 @@ elijahAccordi = \chordmode {
   %37
   fa4        fa4:7/la   sib2            |
   %38
-  sib1                                  |
+  sib1                                  |  %39-77  accordi non ancora scritti
+  s1*39
 }

@@ -16,3 +16,6 @@ Lette finora, con una griglia delle altezze:
 - Overture (pagina 11): voce superiore e basso delle battute 21–38, letti
   da un lettore separato; diversi punti incerti, elencati nei commenti di
   `music/overture.ly` solo in parte.
+- Overture (pagine 12 e 13): voce superiore e basso delle battute 39–77,
+  fino alla doppia stanghetta finale. A pagina 14 comincia il coro
+  «Help, Lord».

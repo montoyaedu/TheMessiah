@@ -188,17 +188,18 @@ meccanica della mano fino a suonare qualsiasi cosa, anche a orecchio.
   - Introduzione: il recitativo di Elia, 12 battute. La voce col testo, da
     cantare o da suonare, e un basso sotto (pedali di re e di la letti,
     battute 7–10 dedotte).
-  - Overture, fuga in re minore: schizzo delle prime 38 (dalla 21 solo canto e basso)
-    battute: il semitono la–si♭ del basso, soggetto, coda, risposta col controsoggetto,
-    terza entrata un'ottava sopra e inizio della quarta. Dalla battuta 10
-    c'è soprattutto la voce superiore.
-  - Layer di accordi (`armonia/accordi.ly`) per recitativo e Overture 1–38:
+  - Overture, fuga in re minore: tutta, 77 battute, fino al pedale di la su
+    cui attacca il coro. Battute 1–20: schizzo con più voci. Battute 21–38:
+    canto, basso e una voce interna dove sta sotto le dita. Battute 39–77:
+    solo canto e basso. Il canto è di norma un'ottava sotto lo spartito; un
+    controllo automatico verifica ogni coppia canto–basso (restano quattro
+    punti non risolti alle battute 39, 40 e 56).
+  - Layer di accordi (`armonia/accordi.ly`) per recitativo e Overture 1–38 (dalla 39 non scritti):
     sigle in stile jazz e note strutturali colorate (edizioni
     `elijah-sigle`, `elijah-accordi`). Gli accordi sono dedotti dalle voci
     trascritte, non letti: da verificare all'ascolto.
-  - Da fare: l'accompagnamento vero del recitativo, le voci sotto la terza
-    entrata (battute 10–38), dalla battuta 39 in poi; provare la sesta corda in re per il
-    recitativo.
+  - Da fare: l'accompagnamento vero del recitativo, le voci interne dalla
+    battuta 39, gli accordi dalla 39, le legature di frase dalla 21.
 - **Registro e dinamica**: quando un'entrata è troppo acuta per stare sotto
   le dita insieme al basso, si abbassa di un'ottava. Le dinamiche sono per voce: il canto in
   semicrome pianissimo, come i violini, e il basso in mezzoforte. Fatto

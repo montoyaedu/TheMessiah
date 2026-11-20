@@ -32,6 +32,12 @@ elijahDinamiche = {
   s1*10
   s1_\markup { \dynamic mf \italic "il soggetto nel basso" }   % 31
   s1*7
+  s1*18
+  s1*4
+  s1^\markup { \dynamic ff }          % 61
+  s1*10
+  s1^\markup { \italic "sempre" \dynamic ff }   % 72
+  s1*5
 }
 
 % ---------- Introduzione: recitativo ----------
