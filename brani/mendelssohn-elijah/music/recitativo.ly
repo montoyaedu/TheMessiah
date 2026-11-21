@@ -71,7 +71,7 @@ elijahRecBasso = {
     %7   do, poi fa diesis a meta' battuta (letto dal revisore)
     do2(                                    fad,2)                                 |
     %8   sol, poi do diesis (letto dal revisore, sicurezza media)
-    sol,2                                   dod2                                   |
+    sol2(                                   dod2)                                  |
     %9   (dedotto)
     re2                                     sold,2~                                |
     %10
@@ -85,9 +85,9 @@ elijahRecBasso = {
 % GLI ACCORDI DEGLI OTTONI che aprono l'Introduzione e punteggiano il
 % recitativo, ridotti a tre note per la chitarra (forme sulle corde acute,
 % sopra il basso). Non sono accordi fermi: dentro c'e' una linea che si
-% muove per grado. Battute 1-5 e 12 lette sullo spartito; la battuta 11 e'
-% una lettura incerta. Alle battute 7-10 l'orchestra ha solo ottave tenute
-% (do - fa diesis, sol - do diesis, re - sol diesis), gia' nel basso.
+% muove per grado. Lette sullo spartito e riscontrate da un revisore
+% indipendente. Alle battute 7-8 l'orchestra ha solo ottave tenute
+% (do - fa diesis, sol - do diesis), gia' nel basso.
 elijahRecOttoni = {
     \key re \minor
     \time 4/4
@@ -100,13 +100,17 @@ elijahRecOttoni = {
     <fa sib re'>1                                                                  |
     %4   sul pedale di la la voce superiore scende fa - mi - re:
     %    re minore, settima di la, re minore, poi la settima diminuita
-    <la re' fa'>4      <sol dod' mi'>4      <fa la re'>4        <si re' sold'>4~   |
+    <la re' fa'>4      <sol dod' mi'>4      <fa la re'>4        <fa si re'>4~      |
     %5
-    <si re' sold'>2                         <la dod' mi'>4.\fermata       r8       |
-    %6-10
-    s1*5
-    %11  (lettura incerta)
-    <la dod' mi'>2                          <la re' fa'>4       <la dod' mi'>4     |
+    <fa si re'>2                            <la dod' mi'>4.\fermata       r8       |
+    %6-8  (silenzio, poi solo ottave tenute, gia' nel basso)
+    s1*3
+    %9   il re resta tenuto contro il sol diesis del basso: il tritono
+    re'1~                                                                          |
+    %10
+    re'4               s2.                                                         |
+    %11  la maggiore, poi si - re - fa (sul la del basso), due volte
+    <la dod' mi'>2                          <fa si re'>4        <si re' fa'>4      |
     %12
     <la dod' mi'>1\fermata                                                         |
 }

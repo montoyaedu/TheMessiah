@@ -26,7 +26,7 @@ elijahRecAccordi = \chordmode {
   %10
   sold4:dim7  s2.                       |
   %11
-  re2:m/la            la2               |
+  la2                 si2:m7.5-/la      |
   %12
   la1                                   |
 }
