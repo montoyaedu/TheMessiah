@@ -9,6 +9,7 @@
 %                    oppure da suonare come melodia
 %   elijahTestoRec   il testo inglese
 %   elijahRecBasso   un basso da suonare sotto: una nota per armonia
+%   elijahRecOttoni  gli accordi degli ottoni (in fondo al file)
 %
 % FONTE: spartito Novello (fonti/), pagina 9 del PDF. La voce e' letta nota
 % per nota con una griglia delle altezze. Il basso NON e' la riduzione
@@ -79,4 +80,30 @@ elijahRecBasso = {
     la,2                                    la,4                la,4               |
     %12
     la,1\fermata                                                                   |
+}
+
+% GLI ACCORDI DEGLI OTTONI che aprono l'Introduzione e punteggiano il
+% recitativo, ridotti a tre note per la chitarra (forme sulle corde acute,
+% sopra il basso). Battute 1-5 e 12 lette sullo spartito; la battuta 11 e'
+% una lettura incerta. Alle battute 7-10 l'orchestra ha solo ottave tenute
+% (do - fa diesis, sol - do diesis, re - sol diesis), gia' nel basso.
+elijahRecOttoni = {
+    \key re \minor
+    \time 4/4
+    %1   re minore: tre accordi, piano
+    <la re' fa'>2                           <la re' fa'>4       <la re' fa'>4      |
+    %2   sforzato
+    <la re' fa'>1                                                                  |
+    %3   si bemolle maggiore
+    <fa sib re'>1                                                                  |
+    %4   sul pedale di la: re minore, la maggiore, settima diminuita
+    <la re' fa'>4      <la dod' mi'>4       <si re' sold'>2~                       |
+    %5
+    <si re' sold'>2                         <la dod' mi'>4.\fermata       r8       |
+    %6-10
+    s1*5
+    %11  (lettura incerta)
+    <la dod' mi'>2                          <la re' fa'>4       <la dod' mi'>4     |
+    %12
+    <la dod' mi'>1\fermata                                                         |
 }

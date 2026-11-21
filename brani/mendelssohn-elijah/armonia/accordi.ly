@@ -13,7 +13,8 @@ elijahRecAccordi = \chordmode {
   %3   "Lord"
   sib1 |
   %4-5  pedale di la
-  la1 | la1 |
+  re4:m/la  la4  sold2:dim7 |
+  sold2:dim7        la2 |
   %6   (la voce sola)
   s1 |
   %7

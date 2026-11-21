@@ -45,10 +45,10 @@ accordiCorrenti = "elijahRecAccordi"
 
 elijahRecNotazione = <<
   \context Voice = "elia"     { \voiceOne \colore #red \voce "elijahVoce" }
-  \context Voice = "recbasso" { \voiceTwo \colore #darkgreen \voce "elijahRecBasso" }
+  \context Voice = "recbasso" { \voiceTwo \colore #darkgreen \voce "elijahRecBasso" }  \context Voice = "ottoni"   { \voiceFour \colore #blue \voce "elijahRecOttoni" }
 >>
 
 elijahRecIntavolatura = <<
   \new TabVoice { \voiceOne \voce "elijahVoce" }
-  \new TabVoice { \voiceTwo \voce "elijahRecBasso" }
+  \new TabVoice { \voiceTwo \voce "elijahRecBasso" }  \new TabVoice { \voiceFour \voce "elijahRecOttoni" }
 >>
