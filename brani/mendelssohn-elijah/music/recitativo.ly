@@ -84,20 +84,23 @@ elijahRecBasso = {
 
 % GLI ACCORDI DEGLI OTTONI che aprono l'Introduzione e punteggiano il
 % recitativo, ridotti a tre note per la chitarra (forme sulle corde acute,
-% sopra il basso). Battute 1-5 e 12 lette sullo spartito; la battuta 11 e'
+% sopra il basso). Non sono accordi fermi: dentro c'e' una linea che si
+% muove per grado. Battute 1-5 e 12 lette sullo spartito; la battuta 11 e'
 % una lettura incerta. Alle battute 7-10 l'orchestra ha solo ottave tenute
 % (do - fa diesis, sol - do diesis, re - sol diesis), gia' nel basso.
 elijahRecOttoni = {
     \key re \minor
     \time 4/4
-    %1   re minore: tre accordi, piano
-    <la re' fa'>2                           <la re' fa'>4       <la re' fa'>4      |
-    %2   sforzato
+    %1   re minore, poi tutte le voci salgono di un grado (mi - sol - si bemolle
+    %    sul re tenuto) e alla battuta 2 ridiscendono: la - si bemolle - la
+    <la re' fa'>2                           <sib mi' sol'>4     <sib mi' sol'>4    |
+    %2   sforzato: di nuovo re minore
     <la re' fa'>1                                                                  |
     %3   si bemolle maggiore
     <fa sib re'>1                                                                  |
-    %4   sul pedale di la: re minore, la maggiore, settima diminuita
-    <la re' fa'>4      <la dod' mi'>4       <si re' sold'>2~                       |
+    %4   sul pedale di la la voce superiore scende fa - mi - re:
+    %    re minore, settima di la, re minore, poi la settima diminuita
+    <la re' fa'>4      <sol dod' mi'>4      <fa la re'>4        <si re' sold'>4~   |
     %5
     <si re' sold'>2                         <la dod' mi'>4.\fermata       r8       |
     %6-10

@@ -9,11 +9,11 @@
 % ---------- Introduzione: recitativo ----------
 elijahRecAccordi = \chordmode {
   %1-2
-  re1:m | re1:m |
+  re2:m  mi2:dim/re | re1:m |
   %3   "Lord"
   sib1 |
   %4-5  pedale di la
-  re4:m/la  la4  sold2:dim7 |
+  re4:m/la  la4:7  re4:m/la  sold4:dim7 |
   sold2:dim7        la2 |
   %6   (la voce sola)
   s1 |
