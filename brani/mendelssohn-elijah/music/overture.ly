@@ -171,7 +171,7 @@ elijahTerza = {
     %43
     red'16 mi'16 fad'16 si16 red'8 mi'16 fad'16 fad'8 mi'8 mi'4 |   % (canto -1 ott., basso -1 ott. rispetto allo spartito)
     %44
-    re'16 do'16 sold16 mi16 mi'4 do'16 si16 la16 si16 mi'4 |   % (canto -1 ott., basso -1 ott. rispetto allo spartito)
+    re'16 si16 sold16 mi16 mi'4 do'16 si16 la16 si16 mi'4 |   % (canto -1 ott., basso -1 ott. rispetto allo spartito)
     %45
     sol'16 mi'16 red'16 fad'16 mi'16 si16 red'16 fad'16 mi'16 si16 do'16 la16 sol16 mi16 la8 |   % (canto -1 ott., basso -1 ott. rispetto allo spartito)
     %46
@@ -191,11 +191,11 @@ elijahTerza = {
     %53
     la8 sol'8 r16 dod'16 si16 la16 la8 fa'8 r16 fa'16 mi'16 re'16 |
     %54
-    re'8 do''8 r16 mi'16 re'16 do'16 do'8 sib'8 r16 re'16 do'16 sib16 |
+    re'8 do''8 r16 mi'16 re'16 do'16 do'8 sib'8 r16 re'16 do'16 si16 |
     %55
     si8 la'8 r16 do'16 sib16 la16 la8 sol'8 r16 sib16 la16 sol16 |
     %56
-    sol'16 fa''16 mi''16 re''16 re''16 si'16 la'16 sold'16 sol'16 fa''16 mi''16 re''16 re''16 sib'16 la'16 sol'16 |   % (canto +0 ott., basso +0 ott. rispetto allo spartito)
+    sol'16 fa''16 mi''16 re''16 re''16 si'16 la'16 sold'16 sold'16 fa''16 mi''16 re''16 re''16 sib'16 la'16 sold'16 |   % (canto +0 ott., basso +0 ott. rispetto allo spartito)
     %57
     la8 la8 sib4 r8 la8 sib4 |   % (canto -1 ott., basso -1 ott. rispetto allo spartito)
     %58
@@ -225,7 +225,7 @@ elijahTerza = {
     %70
     re'8 si'8 r16 fa'16 mi'16 re'16 re'8 la'8 r16 fa'16 mi'16 re'16 |
     %71
-    re'16 re'16 mi'16 fa'16 fa'8 sol8 r16 re'16 mi'16 fa'16 fa'8 sold8 |
+    re'16 re'16 mi'16 fa'16 fa'8 sold8 r16 re'16 mi'16 fa'16 fa'8 sold8 |
     %72
     r16 mi'16 fa'16 sol'16 sol'8 la8 r16 mi'16 fa'16 sol'16 sol'8 la8 |
     %73
