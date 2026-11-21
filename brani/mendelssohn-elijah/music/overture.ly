@@ -71,12 +71,12 @@ elijahRisposta = {
     do'8     si        la         sold      la8        sol4               <fad la>8 |
     %9
     sib4               r4                   sib4                r4                 |
-    %10  voce interna sotto il soggetto (lettura incerta)
-    s4                 la8        la        fa4                 s4                 |
+    %10  voce interna sotto il soggetto: (sol) la sol fa, poi re - do naturale
+    s4                 la8        sol       fa4                 re8       do'!     |
     %11  voce di mezzo: scende per semitoni (lettura meno sicura)
     si4                sib                  la                  sold               |
-    %12  NON LETTO
-    s1                                                                             |
+    %12  voci interne (lette dal revisore; ottava da verificare)
+    la4                r8         sol8      fad4                sol8      fa!8     |
     %13  (lettura meno sicura)
     sold8    re'       sold       la        r8         re'      sold      la       |
     %14  NON LETTO
@@ -114,7 +114,7 @@ elijahTerza = {
     %    il si naturale e' una lettura incerta)
     fa'8     re'       si         do'       fa'8       re'      si        do'      |
     %19
-    fa'8     re'       sol'16  re'  do'  sib   sib8     la       mib'4~             |
+    fa'8     re'       sol'16  reb'  do'  sib   sib8     la       mib'4~            |
     %20
     mib'8    re'       fa'4~                fa'8       do'      la        fa'      |
     % ---- battute 21-38 (pagina 11 dello spartito).
@@ -253,7 +253,7 @@ elijahBasso = {
     %4   sotto la pausa della coda, il basso scende: re do si bemolle la
     s2                                      re8        do       sib,      la,      |
     %5   sol diesis sotto il fa: settima diminuita
-    sold,8   r8        sold,4               r4                  sold,4             |
+    sold,8   re8       sold,4               r8        re8       sold,4             |
     %6-8
     s1*3
     %9   (i re in croma sono un'ottava sopra lo spartito)
