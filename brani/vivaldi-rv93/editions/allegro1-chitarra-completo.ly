@@ -1,4 +1,4 @@
 \version "2.24.0"
 
-% Primo movimento: tutte le voci per chitarra sola, con intavolatura (sesta in mi).
+% Primo movimento: tutti e quattro i layer (violino, violoncello, pianoforte).
 \include "../music/allegro1-chitarra-completo.ly"
