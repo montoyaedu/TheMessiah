@@ -19,3 +19,7 @@ Lette finora, con una griglia delle altezze:
 - Overture (pagine 12 e 13): voce superiore e basso delle battute 39–77,
   fino alla doppia stanghetta finale. A pagina 14 comincia il coro
   «Help, Lord».
+
+| File | Contenuto |
+|------|-----------|
+| `spartito-peters-IMSLP191441.pdf` | Riduzione per canto e pianoforte, edizione C. F. Peters, Lipsia (da IMSLP, file #191441; scansione della Sibley Music Library), testo tedesco, 83 pagine. L'Ouverture occupa le pagine 3–7 del PDF e finisce prima del n. 1 «Hilf, Herr!». È una seconda riduzione dello stesso brano: serve per incrociare la lettura della Novello. |

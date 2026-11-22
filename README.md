@@ -77,6 +77,7 @@ elencate in `lib/opzioni.ly`. Per aggiungere un brano: vedi
 [brani/README.md](brani/README.md).
 
 Idee, stato della trascrizione e cose da decidere: vedi [IDEE.md](IDEE.md).
+La cronologia delle conversazioni con le scelte fatte è in [docs/cronologia-chat.md](docs/cronologia-chat.md).
 
 ## Crediti e fonti
 

@@ -251,6 +251,63 @@ il manico; le note sono una delle realizzazioni possibili.
   quale difficoltà allena, così entra nel catalogo degli schemi insieme ai
   passaggi presi dal repertorio.
 
+## Metodo di lavoro, controlli e strumenti
+
+- **Ogni esito va verificato.** Le letture dalle scansioni sono il punto debole:
+  nell'Overture di Elijah i controlli indipendenti hanno trovato 14 errori in
+  batterie di battute già "finite". Pratica adottata: (1) lettura da parte di un
+  lettore separato con una griglia delle altezze sul rigo; (2) verifica
+  avversariale su ritmi e altezze; (3) controllo automatico di suonabilità
+  (basso sotto il canto, note entro quattro tasti). Da fare: un comando unico
+  `make verifica` e una lista di controllo per brano; segnare in `fonti/` quali
+  battute sono lette, dedotte o non verificate.
+- **Cronologia della chat nel repository**: `docs/cronologia-chat.md`, generata
+  da `strumenti/esporta_chat.py` (solo testo, senza strumenti né immagini;
+  email e nomi dei modelli tolti). È un'istantanea: va rigenerata a fine sessione.
+- **Interfaccia testuale per intervenire senza imparare LilyPond.** Tre gradini:
+  1. *Chat guidata* (già in uso): si dice «battuta 31, basso: sol invece di si♭»
+     e la modifica la fa Claude.
+  2. *Scheda di interventi*: un file di testo per brano con una riga per
+     intervento («bar 31 · basso · sol la si do»), in nomi di nota italiani;
+     uno script li applica ai file `.ly` mantenendo i controlli di battuta, e
+     un comando `make anteprima` rigenera il PDF. Consigliato come primo passo:
+     è piccolo, si può provare subito e lascia traccia di ogni scelta.
+  3. *Interfaccia interattiva* (terminale o pagina web): una battuta alla volta
+     con anteprima, campi per voce, annulla. Da fare solo se la scheda non basta.
+- **Livelli di difficoltà** (principianti, bambini): la stessa musica in più
+  riduzioni, scelte con una sola opzione `livello`. Ipotesi: 1 melodia sola, in
+  prima posizione e su tonalità facili; 2 melodia più basso a vuoto; 3 due
+  voci; 4 tutto ciò che sta sotto le dita; 5 versione completa. Ogni livello
+  deriva dagli stessi layer, con tempo e diteggiatura propri.
+- **Skill e strumenti pubblici** (cercati sul web, non provati): nessuna skill
+  dedicata a LilyPond nel catalogo dell'account. Esistono server MCP e skill
+  di terzi per la notazione (music.build, rhythm-vibe, mcp-score, una skill
+  per MuseScore), e per leggere le scansioni c'è Audiveris, che produce MusicXML.
+  Metaswarm è un'orchestrazione per lo sviluppo software (da issue a PR, TDD,
+  revisori a più passaggi): non è pensato per la musica, e quello che serve qui
+  (lettore indipendente, revisore avversariale, controlli automatici) lo stiamo
+  già facendo a mano.
+- **Lettura delle scansioni con riconoscimento ottico** (da valutare): Audiveris
+  sui PDF IMSLP, poi correzione guidata. Potrebbe sostituire la lettura con la
+  griglia, ma i risultati su scansioni scadenti vanno controllati comunque.
+
+## Concerto RV 93, primo movimento
+
+- Compromesso scelto: versione per chitarra sola con tutti i layer (violino,
+  violoncello, pianoforte destra e sinistra), un'ottava sotto, note sotto il mi
+  grave riportate in alto, **tempo abbassato** (quarto = 76 invece di 100) per
+  dare l'illusione dell'orchestra al completo. Il valore del tempo è da affinare
+  suonando.
+- Layer escludibili uno alla volta (`layerEscluso`); la rimozione automatica dei
+  raddoppi non è riuscita e va riscritta, oppure si decide a mano.
+
+## Overture di Elijah: lavorare dalla fine
+
+- Seconda fonte: riduzione Peters (in `fonti/`), che serve per
+  incrociare la Novello. Si parte dalle ultime battute (57–77), che oggi hanno
+  solo canto e basso: confronto tra le due edizioni, poi voci interne e
+  adattamento alla chitarra, poi si risale.
+
 ## Piano: un passo per volta
 
 Regola di lavoro: ogni passo aggiunge **un solo layer o una sola edizione**,
