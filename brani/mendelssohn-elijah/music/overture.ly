@@ -225,7 +225,7 @@ elijahTerza = {
     %70
     re'8 si'8 r16 fa'16 mi'16 re'16 re'8 la'8 r16 fa'16 mi'16 re'16 |
     %71
-    re'16 re'16 mi'16 fa'16 fa'8 sold8 r16 re'16 mi'16 fa'16 fa'8 sold8 |
+    re'16 re'16 mi'16 fa'16 fa'8 sold8 r16 re'16 mi'16 fa'16 fa'8 sold8 |   % APERTO: la Peters ha sol naturale sul 2o e 4o ottavo (dal sol diesis di battuta 72 in poi non c'e' dubbio); la Novello e' stata letta con il diesis
     %72
     r16 mi'16 fa'16 sol'16 sol'8 la8 r16 mi'16 fa'16 sol'16 sol'8 la8 |
     %73
@@ -372,7 +372,7 @@ elijahBasso = {
     %63
     la,2 la2 |
     %64
-    la4 la8 do'8 la2 |
+    la4 la8 do'8 la2~ |   % legato al la della 65: cosi' nella Peters (nella Novello la legatura e' ambigua)
     %65
     la4 la8 la8 la4 la8 la8 |
     %66

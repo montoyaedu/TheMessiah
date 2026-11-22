@@ -308,6 +308,13 @@ il manico; le note sono una delle realizzazioni possibili.
   solo canto e basso: confronto tra le due edizioni, poi voci interne e
   adattamento alla chitarra, poi si risale.
 
+- **Punti in cui le due edizioni di Elijah non coincidono** (confronto battute
+  57–77 Novello e Peters): battuta 71, sol naturale nella Peters e sol diesis
+  nella lettura della Novello (aperto: da decidere all'ascolto); battuta 64–65,
+  legatura sul la del basso presente nella Peters (applicata). Il resto delle
+  21 battute coincide in altezze, alterazioni, pause e ritmi; 73, 74–76
+  controllate solo in parte.
+
 ## Piano: un passo per volta
 
 Regola di lavoro: ogni passo aggiunge **un solo layer o una sola edizione**,
