@@ -19,7 +19,6 @@ largoChitarraScore = \score {
       \largoChitarraNotazione
     }
     \seIntavolatura \new TabStaff \with {
-      stringTunings = #guitar-standard-tuning
     } \largoChitarraIntavolatura
   >>
 }
@@ -48,7 +47,6 @@ allegroUnoChitarraScore = \score {
       \allegroUnoNotazione
     }
     \seIntavolatura \new TabStaff \with {
-      stringTunings = #guitar-standard-tuning
     } \allegroUnoIntavolatura
   >>
 }
