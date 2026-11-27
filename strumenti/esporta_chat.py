@@ -13,6 +13,14 @@ import json, re, sys, datetime
 
 EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
 MODELLI = re.compile(r"\b(?:claude[- ])?(?:fable|mythos|opus|sonnet|haiku)(?:[- ]?[\d.]+)*\b", re.I)
+# Nel repository il trascrittore si cita sempre come «maestro M. Vercesi».
+NOMI = [
+    (r"Mar[t]ino\s+Vercesi", "M. Vercesi"),
+    (r"\bMar[t]ino\b", "M."),
+    (r"\b[Ii]l (?:mio|tuo) maestro\b", "il maestro M. Vercesi"),
+    (r"\b(?:mio|tuo) maestro\b", "maestro M. Vercesi"),
+    (r"M\. Vercesi M\. Vercesi", "M. Vercesi"),
+]
 REMINDER = re.compile(r"<system-reminder>.*?</system-reminder>", re.S)
 AUTOMATICI = ("Another Claude session", "[SYSTEM NOTIFICATION", "<task-notification",
               "<agent-message", "<local-command", "<command-name>", "The user sent a new message",
@@ -23,6 +31,8 @@ def pulisci(t):
     t = REMINDER.sub("", t)
     t = EMAIL.sub("[email]", t)
     t = MODELLI.sub("[modello]", t)
+    for vecchio, nuovo in NOMI:
+        t = re.sub(vecchio, nuovo, t)
     return t.strip()
 
 
