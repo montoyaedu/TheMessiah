@@ -74,19 +74,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   trascrizione ([esempio](docs/revisione/elijah-overture-57-77.pdf), provato su
   una sola pagina); i PDF delle fonti, che git scartava in silenzio, ora sono
   tracciati. Tutto portato su `main`.
-- **2026-11-22 · Elijah, finale: confronto tra due edizioni.** Battute 57–77
-  confrontate tra Novello e Peters: coincidono, salvo una legatura (aggiunta,
-  battute 64–65) e il sol della battuta 71 (**aperto**: naturale nella Peters,
-  diesis nella nostra lettura). Battuta 73 controllata solo in parte.
-- **2026-11-22 · Vivaldi RV 93, primo movimento.** Prova con tutte le voci su
-  un rigo di chitarra, a tempo ridotto e con layer escludibili. *Poi tolta: vedi
-  sopra.* Restano le idee (ottava sotto, tempo 76, un layer per voce).
-- **2026-11-21 · Elijah: verifica avversariale completa.** Tre revisori
-  indipendenti hanno trovato 11 errori (accordi del recitativo, alterazioni,
-  note mancanti nel basso), tutti corretti. Aggiunti gli accordi degli ottoni
-  del recitativo, con la linea interna che si muove.
-- **2026-11-20 · Elijah: Overture intera.** 77 battute; dalla 39 solo canto e
-  basso. Sigle degli accordi fino alla 38, dedotte e non lette.
 <!-- DIARIO:fine -->
 
 ## Le partiture, da scaricare
