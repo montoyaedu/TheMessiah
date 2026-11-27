@@ -4,14 +4,51 @@
 dicono cosa non funziona, chi sa leggere una fonte meglio di noi, chi conosce
 LilyPond. Vedi [Come contribuire](#come-contribuire).
 
+## Perché questo repository
+
+Per incidere musica esistono soprattutto programmi proprietari, spesso a un
+costo proibitivo, e senza una vera alternativa. Il manoscritto resta l'opzione
+migliore, ma molti vogliono anche una versione incisa, e l'incisione è un'arte
+difficile da padroneggiare. [LilyPond](https://lilypond.org) è un'alternativa
+valida e libera: il risultato è bello, ma il linguaggio è contorto e lungo da
+imparare. Qui l'AI ci aiuta a scriverlo; **il suo lavoro va comunque
+controllato**, nota per nota, sulla fonte e sullo strumento.
+
+Il bello è che con git e LilyPond tutto è testo: ogni scelta può essere
+tracciata, abbandonata, ripresa, anche da altri, come si fa con il software
+open source.
+
 ## Ultimi lavori
 
 Il più recente in alto. **Ogni passo di lavoro aggiunge qui una voce**: che cosa
 è cambiato, perché, e che cosa resta non verificato. Vale per tutti, assistente
 AI compreso (vedi [Come contribuire](#come-contribuire)). Le voci più vecchie
-scendono in [docs/diario.md](docs/diario.md).
+scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
+con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Elijah, finale: voci interne e accordi (battute 57–77).**
+  Aggiunta la voce interna in 19 battute su 21 e gli accordi (sigle, gradi,
+  colori) di tutte e 21. **Letti** sulla riduzione Novello da un lettore
+  separato, con griglia delle altezze; **non ancora controllati da un secondo
+  lettore**. La voce interna è un'ottava sotto, come il canto; nella 63 e in
+  metà della 64 è il tenore del rigo di basso; 68–70 alleggerite (senza le
+  semicrome parallele a tre voci); 74–75 vuote (andrebbe sotto il mi basso).
+  Il controllo automatico dice solo che le note stanno sotto le dita a coppie
+  e a tre: **non dice se le terze in semicrome di 73 e 76 si suonano a tempo**
+  (da provare sullo strumento). Battuta 71: la Novello ha sol♯ (confermato dal
+  lettore), la Peters sol naturale: resta una differenza tra edizioni.
+
+  | Che cosa | Dove |
+  |---|---|
+  | Sorgente, note | [`brani/mendelssohn-elijah/music/overture.ly`](brani/mendelssohn-elijah/music/overture.ly) (`elijahInterna`) |
+  | Sorgente, accordi | [`brani/mendelssohn-elijah/armonia/accordi.ly`](brani/mendelssohn-elijah/armonia/accordi.ly) |
+  | Strumenti | [`strumenti/suonabile.py`](strumenti/suonabile.py), [`strumenti/griglia_altezze.py`](strumenti/griglia_altezze.py) |
+  | PDF | [elijah](pdf/mendelssohn-elijah/elijah.pdf) · [voci colorate](pdf/mendelssohn-elijah/elijah-voci.pdf) · [sigle](pdf/mendelssohn-elijah/elijah-sigle.pdf) · [note d'accordo](pdf/mendelssohn-elijah/elijah-accordi.pdf) |
+  | Fonte | [`brani/mendelssohn-elijah/fonti/`](brani/mendelssohn-elijah/fonti) |
+- **2026-11-27 · README.** Aggiunta in testa la motivazione del progetto; la
+  tabella dei PDF ora va dalla più recente alla più vecchia; l'ultima voce di
+  questo diario porta una tabellina con sorgente, strumenti e PDF.
 - **2026-11-27 · Nomi.** In tutti i file il trascrittore è ora citato come
   «maestro M. Vercesi», senza riferimenti personali; la stessa regola è
   applicata dall'esportatore della chat (`strumenti/esporta_chat.py`) e alla
@@ -60,6 +97,13 @@ edizioni: leggi [lo stato di ogni brano](#i-brani-in-corso) prima di fidarti di 
 <!-- TABELLA-PDF:inizio -->
 | Data | Brano | PDF | Caratteristiche | Per rigenerarlo |
 |---|---|---|---|---|
+| 2026-11-20 | Mendelssohn, Elijah | [elijah](pdf/mendelssohn-elijah/elijah.pdf) | Introduzione e Overture, notazione classica. | `make build/mendelssohn-elijah/elijah.pdf` |
+| 2026-11-20 | Mendelssohn, Elijah | [elijah-accordi](pdf/mendelssohn-elijah/elijah-accordi.pdf) | Sigle in stile jazz sopra il rigo e note strutturali dell'accordo colorate. Gli accordi sono dedotti dalle voci trascritte (vedi armonia/accordi.ly). | `make build/mendelssohn-elijah/elijah-accordi.pdf` |
+| 2026-11-20 | Mendelssohn, Elijah | [elijah-sigle](pdf/mendelssohn-elijah/elijah-sigle.pdf) | Solo le sigle in stile jazz sopra il rigo, note in nero. | `make build/mendelssohn-elijah/elijah-sigle.pdf` |
+| 2026-11-20 | Mendelssohn, Elijah | [elijah-tab](pdf/mendelssohn-elijah/elijah-tab.pdf) | Come sopra, con intavolatura. | `make build/mendelssohn-elijah/elijah-tab.pdf` |
+| 2026-11-20 | Mendelssohn, Elijah | [elijah-voci](pdf/mendelssohn-elijah/elijah-voci.pdf) | Come sopra, con le voci in colori diversi (la voce di Elia in rosso). | `make build/mendelssohn-elijah/elijah-voci.pdf` |
+| 2026-11-19 | Smetana, Vltava (La Moldava) | [moldava-due-voci](pdf/smetana-moldava/moldava-due-voci.pdf) | Come moldava-voci, con la seconda voce dell'introduzione: i clarinetti (battute 17-27) e la sesta inferiore dei flauti (28-35), in viola. Per studiare la partitura o per due chitarre: su una sola e' al limite. | `make build/smetana-moldava/moldava-due-voci.pdf` |
+| 2026-11-19 | Smetana, Vltava (La Moldava) | [moldava-onda](pdf/smetana-moldava/moldava-onda.pdf) | Il tema con l'onda di semicrome sotto, al posto degli accordi. | `make build/smetana-moldava/moldava-onda.pdf` |
 | 2026-11-18 | Händel, Messiah, «Comfort ye» | [comfort-ye-chitarra](pdf/messiah-comfort-ye/comfort-ye-chitarra.pdf) | Chitarra sola, con il testo sotto il canto. | `make build/messiah-comfort-ye/comfort-ye-chitarra.pdf` |
 | 2026-11-18 | Händel, Messiah, «Comfort ye» | [comfort-ye-chitarra-accordi](pdf/messiah-comfort-ye/comfort-ye-chitarra-accordi.pdf) | Con sigle e note strutturali dell'accordo colorate. | `make build/messiah-comfort-ye/comfort-ye-chitarra-accordi.pdf` |
 | 2026-11-18 | Händel, Messiah, «Comfort ye» | [comfort-ye-chitarra-tab](pdf/messiah-comfort-ye/comfort-ye-chitarra-tab.pdf) | Con intavolatura. | `make build/messiah-comfort-ye/comfort-ye-chitarra-tab.pdf` |
@@ -83,13 +127,6 @@ edizioni: leggi [lo stato di ogni brano](#i-brani-in-corso) prima di fidarti di 
 | 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava](pdf/smetana-moldava/moldava.pdf) | Notazione classica. | `make build/smetana-moldava/moldava.pdf` |
 | 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava-accordi](pdf/smetana-moldava/moldava-accordi.pdf) | Sigle e note strutturali dell'accordo colorate. | `make build/smetana-moldava/moldava-accordi.pdf` |
 | 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava-voci](pdf/smetana-moldava/moldava-voci.pdf) | Le tre voci in colori diversi: canto rosso, onda e accordi blu, bassi e armonici verdi. | `make build/smetana-moldava/moldava-voci.pdf` |
-| 2026-11-19 | Smetana, Vltava (La Moldava) | [moldava-due-voci](pdf/smetana-moldava/moldava-due-voci.pdf) | Come moldava-voci, con la seconda voce dell'introduzione: i clarinetti (battute 17-27) e la sesta inferiore dei flauti (28-35), in viola. Per studiare la partitura o per due chitarre: su una sola e' al limite. | `make build/smetana-moldava/moldava-due-voci.pdf` |
-| 2026-11-19 | Smetana, Vltava (La Moldava) | [moldava-onda](pdf/smetana-moldava/moldava-onda.pdf) | Il tema con l'onda di semicrome sotto, al posto degli accordi. | `make build/smetana-moldava/moldava-onda.pdf` |
-| 2026-11-20 | Mendelssohn, Elijah | [elijah](pdf/mendelssohn-elijah/elijah.pdf) | Introduzione e Overture, notazione classica. | `make build/mendelssohn-elijah/elijah.pdf` |
-| 2026-11-20 | Mendelssohn, Elijah | [elijah-accordi](pdf/mendelssohn-elijah/elijah-accordi.pdf) | Sigle in stile jazz sopra il rigo e note strutturali dell'accordo colorate. Gli accordi sono dedotti dalle voci trascritte (vedi armonia/accordi.ly). | `make build/mendelssohn-elijah/elijah-accordi.pdf` |
-| 2026-11-20 | Mendelssohn, Elijah | [elijah-sigle](pdf/mendelssohn-elijah/elijah-sigle.pdf) | Solo le sigle in stile jazz sopra il rigo, note in nero. | `make build/mendelssohn-elijah/elijah-sigle.pdf` |
-| 2026-11-20 | Mendelssohn, Elijah | [elijah-tab](pdf/mendelssohn-elijah/elijah-tab.pdf) | Come sopra, con intavolatura. | `make build/mendelssohn-elijah/elijah-tab.pdf` |
-| 2026-11-20 | Mendelssohn, Elijah | [elijah-voci](pdf/mendelssohn-elijah/elijah-voci.pdf) | Come sopra, con le voci in colori diversi (la voce di Elia in rosso). | `make build/mendelssohn-elijah/elijah-voci.pdf` |
 <!-- TABELLA-PDF:fine -->
 
 ### Come rigenerarle

@@ -401,6 +401,10 @@ elijahBasso = {
     la1 |
 }
 
+% Battute 57-77: letta sulla Novello da un lettore separato (non ancora
+% controllata da un secondo), 8a bassa come il canto; nella 63 e in meta' della
+% 64 e' il tenore del rigo di basso all'altezza stampata; 68-70 alleggerite
+% (senza le semicrome parallele); 74-75 vuote (andrebbe sotto il mi basso).
 % Voce interna delle battute 21-38, letta sullo spartito da un lettore
 % separato (una linea per battuta, tra canto e basso) e abbassata di
 % un'ottava come il canto. C'e' solo dove un controllo automatico la trova
@@ -447,4 +451,47 @@ elijahInterna = {
     s1 |
     %38
     s1 |
+    s1*18   % 39-56: voci interne non ancora scritte
+    %57
+    mi8 fa8 sol8 fa8 mi8 fa8 sol8 fa8 |
+    %58
+    s8 sol8 mi8 re16 mi16 sol8 la16 sol16 sol8 fa8 |
+    %59
+    s16 sib16 dod'16 re'16 re'8 fa8 s16 la16 dod'16 re'16 re'8 fa8 |
+    %60
+    s16 fa16 sol16 la16 do'8 sib8 la8 sol8 la8 sol8 |
+    %61
+    fa8 mib8 fa8 mib8 re4 re8 re8 |
+    %62
+    la8 fa8 re8 fa8 la8 fa8 re8 fa8 |
+    %63
+    s8 la8 si8 sold8 dod'8 re'16 mi'16 mib'8 do'8 |
+    %64
+    re'4 do'8 mib'16 s16 re'8 si8 dod'8 dod'8 |
+    %65
+    sib8 re'8 dod'8 s8 dod'8 re'8 do'8 s8 |
+    %66
+    re'8 re'8 re'8 mi'16 fa'16 mi'8 mi'8 sol'8 fa'16 mi'16 |
+    %67
+    fa'4 s8 fa'8 fa'4 s8 fa'8 |
+    %68
+    fa'8 s8 mi'8 re'16 la16 la8 la8 s4 |
+    %69
+    la8 re'8 s4 la8 re'8 s4 |
+    %70
+    la8 re'8 s4 la8 re'8 s4 |
+    %71
+    la8 sold8 s8 fa8 s4 s8 fa8 |
+    %72
+    s4 s8 sol8 s4 s8 sol8 |
+    %73
+    s16 mi'16 fa'16 sol'16 sol'16 dod'16 re'16 mi'16 mi'16 la16 sib16 sol16 sol16 mi16 fa16 sol16 |
+    %74
+    s1 |
+    %75
+    s1 |
+    %76
+    re'16 mi'16 fa'16 sol'16 fa'16 mi'16 re'16 dod'16 mi'16 re'16 dod'16 sib16 la16 sib16 dod'16 re'16 |
+    %77
+    dod'8 re'8 mi'8 fa'8 sol'8 fa'8 mi'8 sol'8 |
 }

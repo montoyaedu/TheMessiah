@@ -4,7 +4,7 @@
 Uso (dalla radice):  python3 strumenti/tabella_pdf.py
 Per ogni edizione brani/<brano>/editions/<nome>.ly legge la prima riga di
 commento (le caratteristiche) e la data del primo commit, e scrive la tabella
-tra i due segnaposto TABELLA-PDF del README, in ordine cronologico.
+tra i due segnaposto TABELLA-PDF del README, dalla piu' recente alla piu' vecchia.
 Di solito si lancia con `make pubblica`, che prima copia i PDF in pdf/.
 """
 import glob, os, subprocess
@@ -45,7 +45,8 @@ def main():
         if not os.path.exists(pdf):
             continue
         voci.append((data(ed), brano, nome, pdf, descrizione(ed)))
-    voci.sort(key=lambda v: (v[0], v[1], v[2]))
+    voci.sort(key=lambda v: (v[1], v[2]))
+    voci.sort(key=lambda v: v[0], reverse=True)   # le piu' recenti in alto
     out = ["| Data | Brano | PDF | Caratteristiche | Per rigenerarlo |", "|---|---|---|---|---|"]
     for d, brano, nome, pdf, desc in voci:
         out.append("| %s | %s | [%s](%s) | %s | `make build/%s/%s.pdf` |"

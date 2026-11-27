@@ -110,6 +110,48 @@ elijahAccordi = \chordmode {
   %37
   fa4        fa4:7/la   sib2            |
   %38
-  sib1                                  |  %39-77  accordi non ancora scritti
-  s1*39
+  sib1                                  |  %39-56  accordi non ancora scritti
+  s1*18
+  % 57-77: a differenza delle battute prima, questi accordi sono LETTI sulla
+  % riduzione Novello (tutte le note di ogni accordo) da un lettore separato;
+  % NON ancora controllati da un secondo lettore. Semplificati al quarto
+  % (all'ottavo dove l'armonia cambia piu' in fretta).
+  %57
+  la4:7/dod  sol4:m  la4:7/dod  sol4:m |
+  %58
+  la4:7/dod  dod4:dim7/sol  dod4:dim7/mi  dod8:dim7 re8:m |
+  %59
+  sol2:m  re2:m/la |
+  %60
+  sib4  fa4/do  re4:m  re4:m |
+  %61
+  sib2/fa  sol4:m  mi4:7/sold |
+  %62  sesta tedesca (sib re fa sold) sul pedale di la
+  re4:m/la  sib4:7/la  re4:m/la  sib4:7/la |
+  %63
+  re4:m/la  sold4:dim7/la  la4  re4:7.9-/la |
+  %64
+  sol4/la  re4:7.9-  sol4/la  la4:7 |
+  %65
+  re4:m/la  la4:7.9-  re4:m/la  re4:7.9-/la |
+  %66
+  sol4/la  mi4:7  la4  la4:7.9- |
+  %67  l'accordo corto e' la dod fa (non un la maggiore semplice)
+  sib4.  la8:aug  sib4.  la8:aug |
+  %68
+  sib8 sol8:m  la4:7/dod  la4:7/mi  re4:m |
+  %69
+  re8:m/fa sol8:m7  re4:m  re8:m/fa re8:m/la  re4:m |
+  %70
+  re8:m/fa sold8:dim7  re4:m  re8:m/fa re8:m/la  re4:m |
+  %71
+  re8:m/fa sold8:dim7/si  sold4:dim7/si  sold2:dim7/si |
+  %72
+  la1:7/dod |
+  %73-75  nona di dominante, poi sul pedale di la
+  la1:7.9- | la1:7.9- | la1:7.9- |
+  %76
+  re2:m/la  la2:7 |
+  %77  salita cromatica sul pedale
+  la8 re8:m/la la8:7 re8:m/la  sol8:m/la sol8:7/la do8/la la8:7 |
 }
