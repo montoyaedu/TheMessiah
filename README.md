@@ -40,6 +40,11 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · README: il tempo, il sacrificio e la fermata.** Scritto il
+  principio che guida le riduzioni: tempo più lento (soprattutto RV 93, primo
+  movimento, e Overture dell'Elijah), note sacrificate, un effetto al posto
+  delle voci ammucchiate; l'RV 93 è tra i più difficili da rendere completo.
+  *Un principio: tempi e partiture non sono ancora stati cambiati.*
 - **2026-11-27 · README: buone pratiche da studiare.** Aggiunta la sezione
   «Da fare: imparare da chi l'ha già fatto»: confrontare i nostri sorgenti con
   i manuali di LilyPond, openLilyLib, Mutopia e le edizioni di manoscritti, e
@@ -87,12 +92,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   applicata dall'esportatore della chat (`strumenti/esporta_chat.py`) e alla
   **storia di git** (file e messaggi dei commit riscritti). La foto del
   manoscritto resta nel repository. *Nessuna nota è cambiata.*
-- **2026-11-27 · Vivaldi RV 93: tolto e da rifare.** Largo e primo movimento
-  venivano da un arrangiamento moderno per trio (O. Wasmuth) senza licenza
-  chiara. Tolti i sorgenti, i PDF e l'immagine, e **riscritta la storia di
-  git** perché non restino nei commit passati. Avviata una lettura del primo
-  movimento direttamente dall'autografo di Vivaldi, fatta da un lettore che non
-  ha visto l'arrangiamento. *Niente di nuovo ancora nella partitura.*
 <!-- DIARIO:fine -->
 
 ## Le partiture, da scaricare
@@ -258,6 +257,28 @@ minimo: che il passo si possa eseguire.
 - **Quanta libertà?** Una riduzione fedele nota per nota spesso non è
   chitarristica. Dove finisce la trascrizione e dove comincia una nuova
   scrittura è una decisione musicale, non tecnica.
+
+## Il tempo, il sacrificio e la fermata
+
+Godere delle note della chitarra richiede suonare, fermarsi, ascoltare e
+contemplare ogni onda che un suono propaga. La «fermata» musicale, sulla
+chitarra classica, è quasi il comportamento normale, e un obbligo: una
+riduzione che non lascia il tempo di ascoltare non funziona, per quanto sia
+fedele.
+
+Ne seguono tre scelte, da tenere presenti in ogni brano:
+
+- **abbassare il tempo**, anche di molto. Vale soprattutto per il primo
+  movimento dell'RV 93 e per l'Overture dell'Elijah;
+- **sacrificare note**: non tutto quello che è nella partitura può stare sotto
+  le dita, e non tutto serve a far sentire l'orchestra;
+- **cercare un effetto** che suggerisca quello che non si può suonare, invece
+  di ammucchiare voci.
+
+Il Concerto RV 93, paradossalmente, è uno dei più difficili da rendere
+completo sulla chitarra: è nato per liuto, ma liuto, due violini e basso
+insieme non stanno in sei corde. La versione «tutte le voci su un rigo» serve
+a vedere che cosa c'è, non a essere suonata così.
 
 ## Da fare: imparare da chi l'ha già fatto
 

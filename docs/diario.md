@@ -3,6 +3,12 @@
 Le voci recenti sono in testa al [README](../README.md#ultimi-lavori). Qui
 scendono quelle più vecchie, sempre dalla più recente.
 
+- **2026-11-27 · Vivaldi RV 93: tolto e da rifare.** Largo e primo movimento
+  venivano da un arrangiamento moderno per trio (O. Wasmuth) senza licenza
+  chiara. Tolti i sorgenti, i PDF e l'immagine, e **riscritta la storia di
+  git** perché non restino nei commit passati. Avviata una lettura del primo
+  movimento direttamente dall'autografo di Vivaldi, fatta da un lettore che non
+  ha visto l'arrangiamento. *Niente di nuovo ancora nella partitura.*
 - **2026-11-27 · Diario dei lavori.** Aggiunta questa sezione e la regola che
   ogni passo la aggiorna. Nessuna partitura è cambiata.
 - **2026-11-27 · Elijah, finale: voci interne (in corso).** Avviata la lettura
