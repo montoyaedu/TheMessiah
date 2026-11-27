@@ -40,6 +40,9 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · README: perché l'RV 93 è difficile.** Corretta la
+  spiegazione: le voci si pestano i piedi (anche sul rigo) e il nodo sono i
+  bassi veloci con il pollice, non l'estensione. *Solo testo.*
 - **2026-11-27 · README: il tempo, il sacrificio e la fermata.** Scritto il
   principio che guida le riduzioni: tempo più lento (soprattutto RV 93, primo
   movimento, e Overture dell'Elijah), note sacrificate, un effetto al posto
@@ -276,9 +279,11 @@ Ne seguono tre scelte, da tenere presenti in ogni brano:
   di ammucchiare voci.
 
 Il Concerto RV 93, paradossalmente, è uno dei più difficili da rendere
-completo sulla chitarra: è nato per liuto, ma liuto, due violini e basso
-insieme non stanno in sei corde. La versione «tutte le voci su un rigo» serve
-a vedere che cosa c'è, non a essere suonata così.
+completo sulla chitarra. Non è questione di estensione: le voci si pestano i
+piedi, anche visivamente sul rigo. Il nodo è la manualità, soprattutto i bassi
+veloci da fare con il pollice, molto difficili mentre le altre dita portano il
+resto. La versione «tutte le voci su un rigo» serve a vedere che cosa c'è, non
+a essere suonata così.
 
 ## Da fare: imparare da chi l'ha già fatto
 
