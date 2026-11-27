@@ -1,3 +1,5 @@
+**Italiano** · [English](README.en.md)
+
 # Trascrizioni per chitarra classica con LilyPond e un assistente AI
 
 **Benvenuto a chiunque voglia contribuire**: chitarristi che provano una pagina e
@@ -40,6 +42,19 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Inglese, licenze, bozze dei post.** Aggiunti il README in
+  inglese (tradotto dall'assistente, **non riletto da un madrelingua**; diario
+  e tabella dei PDF restano solo in italiano), un prospetto delle licenze e due
+  bozze di messaggi per presentare il progetto. **Niente è stato pubblicato
+  fuori dal repository.** Le licenze di partiture e testi sono solo una
+  *proposta*; la trascrizione del maestro M. Vercesi resta a diritti riservati
+  finché non decide lui.
+
+  | Che cosa | Dove |
+  |---|---|
+  | README in inglese | [`README.en.md`](README.en.md) |
+  | Licenze (bozza) | [`LICENZE.md`](LICENZE.md), accanto al [`LICENSE`](LICENSE) MIT che c'era già |
+  | Bozze dei post | [`docs/bozze/post-lilypond-user.md`](docs/bozze/post-lilypond-user.md), [`docs/bozze/post-forum-chitarra.md`](docs/bozze/post-forum-chitarra.md) |
 - **2026-11-27 · Vivaldi RV 93, primo movimento: controllo del secondo lettore.**
   Un lettore indipendente ha confrontato le 51 battute con l'autografo: la
   lettura regge, con **quattro correzioni** applicate (40: levare dei violini;
@@ -47,13 +62,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   *dedotto*). **Non coperto**: 18 battute viste solo a medio ingrandimento, le
   legature, e nessuna prova sullo strumento. **Indecidibili sulla scansione**:
   26 (violino II), 35, 45 e 49 (liuto).
-
-  | Che cosa | Dove |
-  |---|---|
-  | Sorgente, note | [`brani/vivaldi-rv93/music/primo-movimento.ly`](brani/vivaldi-rv93/music/primo-movimento.ly) |
-  | Controllo, battuta per battuta | [`brani/vivaldi-rv93/fonti/controllo-primo-movimento.txt`](brani/vivaldi-rv93/fonti/controllo-primo-movimento.txt) |
-  | Stato del brano | [`brani/vivaldi-rv93/README.md`](brani/vivaldi-rv93/README.md) |
-  | PDF | [chitarra](pdf/vivaldi-rv93/rv93-primo-chitarra.pdf) · [voci colorate](pdf/vivaldi-rv93/rv93-primo-chitarra-voci.pdf) · [solo liuto e basso](pdf/vivaldi-rv93/rv93-primo-liuto-basso.pdf) · [quattro parti](pdf/vivaldi-rv93/rv93-primo-partitura.pdf) |
 - **2026-11-27 · README: perché l'RV 93 è difficile.** Corretta la
   spiegazione: le voci si pestano i piedi (anche sul rigo) e il nodo sono i
   bassi veloci con il pollice, non l'estensione. *Solo testo.*
@@ -82,17 +90,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   è cambiata.*
 - **2026-11-27 · Ringraziamento.** Aggiunto in testa al README il
   ringraziamento al maestro M. Vercesi. *Nessuna nota è cambiata.*
-- **2026-11-27 · Elijah, finale: voci interne e accordi (battute 57–77).**
-  Aggiunta la voce interna in 19 battute su 21 e gli accordi (sigle, gradi,
-  colori) di tutte e 21. **Letti** sulla riduzione Novello da un lettore
-  separato, con griglia delle altezze; **non ancora controllati da un secondo
-  lettore**. La voce interna è un'ottava sotto, come il canto; nella 63 e in
-  metà della 64 è il tenore del rigo di basso; 68–70 alleggerite (senza le
-  semicrome parallele a tre voci); 74–75 vuote (andrebbe sotto il mi basso).
-  Il controllo automatico dice solo che le note stanno sotto le dita a coppie
-  e a tre: **non dice se le terze in semicrome di 73 e 76 si suonano a tempo**
-  (da provare sullo strumento). Battuta 71: la Novello ha sol♯ (confermato dal
-  lettore), la Peters sol naturale: resta una differenza tra edizioni.
 <!-- DIARIO:fine -->
 
 ## Le partiture, da scaricare
@@ -316,7 +313,7 @@ esistenti e da far leggere all'assistente prima di ogni lavoro.
 |---|---|---|
 | **Händel, Messiah, Overture** (`messiah-overture`), trascrizione di M. Vercesi | Grave in bozza; Allegro battute 1–38 e le ultime 11 dal manoscritto | Mancano le battute 39–74 dell'Allegro; confronto col manoscritto; diteggiature del maestro M. Vercesi |
 | **Händel, Messiah n. 2, «Comfort ye»** (`messiah-comfort-ye`) | Battute 1–13 | Battute 14–37 |
-| **Mendelssohn, Elijah, Introduzione e Overture** (`mendelssohn-elijah`) | Recitativo completo; Overture intera, 77 battute; ritmi e altezze verificati; fine confrontata su due edizioni | Voci interne dalla battuta 39; battuta 71 (sol o sol♯: le edizioni non coincidono); mai provata sullo strumento |
+| **Mendelssohn, Elijah, Introduzione e Overture** (`mendelssohn-elijah`) | Recitativo completo; Overture intera, 77 battute; ritmi e altezze verificati; fine confrontata su due edizioni | Voci interne delle battute 39–56; secondo controllo delle 57–77; battuta 71 (sol o sol♯: le edizioni non coincidono); mai provata sullo strumento |
 | **Vivaldi, Concerto RV 93** (`vivaldi-rv93`) | Primo movimento (51 battute) riletto dall'autografo e controllato da un secondo lettore, tutte le voci su un rigo; la prima versione, da un arrangiamento moderno, è stata tolta | Renderlo chitarristico (tempo, note da sacrificare); Largo e terzo movimento |
 | **Smetana, Vltava** (`smetana-moldava`) | Esperimento: 74 battute, i flauti dell'introduzione in una sola linea, tema sulla quarta corda | In pausa: revisione dell'effetto da parte del chitarrista |
 
@@ -352,6 +349,9 @@ Preludio n. 1 di Villa-Lobos.
 - [docs/cronologia-chat.md](docs/cronologia-chat.md): la conversazione con
   l'assistente, per risalire alle scelte (istantanea, solo testo).
 - [brani/README.md](brani/README.md): come è fatta la cartella di un brano.
+- [LICENZE.md](LICENZE.md): che cosa è coperto da quale licenza (bozza da confermare).
+- [README.en.md](README.en.md): questo file in inglese. L'italiano fa fede; la
+  traduzione si rigenera, non si corregge a mano.
 
 ## Come si compila
 
@@ -381,7 +381,7 @@ Brani:
 - `messiah-comfort-ye`: Händel, Messiah n. 2, recitativo «Comfort ye my people», riduzione per chitarra sola (battute 1–13, in bozza).
 - `mendelssohn-elijah`: Mendelssohn, Elijah: il recitativo iniziale con un basso e l'Overture intera (77 battute), schizzo per chitarra sola.
 - `smetana-moldava`: Smetana, Vltava: esperimento per chitarra sola (74 battute): i due flauti intrecciati dell'introduzione e il tema alla maniera di Villa-Lobos.
-- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93: primo movimento dall'autografo (da controllare).
+- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93: primo movimento dall'autografo, controllato da un secondo lettore.
 
 | Impaginazione | Aspetto                                                              |
 |---------------|----------------------------------------------------------------------|

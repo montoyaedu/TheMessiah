@@ -3,6 +3,17 @@
 Le voci recenti sono in testa al [README](../README.md#ultimi-lavori). Qui
 scendono quelle più vecchie, sempre dalla più recente.
 
+- **2026-11-27 · Elijah, finale: voci interne e accordi (battute 57–77).**
+  Aggiunta la voce interna in 19 battute su 21 e gli accordi (sigle, gradi,
+  colori) di tutte e 21. **Letti** sulla riduzione Novello da un lettore
+  separato, con griglia delle altezze; **non ancora controllati da un secondo
+  lettore**. La voce interna è un'ottava sotto, come il canto; nella 63 e in
+  metà della 64 è il tenore del rigo di basso; 68–70 alleggerite (senza le
+  semicrome parallele a tre voci); 74–75 vuote (andrebbe sotto il mi basso).
+  Il controllo automatico dice solo che le note stanno sotto le dita a coppie
+  e a tre: **non dice se le terze in semicrome di 73 e 76 si suonano a tempo**
+  (da provare sullo strumento). Battuta 71: la Novello ha sol♯ (confermato dal
+  lettore), la Peters sol naturale: resta una differenza tra edizioni.
 - **2026-11-27 · README.** Aggiunta in testa la motivazione del progetto; la
   tabella dei PDF ora va dalla più recente alla più vecchia; l'ultima voce di
   questo diario porta una tabellina con sorgente, strumenti e PDF.
