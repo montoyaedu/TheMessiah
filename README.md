@@ -12,6 +12,12 @@ AI compreso (vedi [Come contribuire](#come-contribuire)). Le voci più vecchie
 scendono in [docs/diario.md](docs/diario.md).
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Vivaldi RV 93: tolto e da rifare.** Largo e primo movimento
+  venivano da un arrangiamento moderno per trio (O. Wasmuth) senza licenza
+  chiara. Tolti i sorgenti, i PDF e l'immagine, e **riscritta la storia di
+  git** perché non restino nei commit passati. Avviata una lettura del primo
+  movimento direttamente dall'autografo di Vivaldi, fatta da un lettore che non
+  ha visto l'arrangiamento. *Niente di nuovo ancora nella partitura.*
 - **2026-11-27 · Diario dei lavori.** Aggiunta questa sezione e la regola che
   ogni passo la aggiorna. Nessuna partitura è cambiata.
 - **2026-11-27 · Elijah, finale: voci interne (in corso).** Avviata la lettura
@@ -30,10 +36,9 @@ scendono in [docs/diario.md](docs/diario.md).
   confrontate tra Novello e Peters: coincidono, salvo una legatura (aggiunta,
   battute 64–65) e il sol della battuta 71 (**aperto**: naturale nella Peters,
   diesis nella nostra lettura). Battuta 73 controllata solo in parte.
-- **2026-11-22 · Vivaldi RV 93, primo movimento.** Tutte le voci su un rigo di
-  chitarra, sesta corda in mi, un'ottava sotto, tempo ridotto a 76; ogni voce è
-  un layer che si può togliere. La rimozione automatica dei raddoppi **non è
-  riuscita**. Non confrontato con l'autografo, non provato sullo strumento.
+- **2026-11-22 · Vivaldi RV 93, primo movimento.** Prova con tutte le voci su
+  un rigo di chitarra, a tempo ridotto e con layer escludibili. *Poi tolta: vedi
+  sopra.* Restano le idee (ottava sotto, tempo 76, un layer per voce).
 - **2026-11-21 · Elijah: verifica avversariale completa.** Tre revisori
   indipendenti hanno trovato 11 errori (accordi del recitativo, alterazioni,
   note mancanti nel basso), tutti corretti. Aggiunti gli accordi degli ottoni
@@ -73,12 +78,6 @@ edizioni: leggi [lo stato di ogni brano](#i-brani-in-corso) prima di fidarti di 
 | 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava](pdf/smetana-moldava/moldava.pdf) | Notazione classica. | `make build/smetana-moldava/moldava.pdf` |
 | 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava-accordi](pdf/smetana-moldava/moldava-accordi.pdf) | Sigle e note strutturali dell'accordo colorate. | `make build/smetana-moldava/moldava-accordi.pdf` |
 | 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava-voci](pdf/smetana-moldava/moldava-voci.pdf) | Le tre voci in colori diversi: canto rosso, onda e accordi blu, bassi e armonici verdi. | `make build/smetana-moldava/moldava-voci.pdf` |
-| 2026-11-18 | Vivaldi, Concerto RV 93 | [allegro1-chitarra](pdf/vivaldi-rv93/allegro1-chitarra.pdf) | Primo movimento per chitarra sola (bozza), numero su ogni battuta. | `make build/vivaldi-rv93/allegro1-chitarra.pdf` |
-| 2026-11-18 | Vivaldi, Concerto RV 93 | [allegro1-chitarra-tab](pdf/vivaldi-rv93/allegro1-chitarra-tab.pdf) | Come allegro1-chitarra, con intavolatura. | `make build/vivaldi-rv93/allegro1-chitarra-tab.pdf` |
-| 2026-11-18 | Vivaldi, Concerto RV 93 | [largo-chitarra](pdf/vivaldi-rv93/largo-chitarra.pdf) | Largo per chitarra sola: parte del liuto e basso ridotto. | `make build/vivaldi-rv93/largo-chitarra.pdf` |
-| 2026-11-18 | Vivaldi, Concerto RV 93 | [largo-chitarra-accordi](pdf/vivaldi-rv93/largo-chitarra-accordi.pdf) | Come largo-chitarra, con sigle e note strutturali colorate. | `make build/vivaldi-rv93/largo-chitarra-accordi.pdf` |
-| 2026-11-18 | Vivaldi, Concerto RV 93 | [largo-chitarra-tab](pdf/vivaldi-rv93/largo-chitarra-tab.pdf) | Come largo-chitarra, con intavolatura. | `make build/vivaldi-rv93/largo-chitarra-tab.pdf` |
-| 2026-11-18 | Vivaldi, Concerto RV 93 | [largo-partitura](pdf/vivaldi-rv93/largo-partitura.pdf) | Partitura originale: liuto, due violini e basso. | `make build/vivaldi-rv93/largo-partitura.pdf` |
 | 2026-11-19 | Smetana, Vltava (La Moldava) | [moldava-due-voci](pdf/smetana-moldava/moldava-due-voci.pdf) | Come moldava-voci, con la seconda voce dell'introduzione: i clarinetti (battute 17-27) e la sesta inferiore dei flauti (28-35), in viola. Per studiare la partitura o per due chitarre: su una sola e' al limite. | `make build/smetana-moldava/moldava-due-voci.pdf` |
 | 2026-11-19 | Smetana, Vltava (La Moldava) | [moldava-onda](pdf/smetana-moldava/moldava-onda.pdf) | Il tema con l'onda di semicrome sotto, al posto degli accordi. | `make build/smetana-moldava/moldava-onda.pdf` |
 | 2026-11-20 | Mendelssohn, Elijah | [elijah](pdf/mendelssohn-elijah/elijah.pdf) | Introduzione e Overture, notazione classica. | `make build/mendelssohn-elijah/elijah.pdf` |
@@ -86,8 +85,6 @@ edizioni: leggi [lo stato di ogni brano](#i-brani-in-corso) prima di fidarti di 
 | 2026-11-20 | Mendelssohn, Elijah | [elijah-sigle](pdf/mendelssohn-elijah/elijah-sigle.pdf) | Solo le sigle in stile jazz sopra il rigo, note in nero. | `make build/mendelssohn-elijah/elijah-sigle.pdf` |
 | 2026-11-20 | Mendelssohn, Elijah | [elijah-tab](pdf/mendelssohn-elijah/elijah-tab.pdf) | Come sopra, con intavolatura. | `make build/mendelssohn-elijah/elijah-tab.pdf` |
 | 2026-11-20 | Mendelssohn, Elijah | [elijah-voci](pdf/mendelssohn-elijah/elijah-voci.pdf) | Come sopra, con le voci in colori diversi (la voce di Elia in rosso). | `make build/mendelssohn-elijah/elijah-voci.pdf` |
-| 2026-11-22 | Vivaldi, Concerto RV 93 | [allegro1-chitarra-completo](pdf/vivaldi-rv93/allegro1-chitarra-completo.pdf) | Primo movimento: tutti e quattro i layer (violino, violoncello, pianoforte). | `make build/vivaldi-rv93/allegro1-chitarra-completo.pdf` |
-| 2026-11-22 | Vivaldi, Concerto RV 93 | [allegro1-chitarra-senza-piano-sinistra](pdf/vivaldi-rv93/allegro1-chitarra-senza-piano-sinistra.pdf) | Stesso brano senza il layer del pianoforte sinistro (il basso del pianoforte). | `make build/vivaldi-rv93/allegro1-chitarra-senza-piano-sinistra.pdf` |
 <!-- TABELLA-PDF:fine -->
 
 ### Come rigenerarle
@@ -217,7 +214,7 @@ minimo: che il passo si possa eseguire.
 | **Händel, Messiah, Overture** (`messiah-overture`), trascrizione di M. Vercesi | Grave in bozza; Allegro battute 1–38 e le ultime 11 dal manoscritto | Mancano le battute 39–74 dell'Allegro; confronto col manoscritto; diteggiature del maestro M. Vercesi |
 | **Händel, Messiah n. 2, «Comfort ye»** (`messiah-comfort-ye`) | Battute 1–13 | Battute 14–37 |
 | **Mendelssohn, Elijah, Introduzione e Overture** (`mendelssohn-elijah`) | Recitativo completo; Overture intera, 77 battute; ritmi e altezze verificati; fine confrontata su due edizioni | Voci interne dalla battuta 39; battuta 71 (sol o sol♯: le edizioni non coincidono); mai provata sullo strumento |
-| **Vivaldi, Concerto RV 93** (`vivaldi-rv93`) | Largo in bozza; primo movimento con tutte le voci su un rigo, a tempo ridotto | Scegliere le voci da tenere e togliere i raddoppi; confronto con l'autografo; terzo movimento |
+| **Vivaldi, Concerto RV 93** (`vivaldi-rv93`) | In rifacimento dall'autografo: la prima versione, ricavata da un arrangiamento moderno, è stata tolta | Leggere il primo movimento dal manoscritto; poi Largo e terzo movimento |
 | **Smetana, Vltava** (`smetana-moldava`) | Esperimento: 74 battute, i flauti dell'introduzione in una sola linea, tema sulla quarta corda | In pausa: revisione dell'effetto da parte del chitarrista |
 
 ### Come appaiono oggi
@@ -241,11 +238,6 @@ Lo stesso con le sigle degli accordi e le note strutturali colorate
 Preludio n. 1 di Villa-Lobos.
 
 ![La Moldava](docs/img/moldava-voci.png)
-
-**Vivaldi RV 93**, primo movimento: tutte le voci su un solo rigo. Non è ancora
-chitarristico: è il materiale da cui scegliere.
-
-![Vivaldi RV 93, tutte le voci](docs/img/vivaldi-tutte-le-voci.png)
 
 **«Comfort ye»**: il canto col testo, da cantare o da suonare.
 
@@ -286,7 +278,7 @@ Brani:
 - `messiah-comfort-ye`: Händel, Messiah n. 2, recitativo «Comfort ye my people», riduzione per chitarra sola (battute 1–13, in bozza).
 - `mendelssohn-elijah`: Mendelssohn, Elijah: il recitativo iniziale con un basso e l'Overture intera (77 battute), schizzo per chitarra sola.
 - `smetana-moldava`: Smetana, Vltava: esperimento per chitarra sola (74 battute): i due flauti intrecciati dell'introduzione e il tema alla maniera di Villa-Lobos.
-- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93, riduzione per chitarra sola di tutta la partitura (primo movimento e Largo, in bozza).
+- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93: in rifacimento dall'autografo.
 
 | Impaginazione | Aspetto                                                              |
 |---------------|----------------------------------------------------------------------|

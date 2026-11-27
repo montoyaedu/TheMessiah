@@ -293,6 +293,10 @@ il manico; le note sono una delle realizzazioni possibili.
 
 ## Concerto RV 93, primo movimento
 
+- **Stato**: la versione descritta qui sotto è stata tolta (veniva da un
+  arrangiamento moderno senza licenza chiara). Le scelte restano valide come
+  idee da riapplicare alla nuova lettura dall'autografo.
+
 - Compromesso scelto: versione per chitarra sola con tutti i layer (violino,
   violoncello, pianoforte destra e sinistra), un'ottava sotto, note sotto il mi
   grave riportate in alto, **tempo abbassato** (quarto = 76 invece di 100) per
