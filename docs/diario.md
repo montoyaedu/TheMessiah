@@ -3,6 +3,8 @@
 Le voci recenti sono in testa al [README](../README.md#ultimi-lavori). Qui
 scendono quelle più vecchie, sempre dalla più recente.
 
+- **2026-11-27 · Ringraziamento.** Aggiunto in testa al README il
+  ringraziamento al maestro M. Vercesi. *Nessuna nota è cambiata.*
 - **2026-11-27 · Elijah, finale: voci interne e accordi (battute 57–77).**
   Aggiunta la voce interna in 19 battute su 21 e gli accordi (sigle, gradi,
   colori) di tutte e 21. **Letti** sulla riduzione Novello da un lettore

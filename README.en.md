@@ -216,7 +216,9 @@ manuscripts.
 - [docs/cronologia-chat.md](docs/cronologia-chat.md): the conversation with
   the assistant, to trace the choices.
 - [brani/README.md](brani/README.md): how a piece folder is made.
-- [LICENZE.md](LICENZE.md): what is covered by which licence.
+- [LICENZE.md](LICENZE.md): licences. In short: code is MIT; the reductions
+  written here and the texts are CC BY-SA 4.0; the sources are public domain;
+  the Messiah Overture folder is all rights reserved (maestro M. Vercesi).
 
 ## Credits and sources
 

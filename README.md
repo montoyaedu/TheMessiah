@@ -42,6 +42,15 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Licenze decise.** Riduzioni scritte qui e testi: **CC BY-SA
+  4.0**; codice: MIT (com'era); fonti: pubblico dominio. La cartella
+  dell'Overture del Messiah resta **a diritti riservati del maestro M.
+  Vercesi** finché non decide lui. Chi contribuisce accetta la stessa licenza.
+
+  | Che cosa | Dove |
+  |---|---|
+  | Prospetto delle licenze | [`LICENZE.md`](LICENZE.md) |
+  | Regola per chi contribuisce | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 - **2026-11-27 · Inglese, licenze, bozze dei post.** Aggiunti il README in
   inglese (tradotto dall'assistente, **non riletto da un madrelingua**; diario
   e tabella dei PDF restano solo in italiano), un prospetto delle licenze e due
@@ -49,12 +58,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   fuori dal repository.** Le licenze di partiture e testi sono solo una
   *proposta*; la trascrizione del maestro M. Vercesi resta a diritti riservati
   finché non decide lui.
-
-  | Che cosa | Dove |
-  |---|---|
-  | README in inglese | [`README.en.md`](README.en.md) |
-  | Licenze (bozza) | [`LICENZE.md`](LICENZE.md), accanto al [`LICENSE`](LICENSE) MIT che c'era già |
-  | Bozze dei post | [`docs/bozze/post-lilypond-user.md`](docs/bozze/post-lilypond-user.md), [`docs/bozze/post-forum-chitarra.md`](docs/bozze/post-forum-chitarra.md) |
 - **2026-11-27 · Vivaldi RV 93, primo movimento: controllo del secondo lettore.**
   Un lettore indipendente ha confrontato le 51 battute con l'autografo: la
   lettura regge, con **quattro correzioni** applicate (40: levare dei violini;
@@ -88,8 +91,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   trascrizioni create dall'AI non sono ancora state verificate e che il
   manoscritto del maestro M. Vercesi è trascritto solo in parte. *Nessuna nota
   è cambiata.*
-- **2026-11-27 · Ringraziamento.** Aggiunto in testa al README il
-  ringraziamento al maestro M. Vercesi. *Nessuna nota è cambiata.*
 <!-- DIARIO:fine -->
 
 ## Le partiture, da scaricare
@@ -349,7 +350,9 @@ Preludio n. 1 di Villa-Lobos.
 - [docs/cronologia-chat.md](docs/cronologia-chat.md): la conversazione con
   l'assistente, per risalire alle scelte (istantanea, solo testo).
 - [brani/README.md](brani/README.md): come è fatta la cartella di un brano.
-- [LICENZE.md](LICENZE.md): che cosa è coperto da quale licenza (bozza da confermare).
+- [LICENZE.md](LICENZE.md): le licenze. In breve: codice MIT; riduzioni scritte qui e testi CC BY-SA 4.0;
+  fonti di pubblico dominio; l'Overture del Messiah a diritti riservati del
+  maestro M. Vercesi.
 - [README.en.md](README.en.md): questo file in inglese. L'italiano fa fede; la
   traduzione si rigenera, non si corregge a mano.
 
