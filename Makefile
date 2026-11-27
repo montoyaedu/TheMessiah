@@ -53,7 +53,13 @@ stampa:
 	   printf '%s\n' '\$(PARTITURA)'; } > build/$(BRANO)/stampa-$(IMPAGINAZIONE).ly
 	$(LILY) -o build/$(BRANO)/stampa-$(IMPAGINAZIONE) build/$(BRANO)/stampa-$(IMPAGINAZIONE).ly
 
+# make pubblica -> ricompila tutto, copia i PDF delle edizioni in pdf/<brano>/
+#                  e aggiorna la tabella in testa al README
+pubblica: all
+	@for f in $(NAMES); do mkdir -p pdf/$$(dirname $$f); cp build/$$f.pdf pdf/$$f.pdf; done
+	python3 strumenti/tabella_pdf.py
+
 clean:
 	rm -rf build
 
-.PHONY: all png svg stampa clean
+.PHONY: all png svg stampa pubblica clean

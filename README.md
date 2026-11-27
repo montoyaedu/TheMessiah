@@ -1,5 +1,104 @@
 # Trascrizioni per chitarra classica con LilyPond e un assistente AI
 
+**Benvenuto a chiunque voglia contribuire**: chitarristi che provano una pagina e
+dicono cosa non funziona, chi sa leggere una fonte meglio di noi, chi conosce
+LilyPond. Vedi [Come contribuire](#come-contribuire).
+
+## Le partiture, da scaricare
+
+Tutti i PDF prodotti finora, in ordine cronologico. Sono **bozze di lavoro**, non
+edizioni: leggi [lo stato di ogni brano](#i-brani-in-corso) prima di fidarti di una nota.
+
+<!-- TABELLA-PDF:inizio -->
+| Data | Brano | PDF | Caratteristiche | Per rigenerarlo |
+|---|---|---|---|---|
+| 2026-11-17 | Händel, Messiah, «Comfort ye» | [comfort-ye-chitarra-voci](pdf/messiah-comfort-ye/comfort-ye-chitarra-voci.pdf) | Come sopra, con le quattro voci in colori diversi (canto in rosso). | `make build/messiah-comfort-ye/comfort-ye-chitarra-voci.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [allegro-shorts](pdf/messiah-overture/allegro-shorts.pdf) | Video verticali: due sistemi per pagina, voci colorate, intavolatura. | `make build/messiah-overture/allegro-shorts.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [allegro-voci-separate](pdf/messiah-overture/allegro-voci-separate.pdf) | Le quattro parti d'arco su righi separati (per studiare le voci). | `make build/messiah-overture/allegro-voci-separate.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-ariosa](pdf/messiah-overture/overture-ariosa.pdf) | Note grandi e larghe, per lo studio e la prima vista. | `make build/messiah-overture/overture-ariosa.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-classica](pdf/messiah-overture/overture-classica.pdf) | Edizione di riferimento: sola notazione con diteggiature, impaginazione da leggio. | `make build/messiah-overture/overture-classica.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-classica-accordi](pdf/messiah-overture/overture-classica-accordi.pdf) | Sigle jazz sopra il rigo e note strutturali dell'accordo colorate. | `make build/messiah-overture/overture-classica-accordi.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-classica-armonia](pdf/messiah-overture/overture-classica-armonia.pdf) | Come overture-classica, con le tre scritture dell'armonia: sigle jazz sopra il rigo, gradi e funzioni (in grassetto) sotto. | `make build/messiah-overture/overture-classica-armonia.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-classica-colori](pdf/messiah-overture/overture-classica-colori.pdf) | Come overture-classica, una voce per colore. | `make build/messiah-overture/overture-classica-colori.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-classica-doppio-rigo](pdf/messiah-overture/overture-classica-doppio-rigo.pdf) | Doppio rigo (violino + basso) ad altezze reali. | `make build/messiah-overture/overture-classica-doppio-rigo.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-classica-provenienza](pdf/messiah-overture/overture-classica-provenienza.pdf) | Colora le note che vengono dalle edizioni di riferimento. | `make build/messiah-overture/overture-classica-provenienza.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-classica-tab](pdf/messiah-overture/overture-classica-tab.pdf) | Come overture-classica, con il rigo di intavolatura. | `make build/messiah-overture/overture-classica-tab.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-compatta](pdf/messiah-overture/overture-compatta.pdf) | Tutto in una pagina, spaziatura stretta. | `make build/messiah-overture/overture-compatta.pdf` |
+| 2026-11-17 | Händel, Messiah, Overture | [overture-telefono](pdf/messiah-overture/overture-telefono.pdf) | Schermo del cellulare, voci colorate. | `make build/messiah-overture/overture-telefono.pdf` |
+| 2026-11-17 | Smetana, Vltava (La Moldava) | [moldava-voci](pdf/smetana-moldava/moldava-voci.pdf) | Le tre voci in colori diversi: canto rosso, onda e accordi blu, bassi e armonici verdi. | `make build/smetana-moldava/moldava-voci.pdf` |
+| 2026-11-17 | Vivaldi, Concerto RV 93 | [largo-partitura](pdf/vivaldi-rv93/largo-partitura.pdf) | Partitura originale: liuto, due violini e basso. | `make build/vivaldi-rv93/largo-partitura.pdf` |
+| 2026-11-18 | Mendelssohn, Elijah | [elijah](pdf/mendelssohn-elijah/elijah.pdf) | Introduzione e Overture, notazione classica. | `make build/mendelssohn-elijah/elijah.pdf` |
+| 2026-11-18 | Mendelssohn, Elijah | [elijah-sigle](pdf/mendelssohn-elijah/elijah-sigle.pdf) | Solo le sigle in stile jazz sopra il rigo, note in nero. | `make build/mendelssohn-elijah/elijah-sigle.pdf` |
+| 2026-11-18 | Mendelssohn, Elijah | [elijah-tab](pdf/mendelssohn-elijah/elijah-tab.pdf) | Come sopra, con intavolatura. | `make build/mendelssohn-elijah/elijah-tab.pdf` |
+| 2026-11-18 | Mendelssohn, Elijah | [elijah-voci](pdf/mendelssohn-elijah/elijah-voci.pdf) | Come sopra, con le voci in colori diversi (la voce di Elia in rosso). | `make build/mendelssohn-elijah/elijah-voci.pdf` |
+| 2026-11-18 | Händel, Messiah, «Comfort ye» | [comfort-ye-chitarra](pdf/messiah-comfort-ye/comfort-ye-chitarra.pdf) | Chitarra sola, con il testo sotto il canto. | `make build/messiah-comfort-ye/comfort-ye-chitarra.pdf` |
+| 2026-11-18 | Händel, Messiah, «Comfort ye» | [comfort-ye-chitarra-accordi](pdf/messiah-comfort-ye/comfort-ye-chitarra-accordi.pdf) | Con sigle e note strutturali dell'accordo colorate. | `make build/messiah-comfort-ye/comfort-ye-chitarra-accordi.pdf` |
+| 2026-11-18 | Händel, Messiah, «Comfort ye» | [comfort-ye-chitarra-tab](pdf/messiah-comfort-ye/comfort-ye-chitarra-tab.pdf) | Con intavolatura. | `make build/messiah-comfort-ye/comfort-ye-chitarra-tab.pdf` |
+| 2026-11-18 | Händel, Messiah, Overture | [allegro-bozza](pdf/messiah-overture/allegro-bozza.pdf) | Bozza di lavoro dell'Allegro: numero su ogni battuta, contato dall'inizio dell'Allegro come nel manoscritto. | `make build/messiah-overture/allegro-bozza.pdf` |
+| 2026-11-18 | Händel, Messiah, Overture | [allegro-finale-bozza](pdf/messiah-overture/allegro-finale-bozza.pdf) | Bozza di lavoro: ultime 11 battute dell'Allegro, dal manoscritto. Un numero su ogni battuta, per il confronto. | `make build/messiah-overture/allegro-finale-bozza.pdf` |
+| 2026-11-18 | Händel, Messiah, Overture | [overture-classica-armonia-la-minore](pdf/messiah-overture/overture-classica-armonia-la-minore.pdf) | La stessa Overture trasportata in la minore: le note cambiano, l'armonia scritta sotto resta identica. Senza diteggiature. | `make build/messiah-overture/overture-classica-armonia-la-minore.pdf` |
+| 2026-11-18 | Händel, Messiah, Overture | [overture-classica-senza-dita](pdf/messiah-overture/overture-classica-senza-dita.pdf) | Come overture-classica, senza diteggiature, corde e barre'. | `make build/messiah-overture/overture-classica-senza-dita.pdf` |
+| 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava](pdf/smetana-moldava/moldava.pdf) | Notazione classica. | `make build/smetana-moldava/moldava.pdf` |
+| 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava-accordi](pdf/smetana-moldava/moldava-accordi.pdf) | Sigle e note strutturali dell'accordo colorate. | `make build/smetana-moldava/moldava-accordi.pdf` |
+| 2026-11-18 | Smetana, Vltava (La Moldava) | [moldava-onda](pdf/smetana-moldava/moldava-onda.pdf) | Il tema con l'onda di semicrome sotto, al posto degli accordi. | `make build/smetana-moldava/moldava-onda.pdf` |
+| 2026-11-18 | Vivaldi, Concerto RV 93 | [allegro1-chitarra](pdf/vivaldi-rv93/allegro1-chitarra.pdf) | Primo movimento per chitarra sola (bozza), numero su ogni battuta. | `make build/vivaldi-rv93/allegro1-chitarra.pdf` |
+| 2026-11-18 | Vivaldi, Concerto RV 93 | [allegro1-chitarra-tab](pdf/vivaldi-rv93/allegro1-chitarra-tab.pdf) | Come allegro1-chitarra, con intavolatura (sesta corda in re). | `make build/vivaldi-rv93/allegro1-chitarra-tab.pdf` |
+| 2026-11-18 | Vivaldi, Concerto RV 93 | [largo-chitarra](pdf/vivaldi-rv93/largo-chitarra.pdf) | Largo per chitarra sola: parte del liuto e basso ridotto. | `make build/vivaldi-rv93/largo-chitarra.pdf` |
+| 2026-11-18 | Vivaldi, Concerto RV 93 | [largo-chitarra-accordi](pdf/vivaldi-rv93/largo-chitarra-accordi.pdf) | Come largo-chitarra, con sigle e note strutturali colorate. | `make build/vivaldi-rv93/largo-chitarra-accordi.pdf` |
+| 2026-11-18 | Vivaldi, Concerto RV 93 | [largo-chitarra-tab](pdf/vivaldi-rv93/largo-chitarra-tab.pdf) | Come largo-chitarra, con intavolatura (sesta corda in re). | `make build/vivaldi-rv93/largo-chitarra-tab.pdf` |
+| 2026-11-19 | Smetana, Vltava (La Moldava) | [moldava-due-voci](pdf/smetana-moldava/moldava-due-voci.pdf) | Come moldava-voci, con la seconda voce dell'introduzione: i clarinetti (battute 17-27) e la sesta inferiore dei flauti (28-35), in viola. Per studiare la partitura o per due chitarre: su una sola e' al limite. | `make build/smetana-moldava/moldava-due-voci.pdf` |
+| 2026-11-20 | Mendelssohn, Elijah | [elijah-accordi](pdf/mendelssohn-elijah/elijah-accordi.pdf) | Sigle in stile jazz sopra il rigo e note strutturali dell'accordo colorate. Gli accordi sono dedotti dalle voci trascritte (vedi armonia/accordi.ly). | `make build/mendelssohn-elijah/elijah-accordi.pdf` |
+| 2026-11-22 | Vivaldi, Concerto RV 93 | [allegro1-chitarra-completo](pdf/vivaldi-rv93/allegro1-chitarra-completo.pdf) | Primo movimento: tutti e quattro i layer (violino, violoncello, pianoforte). | `make build/vivaldi-rv93/allegro1-chitarra-completo.pdf` |
+| 2026-11-22 | Vivaldi, Concerto RV 93 | [allegro1-chitarra-senza-piano-sinistra](pdf/vivaldi-rv93/allegro1-chitarra-senza-piano-sinistra.pdf) | Stesso brano senza il layer del pianoforte sinistro (il basso del pianoforte). | `make build/vivaldi-rv93/allegro1-chitarra-senza-piano-sinistra.pdf` |
+<!-- TABELLA-PDF:fine -->
+
+### Come rigenerarle
+
+Servono [LilyPond](https://lilypond.org) 2.24 e `make`.
+
+    make                               # tutte le edizioni, in build/<brano>/
+    make BRANO=mendelssohn-elijah      # un solo brano
+    make build/smetana-moldava/moldava.pdf    # una sola edizione
+    make pubblica                      # ricompila, copia in pdf/ e aggiorna questa tabella
+
+### Quali file modificare
+
+Ogni brano è una cartella `brani/<brano>/`, divisa in strati indipendenti:
+
+| Voglio cambiare… | File da modificare |
+|---|---|
+| una nota, un ritmo, una pausa | `brani/<brano>/music/*.ly`: una variabile per voce, una battuta per riga, preceduta dal suo numero (`%12`) e chiusa dal controllo di battuta |
+| una diteggiatura, una corda, un barré | `brani/<brano>/dita/*.ly`: stesso ritmo delle note, scritto a spazi (`s4-3` = dito 3 sulla nota di quel quarto) |
+| un accordo in sigla, un grado, una funzione | `brani/<brano>/armonia/*.ly` |
+| quali voci stanno sul rigo, i colori, le dinamiche | `brani/<brano>/layers/*.ly` |
+| il formato della pagina, la densità | `impaginazioni/*.ly` (comuni a tutti i brani) |
+| che cosa stampa un PDF (impaginazione + opzioni) | `brani/<brano>/editions/<nome>.ly`: poche righe; copiarne una per fare una nuova edizione |
+| una funzione o un'opzione comune | `lib/*.ly` (le opzioni sono elencate in `lib/opzioni.ly`) |
+
+Le note sono in italiano (`do re mi`, `dod` = do diesis, `sib` = si bemolle;
+`'` e `,` spostano l'ottava). Dopo ogni modifica si lancia `make`: se una battuta
+non torna, LilyPond dice la riga. Dettagli in [brani/README.md](brani/README.md)
+e più sotto in [Come si compila](#come-si-compila).
+
+### Come contribuire
+
+- **Suonare e riferire.** È il contributo più utile: apri un PDF, prova un
+  passaggio, e scrivi in una *issue* la battuta e cosa non va (nota sbagliata,
+  non sta sotto le dita, non rende l'effetto). Non serve conoscere LilyPond.
+- **Rivedere con la scheda.** In [docs/revisione/](docs/revisione/) ci sono
+  schede con la fonte sopra e la trascrizione sotto: si stampano, si spuntano,
+  si fotografano.
+- **Correggere i sorgenti.** Una battuta per riga: una *pull request* con la
+  riga corretta e la fonte da cui viene è benvenuta.
+- **Proporre un'altra soluzione.** Diteggiature e scelte di riduzione sono
+  strati separati: si può aggiungere la propria senza cancellare quella che c'è.
+- **Proporre un brano** di pubblico dominio, con la fonte.
+
+Le fonti devono essere di pubblico dominio o con licenza compatibile, e va
+detto se una nota è *letta*, *dedotta* o *non verificata*.
+
+---
+
 Un laboratorio: ridurre per **chitarra sola** musica nata per orchestra, coro o
 ensemble (Händel, Mendelssohn, Vivaldi, Smetana), scrivendo le partiture in
 LilyPond con l'aiuto di un assistente AI, e capire **quanto di questo lavoro si

@@ -13,3 +13,4 @@ build/
 !docs/revisione/*.pdf
 !docs/img/*.png
 __pycache__/
+!pdf/*/*.pdf
