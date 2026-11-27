@@ -1,0 +1,75 @@
+RV 93, primo movimento - controllo della trascrizione (music/primo-movimento.ly) contro l'autografo
+Fonte unica: fonti/autografo-torino-IMSLP779675.pdf, pp. 1-4 (immagini native 150 dpi, ingrandite 3-8x).
+Nessuna edizione moderna consultata. Legenda fiducia: high / medium / low.
+
+1: OK
+2: OK
+3: OK
+4: OK
+5: OK
+6: OK (vl1 rigo vuoto ma con "Po:" davanti al rigo: suona, quindi raddoppio; vl2: tempo 1 vuoto, poi pausa di croma, bemolle, fa''8 e "Vt supra")
+7: OK
+8: OK come lettura di posizione; basso: do do senza alterazione -> quasi certamente do NATURALE, non dod (confidence medium-high) - vedi nota A
+9: OK come lettura di posizione; basso: il do (4a croma) senza alterazione -> do naturale probabile (medium-high) - nota A
+10: violino2: transcription has sol''8 as last eighth (copia "ut supra"), scan shows una croma scritta apposta nel rigo del vl2 subito prima della stanghetta, testa nello spazio mi'' (confidence medium) - il vl2 qui ha nota propria, una terza sotto il liuto. Liuto: ultima nota sol'' confermata (medium-high). Basso: DIESIS esplicito davanti al primo do -> dod re dod si, la, si, dod la, OK
+11: OK ("F:" davanti a vl1 (rigo vuoto), vl2 e basso: conferma che il rigo vuoto del vl1 in 6-11 e' raddoppio)
+12: OK
+13: OK (basso: nessuna alterazione visibile sui do; resta dod per armatura)
+14: OK
+15: OK
+16: OK
+17: OK
+18: OK
+19: OK
+20: OK
+21: OK
+22: OK
+23: OK (segno di ritornello dopo la battuta confermato)
+24: OK
+25: OK
+26: violino2: transcription has dod''4 on beat 3, scan shows una semiminima con testa sulla/appena sopra la linea centrale: si' oppure dod'' (confidence low) - indecidibile dalla sola posizione; la pausa di semiminima che segue e' chiara. Resto OK
+27: OK
+28: OK
+29: OK
+30: OK
+31: OK
+32: OK
+33: OK
+34: OK
+35: OK (liuto: prima nota molto alta, re''' probabile, mi''' non escluso - medium)
+36: OK (basso medium)
+37: OK
+38: OK
+39: OK
+40: violino1: transcription has R1, scan shows una croma fa''(diesis per armatura) in levare a fine battuta seguita da "Vt Supra" -> r2 r4 r8 fad''8 (confidence high). violino2: transcription has R1, scan shows una croma la'' in levare a fine battuta -> r2 r4 r8 la''8 (confidence high per la presenza della nota, medium per l'altezza)
+41: OK
+42: basso: transcription has "re8 re mi16 mi fad sol" in the second half, scan shows la terza testa alla stessa altezza dei due re precedenti -> re8 re re16 mi fad sol (confidence medium) - stessa figura della battuta 3
+43: OK (basso: ultime due semiminime nello spazio piu' basso = la,; medium-high)
+44: OK (violini: righi vuoti = pause, vedi nota B)
+45: OK come lettura di posizione; liuto: i due do''' senza alterazione -> do naturale probabile (confidence low-medium) - nota A
+46: OK (liuto, zona macchiata: sib sib sib la sol | sol sol sol fa(bemolle = bequadro) mi; medium)
+47: OK (basso: bemolle esplicito sul do = do naturale, gia' cosi' nella trascrizione)
+48: OK
+49: liuto: transcription has fad''16 as first note of beat 3, scan shows la testa disegnata piu' in basso (mi'' o re'') (confidence low) - la figura parallela di batt. 50 e il vl1 fanno pensare a fad''; indecidibile. Resto OK (vl1: note proprie da meta' battuta, poi "Vt supra")
+50: OK
+51: OK (basso: c'e' una cancellatura a meta' battuta; lettura re re' sol la re2 plausibile, medium)
+
+RIEPILOGO
+
+Conteggio e mappa: 51 battute, ritornello dopo la 23; la mappa pagina/sistema->battute data e' corretta in tutti i 12 sistemi. In armatura c'e' il segno di tempo "C".
+
+Errori di cui sono ragionevolmente sicuro:
+ - 40, violino1 e violino2: manca la croma in levare (fad'' / la'') alla fine della battuta. (high)
+ - 42, basso: terza nota del gruppo di semicrome re, non mi (re16 mi fad sol). (medium)
+ - 10, violino2: ultima croma mi'', non sol''. (medium)
+ - 8-9, basso: i do senza alterazione sono do naturale, non dod. (medium-high) - nota A
+
+Nota A (do senza alterazione): in batt. 10 Vivaldi mette un diesis ESPLICITO sul primo do del basso, superfluo se i do di 8-9 fossero gia' diesis; in batt. 47, passo parallelo, mette un bemolle esplicito (= bequadro) sul do. Dedotto dalla notazione, non letto: nelle battute 8-9 il do e' naturale. Per il liuto a 45 non c'e' un indizio altrettanto diretto (contesto con sib e fa naturale): do naturale probabile, non dimostrabile.
+
+Nota B (righi vuoti): vl1 batt. 6-10 = raddoppio (ut supra che continua): lo provano le dinamiche "Po:" (batt. 6) e "F:" (batt. 11) scritte davanti al rigo vuoto. Violini 44-48 = pause: hanno una semiminima propria a 43 e poi nulla, senza "ut supra" ne' dinamiche, e rientrano a 49 con note scritte. (medium-high)
+
+Indecidibili dalla scansione: 26 vl2 (si' o dod''), 49 liuto prima semicroma del 3o tempo, 45 liuto (do naturale o diesis), 35 liuto prima nota (re''' o mi''').
+
+Non confrontate: legature. Viste di passaggio: nel basso della batt. 1 l'autografo ha legature sui gruppi di quattro crome che la trascrizione non riporta.
+
+Battute controllate meno a fondo (solo a ingrandimento medio, senza zoom nota per nota): 1-5, 14-17, 24-25, 36, 39, 41, 44, 50. Limite generale: la scansione e' a 150 dpi, le teste sono spesso disegnate un po' sotto la posizione reale: letture di altezza di singole note isolate restano "medium".

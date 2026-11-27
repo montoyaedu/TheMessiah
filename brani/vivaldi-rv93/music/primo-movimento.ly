@@ -7,16 +7,20 @@
 % LETTE dall'autografo (fonti/autografo-torino-IMSLP779675.pdf, pagine 1-4) da
 % un lettore che non ha visto nessun'altra edizione. La lettura grezza, con il
 % grado di fiducia battuta per battuta, e' in fonti/lettura-primo-movimento.txt.
-% NON ancora controllate da un secondo lettore.
+% CONTROLLATE da un secondo lettore indipendente, anche lui solo sull'autografo:
+% quattro correzioni (battute 8-9 e 42 basso, 10 e 40 violini), segnate nei
+% commenti. Le battute 1-5, 14-17, 24-25, 36, 39, 41, 44 e 50 sono state
+% confrontate solo a medio ingrandimento; le legature non sono state confrontate.
 %
 % 51 battute in due meta' ritornellate (1-23, 24-51). L'autografo non ha
 % indicazione di tempo.
 %
 % Battute meno sicure: 35 e 38 (figura del liuto), 46 (liuto, macchia),
 % 42-43 e 51 (basso), 26 (ultimo quarto del violino II), 10 (ultima nota del
-% liuto). Nelle battute 8-9 (basso) e 45 (liuto) le note in posizione di "do"
-% non hanno alterazione: qui sono scritte alla lettera come do diesis, ma
-% probabilmente Vivaldi intende do naturale.
+% liuto). Restano indecidibili sulla scansione: 26 violino II (si' o dod''),
+% 49 liuto (primo sedicesimo del terzo tempo), 35 liuto (prima nota re''' o
+% mi'''), 45 liuto (i due do''' senza alterazione: scritti alla lettera come do
+% diesis, forse naturali). Nelle battute 8-9 del basso il do e' ora naturale.
 %
 % "ut supra" nell'autografo = la parte raddoppia quella sopra: qui la battuta
 % e' ricopiata e segnata nel commento. Nelle battute 6-10 il rigo del violino I
@@ -217,7 +221,7 @@ rvViolinoI = {
     %39
     R1 |
     %40
-    R1 |
+    r2 r4 r8 fad''8 |   % corretto dal secondo lettore: levare scritto, poi 'ut supra'
     %41
     fad''32( mi'' re''8.) fad''32( mi'' re''8.) la''8 la' la' la' |   % ut supra: = liuto
     %42
@@ -265,7 +269,7 @@ rvViolinoII = {
     %9
     fa''8 fa'' fad'' fad'' sol'' sol'' sold'' sold'' |   % ut supra: = liuto
     %10
-    la''4 r8 la''8 r8 la''8 r8 sol''8 |   % ut supra: = liuto
+    la''4 r8 la''8 r8 la''8 r8 mi''8 |   % ut supra: = liuto, ma l'ultimo ottavo e' scritto (mi''): corretto dal secondo lettore
     %11
     re''16 mi'' fad'' re'' dod'' re'' mi'' dod'' re''16 mi'' fad'' re'' dod'' re'' mi'' dod'' |
     %12
@@ -325,7 +329,7 @@ rvViolinoII = {
     %39
     R1 |
     %40
-    R1 |
+    r2 r4 r8 la''8 |   % corretto dal secondo lettore: levare scritto (il la e' di media sicurezza)
     %41
     la''32( sol'' fad''8.) la''32( sol'' fad''8.) mi''8 la' la' la' |
     %42
@@ -369,9 +373,9 @@ rvBasso = {
     %7
     re8 re re re re la, la, la, |
     %8
-    re8 re re re dod dod sib, sib, |
+    re8 re re re do do sib, sib, |   % do naturale DEDOTTO (nessuna alterazione scritta; alla 10 Vivaldi rimette il diesis)
     %9
-    la,8 la, re dod sib, sib, mi re |
+    la,8 la, re do sib, sib, mi re |   % do naturale DEDOTTO, come alla 8
     %10
     dod8 re dod si, la, si, dod la, |
     %11
@@ -437,7 +441,7 @@ rvBasso = {
     %41
     re8( re re re) la,( la, la, la,) |
     %42
-    re8 re re re re8 re mi16 mi fad sol |
+    re8 re re re re8 re re16 mi fad sol |   % corretto dal secondo lettore (terza nota re, come alla battuta 3; media sicurezza)
     %43
     la8( sol fa re) la,4 la, |
     %44
@@ -589,7 +593,7 @@ rvViolinoIISola = {
     %9
     s1 |
     %10
-    s1 |
+    s2. s8 mi''8 |   % corretto dal secondo lettore
     %11
     re''16 mi'' fad'' re'' dod'' re'' mi'' dod'' re''16 mi'' fad'' re'' dod'' re'' mi'' dod'' |
     %12
@@ -649,7 +653,7 @@ rvViolinoIISola = {
     %39
     s1 |
     %40
-    s1 |
+    s2 s4 s8 la''8 |   % corretto dal secondo lettore
     %41
     la''32( sol'' fad''8.) la''32( sol'' fad''8.) mi''8 la' la' la' |
     %42

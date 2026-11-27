@@ -40,6 +40,20 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Vivaldi RV 93, primo movimento: controllo del secondo lettore.**
+  Un lettore indipendente ha confrontato le 51 battute con l'autografo: la
+  lettura regge, con **quattro correzioni** applicate (40: levare dei violini;
+  42: basso; 10: ultimo ottavo del violino II; 8–9: do naturale nel basso,
+  *dedotto*). **Non coperto**: 18 battute viste solo a medio ingrandimento, le
+  legature, e nessuna prova sullo strumento. **Indecidibili sulla scansione**:
+  26 (violino II), 35, 45 e 49 (liuto).
+
+  | Che cosa | Dove |
+  |---|---|
+  | Sorgente, note | [`brani/vivaldi-rv93/music/primo-movimento.ly`](brani/vivaldi-rv93/music/primo-movimento.ly) |
+  | Controllo, battuta per battuta | [`brani/vivaldi-rv93/fonti/controllo-primo-movimento.txt`](brani/vivaldi-rv93/fonti/controllo-primo-movimento.txt) |
+  | Stato del brano | [`brani/vivaldi-rv93/README.md`](brani/vivaldi-rv93/README.md) |
+  | PDF | [chitarra](pdf/vivaldi-rv93/rv93-primo-chitarra.pdf) · [voci colorate](pdf/vivaldi-rv93/rv93-primo-chitarra-voci.pdf) · [solo liuto e basso](pdf/vivaldi-rv93/rv93-primo-liuto-basso.pdf) · [quattro parti](pdf/vivaldi-rv93/rv93-primo-partitura.pdf) |
 - **2026-11-27 · README: perché l'RV 93 è difficile.** Corretta la
   spiegazione: le voci si pestano i piedi (anche sul rigo) e il nodo sono i
   bassi veloci con il pollice, non l'estensione. *Solo testo.*
@@ -62,14 +76,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   probabilmente è naturale. La versione per chitarra mette tutte le voci su un
   rigo (ottava sotto, basso compresso sopra il mi, ♩ = 76 scelto da noi) e
   **non è ancora chitarristica**; ogni voce è un layer che si può togliere.
-
-  | Che cosa | Dove |
-  |---|---|
-  | Sorgente, note | [`brani/vivaldi-rv93/music/primo-movimento.ly`](brani/vivaldi-rv93/music/primo-movimento.ly) |
-  | Sorgente, voci sul rigo | [`brani/vivaldi-rv93/layers/chitarra.ly`](brani/vivaldi-rv93/layers/chitarra.ly) |
-  | Lettura grezza | [`brani/vivaldi-rv93/fonti/lettura-primo-movimento.txt`](brani/vivaldi-rv93/fonti/lettura-primo-movimento.txt) |
-  | PDF | [chitarra](pdf/vivaldi-rv93/rv93-primo-chitarra.pdf) · [voci colorate](pdf/vivaldi-rv93/rv93-primo-chitarra-voci.pdf) · [solo liuto e basso](pdf/vivaldi-rv93/rv93-primo-liuto-basso.pdf) · [quattro parti](pdf/vivaldi-rv93/rv93-primo-partitura.pdf) |
-  | Fonte | [autografo](brani/vivaldi-rv93/fonti/autografo-torino-IMSLP779675.pdf), pagine 1–4 |
 - **2026-11-27 · Avviso sullo stato.** In testa al README è ora scritto che le
   trascrizioni create dall'AI non sono ancora state verificate e che il
   manoscritto del maestro M. Vercesi è trascritto solo in parte. *Nessuna nota
@@ -87,14 +93,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   e a tre: **non dice se le terze in semicrome di 73 e 76 si suonano a tempo**
   (da provare sullo strumento). Battuta 71: la Novello ha sol♯ (confermato dal
   lettore), la Peters sol naturale: resta una differenza tra edizioni.
-- **2026-11-27 · README.** Aggiunta in testa la motivazione del progetto; la
-  tabella dei PDF ora va dalla più recente alla più vecchia; l'ultima voce di
-  questo diario porta una tabellina con sorgente, strumenti e PDF.
-- **2026-11-27 · Nomi.** In tutti i file il trascrittore è ora citato come
-  «maestro M. Vercesi», senza riferimenti personali; la stessa regola è
-  applicata dall'esportatore della chat (`strumenti/esporta_chat.py`) e alla
-  **storia di git** (file e messaggi dei commit riscritti). La foto del
-  manoscritto resta nel repository. *Nessuna nota è cambiata.*
 <!-- DIARIO:fine -->
 
 ## Le partiture, da scaricare
@@ -319,7 +317,7 @@ esistenti e da far leggere all'assistente prima di ogni lavoro.
 | **Händel, Messiah, Overture** (`messiah-overture`), trascrizione di M. Vercesi | Grave in bozza; Allegro battute 1–38 e le ultime 11 dal manoscritto | Mancano le battute 39–74 dell'Allegro; confronto col manoscritto; diteggiature del maestro M. Vercesi |
 | **Händel, Messiah n. 2, «Comfort ye»** (`messiah-comfort-ye`) | Battute 1–13 | Battute 14–37 |
 | **Mendelssohn, Elijah, Introduzione e Overture** (`mendelssohn-elijah`) | Recitativo completo; Overture intera, 77 battute; ritmi e altezze verificati; fine confrontata su due edizioni | Voci interne dalla battuta 39; battuta 71 (sol o sol♯: le edizioni non coincidono); mai provata sullo strumento |
-| **Vivaldi, Concerto RV 93** (`vivaldi-rv93`) | Primo movimento (51 battute) riletto dall'autografo, tutte le voci su un rigo; la prima versione, da un arrangiamento moderno, è stata tolta | Controllo del secondo lettore; renderlo chitarristico; Largo e terzo movimento |
+| **Vivaldi, Concerto RV 93** (`vivaldi-rv93`) | Primo movimento (51 battute) riletto dall'autografo e controllato da un secondo lettore, tutte le voci su un rigo; la prima versione, da un arrangiamento moderno, è stata tolta | Renderlo chitarristico (tempo, note da sacrificare); Largo e terzo movimento |
 | **Smetana, Vltava** (`smetana-moldava`) | Esperimento: 74 battute, i flauti dell'introduzione in una sola linea, tema sulla quarta corda | In pausa: revisione dell'effetto da parte del chitarrista |
 
 ### Come appaiono oggi

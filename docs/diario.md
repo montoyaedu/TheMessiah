@@ -3,6 +3,14 @@
 Le voci recenti sono in testa al [README](../README.md#ultimi-lavori). Qui
 scendono quelle più vecchie, sempre dalla più recente.
 
+- **2026-11-27 · README.** Aggiunta in testa la motivazione del progetto; la
+  tabella dei PDF ora va dalla più recente alla più vecchia; l'ultima voce di
+  questo diario porta una tabellina con sorgente, strumenti e PDF.
+- **2026-11-27 · Nomi.** In tutti i file il trascrittore è ora citato come
+  «maestro M. Vercesi», senza riferimenti personali; la stessa regola è
+  applicata dall'esportatore della chat (`strumenti/esporta_chat.py`) e alla
+  **storia di git** (file e messaggi dei commit riscritti). La foto del
+  manoscritto resta nel repository. *Nessuna nota è cambiata.*
 - **2026-11-27 · Vivaldi RV 93: tolto e da rifare.** Largo e primo movimento
   venivano da un arrangiamento moderno per trio (O. Wasmuth) senza licenza
   chiara. Tolti i sorgenti, i PDF e l'immagine, e **riscritta la storia di
