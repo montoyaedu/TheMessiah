@@ -4,6 +4,12 @@
 dicono cosa non funziona, chi sa leggere una fonte meglio di noi, chi conosce
 LilyPond. Vedi [Come contribuire](#come-contribuire).
 
+> **Stato del lavoro: tutto da verificare.** Per ora non c'è ancora stato il
+> tempo di controllare sullo strumento e sulle fonti le trascrizioni create
+> dall'AI, né di trascrivere per intero il manoscritto originale del maestro
+> M. Vercesi (ne sono incise solo alcune parti). Le partiture qui sotto sono
+> quindi **bozze di lavoro**, non edizioni da cui studiare o suonare in pubblico.
+
 ## Perché questo repository
 
 Per incidere musica esistono soprattutto programmi proprietari, spesso a un
@@ -34,6 +40,10 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Avviso sullo stato.** In testa al README è ora scritto che le
+  trascrizioni create dall'AI non sono ancora state verificate e che il
+  manoscritto del maestro M. Vercesi è trascritto solo in parte. *Nessuna nota
+  è cambiata.*
 - **2026-11-27 · Ringraziamento.** Aggiunto in testa al README il
   ringraziamento al maestro M. Vercesi. *Nessuna nota è cambiata.*
 - **2026-11-27 · Elijah, finale: voci interne e accordi (battute 57–77).**
