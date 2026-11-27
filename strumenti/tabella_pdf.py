@@ -31,7 +31,7 @@ def descrizione(percorso):
 
 
 def data(percorso):
-    r = subprocess.run(["git", "log", "--diff-filter=A", "--follow", "--format=%as", "--", percorso],
+    r = subprocess.run(["git", "log", "--diff-filter=A", "--format=%as", "--", percorso],
                        capture_output=True, text=True).stdout.split()
     return r[-1] if r else "non ancora nel repository"
 

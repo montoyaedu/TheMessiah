@@ -1,6 +1,6 @@
 \version "2.24.0"
 
-% Come allegro1-chitarra, con intavolatura (sesta corda in re).
+% Come allegro1-chitarra, con intavolatura.
 
 \include "../../../impaginazioni/classica.ly"
 intavolatura = ##t
