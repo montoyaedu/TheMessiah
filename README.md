@@ -40,6 +40,23 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Vivaldi RV 93, primo movimento rifatto dall'autografo.**
+  51 battute, quattro parti (liuto, violino I e II, basso), **lette**
+  dall'autografo da un lettore che non ha visto altre edizioni. **Il controllo
+  di un secondo lettore è in corso: per ora niente è da dare per buono.**
+  Battute meno sicure: 35, 38, 46 (liuto), 42–43, 51 (basso), 26 (violino II);
+  nelle 8–9 e 45 un do senza alterazione è scritto alla lettera come do♯ ma
+  probabilmente è naturale. La versione per chitarra mette tutte le voci su un
+  rigo (ottava sotto, basso compresso sopra il mi, ♩ = 76 scelto da noi) e
+  **non è ancora chitarristica**; ogni voce è un layer che si può togliere.
+
+  | Che cosa | Dove |
+  |---|---|
+  | Sorgente, note | [`brani/vivaldi-rv93/music/primo-movimento.ly`](brani/vivaldi-rv93/music/primo-movimento.ly) |
+  | Sorgente, voci sul rigo | [`brani/vivaldi-rv93/layers/chitarra.ly`](brani/vivaldi-rv93/layers/chitarra.ly) |
+  | Lettura grezza | [`brani/vivaldi-rv93/fonti/lettura-primo-movimento.txt`](brani/vivaldi-rv93/fonti/lettura-primo-movimento.txt) |
+  | PDF | [chitarra](pdf/vivaldi-rv93/rv93-primo-chitarra.pdf) · [voci colorate](pdf/vivaldi-rv93/rv93-primo-chitarra-voci.pdf) · [solo liuto e basso](pdf/vivaldi-rv93/rv93-primo-liuto-basso.pdf) · [quattro parti](pdf/vivaldi-rv93/rv93-primo-partitura.pdf) |
+  | Fonte | [autografo](brani/vivaldi-rv93/fonti/autografo-torino-IMSLP779675.pdf), pagine 1–4 |
 - **2026-11-27 · Avviso sullo stato.** In testa al README è ora scritto che le
   trascrizioni create dall'AI non sono ancora state verificate e che il
   manoscritto del maestro M. Vercesi è trascritto solo in parte. *Nessuna nota
@@ -57,14 +74,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   e a tre: **non dice se le terze in semicrome di 73 e 76 si suonano a tempo**
   (da provare sullo strumento). Battuta 71: la Novello ha sol♯ (confermato dal
   lettore), la Peters sol naturale: resta una differenza tra edizioni.
-
-  | Che cosa | Dove |
-  |---|---|
-  | Sorgente, note | [`brani/mendelssohn-elijah/music/overture.ly`](brani/mendelssohn-elijah/music/overture.ly) (`elijahInterna`) |
-  | Sorgente, accordi | [`brani/mendelssohn-elijah/armonia/accordi.ly`](brani/mendelssohn-elijah/armonia/accordi.ly) |
-  | Strumenti | [`strumenti/suonabile.py`](strumenti/suonabile.py), [`strumenti/griglia_altezze.py`](strumenti/griglia_altezze.py) |
-  | PDF | [elijah](pdf/mendelssohn-elijah/elijah.pdf) · [voci colorate](pdf/mendelssohn-elijah/elijah-voci.pdf) · [sigle](pdf/mendelssohn-elijah/elijah-sigle.pdf) · [note d'accordo](pdf/mendelssohn-elijah/elijah-accordi.pdf) |
-  | Fonte | [`brani/mendelssohn-elijah/fonti/`](brani/mendelssohn-elijah/fonti) |
 - **2026-11-27 · README.** Aggiunta in testa la motivazione del progetto; la
   tabella dei PDF ora va dalla più recente alla più vecchia; l'ultima voce di
   questo diario porta una tabellina con sorgente, strumenti e PDF.
@@ -81,18 +90,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   ha visto l'arrangiamento. *Niente di nuovo ancora nella partitura.*
 - **2026-11-27 · Diario dei lavori.** Aggiunta questa sezione e la regola che
   ogni passo la aggiorna. Nessuna partitura è cambiata.
-- **2026-11-27 · Elijah, finale: voci interne (in corso).** Avviata la lettura
-  delle voci interne e dell'armonia delle battute 57–77 sull'ultima pagina
-  della Novello. *Non ancora nella partitura.* Salvati in `strumenti/` la
-  griglia delle altezze e il controllo di suonabilità.
-- **2026-11-27 · PDF da scaricare.** I 38 PDF sono in `pdf/<brano>/`, con la
-  tabella qui sotto generata da `make pubblica`. Le date della tabella sono
-  quelle di comparsa del file, non sempre quelle del primo lavoro.
-- **2026-11-27 · README, scheda di revisione, fonti.** README riscritto intorno
-  al processo e alle perplessità; nuovo strumento che affianca fonte e
-  trascrizione ([esempio](docs/revisione/elijah-overture-57-77.pdf), provato su
-  una sola pagina); i PDF delle fonti, che git scartava in silenzio, ora sono
-  tracciati. Tutto portato su `main`.
 <!-- DIARIO:fine -->
 
 ## Le partiture, da scaricare
@@ -103,6 +100,10 @@ edizioni: leggi [lo stato di ogni brano](#i-brani-in-corso) prima di fidarti di 
 <!-- TABELLA-PDF:inizio -->
 | Data | Brano | PDF | Caratteristiche | Per rigenerarlo |
 |---|---|---|---|---|
+| 2026-11-27 | Vivaldi, Concerto RV 93 | [rv93-primo-chitarra](pdf/vivaldi-rv93/rv93-primo-chitarra.pdf) | Primo movimento, chitarra sola: tutte le voci dell'autografo su un rigo (non ancora chitarristico), tempo ridotto. | `make build/vivaldi-rv93/rv93-primo-chitarra.pdf` |
+| 2026-11-27 | Vivaldi, Concerto RV 93 | [rv93-primo-chitarra-voci](pdf/vivaldi-rv93/rv93-primo-chitarra-voci.pdf) | Come sopra, con le voci colorate: liuto rosso, violino I arancio, violino II blu, basso verde. | `make build/vivaldi-rv93/rv93-primo-chitarra-voci.pdf` |
+| 2026-11-27 | Vivaldi, Concerto RV 93 | [rv93-primo-liuto-basso](pdf/vivaldi-rv93/rv93-primo-liuto-basso.pdf) | Primo movimento, chitarra sola: solo liuto e basso (tolti i layer dei violini). | `make build/vivaldi-rv93/rv93-primo-liuto-basso.pdf` |
+| 2026-11-27 | Vivaldi, Concerto RV 93 | [rv93-primo-partitura](pdf/vivaldi-rv93/rv93-primo-partitura.pdf) | Primo movimento: le quattro parti come lette dall'autografo, per il confronto con la fonte. | `make build/vivaldi-rv93/rv93-primo-partitura.pdf` |
 | 2026-11-20 | Mendelssohn, Elijah | [elijah](pdf/mendelssohn-elijah/elijah.pdf) | Introduzione e Overture, notazione classica. | `make build/mendelssohn-elijah/elijah.pdf` |
 | 2026-11-20 | Mendelssohn, Elijah | [elijah-accordi](pdf/mendelssohn-elijah/elijah-accordi.pdf) | Sigle in stile jazz sopra il rigo e note strutturali dell'accordo colorate. Gli accordi sono dedotti dalle voci trascritte (vedi armonia/accordi.ly). | `make build/mendelssohn-elijah/elijah-accordi.pdf` |
 | 2026-11-20 | Mendelssohn, Elijah | [elijah-sigle](pdf/mendelssohn-elijah/elijah-sigle.pdf) | Solo le sigle in stile jazz sopra il rigo, note in nero. | `make build/mendelssohn-elijah/elijah-sigle.pdf` |
@@ -262,7 +263,7 @@ minimo: che il passo si possa eseguire.
 | **Händel, Messiah, Overture** (`messiah-overture`), trascrizione di M. Vercesi | Grave in bozza; Allegro battute 1–38 e le ultime 11 dal manoscritto | Mancano le battute 39–74 dell'Allegro; confronto col manoscritto; diteggiature del maestro M. Vercesi |
 | **Händel, Messiah n. 2, «Comfort ye»** (`messiah-comfort-ye`) | Battute 1–13 | Battute 14–37 |
 | **Mendelssohn, Elijah, Introduzione e Overture** (`mendelssohn-elijah`) | Recitativo completo; Overture intera, 77 battute; ritmi e altezze verificati; fine confrontata su due edizioni | Voci interne dalla battuta 39; battuta 71 (sol o sol♯: le edizioni non coincidono); mai provata sullo strumento |
-| **Vivaldi, Concerto RV 93** (`vivaldi-rv93`) | In rifacimento dall'autografo: la prima versione, ricavata da un arrangiamento moderno, è stata tolta | Leggere il primo movimento dal manoscritto; poi Largo e terzo movimento |
+| **Vivaldi, Concerto RV 93** (`vivaldi-rv93`) | Primo movimento (51 battute) riletto dall'autografo, tutte le voci su un rigo; la prima versione, da un arrangiamento moderno, è stata tolta | Controllo del secondo lettore; renderlo chitarristico; Largo e terzo movimento |
 | **Smetana, Vltava** (`smetana-moldava`) | Esperimento: 74 battute, i flauti dell'introduzione in una sola linea, tema sulla quarta corda | In pausa: revisione dell'effetto da parte del chitarrista |
 
 ### Come appaiono oggi
@@ -326,7 +327,7 @@ Brani:
 - `messiah-comfort-ye`: Händel, Messiah n. 2, recitativo «Comfort ye my people», riduzione per chitarra sola (battute 1–13, in bozza).
 - `mendelssohn-elijah`: Mendelssohn, Elijah: il recitativo iniziale con un basso e l'Overture intera (77 battute), schizzo per chitarra sola.
 - `smetana-moldava`: Smetana, Vltava: esperimento per chitarra sola (74 battute): i due flauti intrecciati dell'introduzione e il tema alla maniera di Villa-Lobos.
-- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93: in rifacimento dall'autografo.
+- `vivaldi-rv93`: Vivaldi, Concerto in re maggiore RV 93: primo movimento dall'autografo (da controllare).
 
 | Impaginazione | Aspetto                                                              |
 |---------------|----------------------------------------------------------------------|

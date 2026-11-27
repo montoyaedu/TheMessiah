@@ -3,6 +3,18 @@
 Le voci recenti sono in testa al [README](../README.md#ultimi-lavori). Qui
 scendono quelle più vecchie, sempre dalla più recente.
 
+- **2026-11-27 · Elijah, finale: voci interne (in corso).** Avviata la lettura
+  delle voci interne e dell'armonia delle battute 57–77 sull'ultima pagina
+  della Novello. *Non ancora nella partitura.* Salvati in `strumenti/` la
+  griglia delle altezze e il controllo di suonabilità.
+- **2026-11-27 · PDF da scaricare.** I 38 PDF sono in `pdf/<brano>/`, con la
+  tabella qui sotto generata da `make pubblica`. Le date della tabella sono
+  quelle di comparsa del file, non sempre quelle del primo lavoro.
+- **2026-11-27 · README, scheda di revisione, fonti.** README riscritto intorno
+  al processo e alle perplessità; nuovo strumento che affianca fonte e
+  trascrizione ([esempio](docs/revisione/elijah-overture-57-77.pdf), provato su
+  una sola pagina); i PDF delle fonti, che git scartava in silenzio, ora sono
+  tracciati. Tutto portato su `main`.
 - **2026-11-22 · Elijah, finale: confronto tra due edizioni.** Battute 57–77
   confrontate tra Novello e Peters: coincidono, salvo una legatura (aggiunta,
   battute 64–65) e il sol della battuta 71 (**aperto**: naturale nella Peters,
