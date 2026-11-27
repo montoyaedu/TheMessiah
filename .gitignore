@@ -7,3 +7,9 @@
 *~
 build/
 *.png
+
+# eccezioni: fonti di pubblico dominio, schede di revisione e immagini del README
+!brani/*/fonti/*.pdf
+!docs/revisione/*.pdf
+!docs/img/*.png
+__pycache__/
