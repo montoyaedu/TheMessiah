@@ -4,6 +4,44 @@
 dicono cosa non funziona, chi sa leggere una fonte meglio di noi, chi conosce
 LilyPond. Vedi [Come contribuire](#come-contribuire).
 
+## Ultimi lavori
+
+Il più recente in alto. **Ogni passo di lavoro aggiunge qui una voce**: che cosa
+è cambiato, perché, e che cosa resta non verificato. Vale per tutti, assistente
+AI compreso (vedi [Come contribuire](#come-contribuire)). Le voci più vecchie
+scendono in [docs/diario.md](docs/diario.md).
+
+<!-- DIARIO:inizio -->
+- **2026-11-27 · Diario dei lavori.** Aggiunta questa sezione e la regola che
+  ogni passo la aggiorna. Nessuna partitura è cambiata.
+- **2026-11-27 · Elijah, finale: voci interne (in corso).** Avviata la lettura
+  delle voci interne e dell'armonia delle battute 57–77 sull'ultima pagina
+  della Novello. *Non ancora nella partitura.* Salvati in `strumenti/` la
+  griglia delle altezze e il controllo di suonabilità.
+- **2026-11-27 · PDF da scaricare.** I 38 PDF sono in `pdf/<brano>/`, con la
+  tabella qui sotto generata da `make pubblica`. Le date della tabella sono
+  quelle di comparsa del file, non sempre quelle del primo lavoro.
+- **2026-11-27 · README, scheda di revisione, fonti.** README riscritto intorno
+  al processo e alle perplessità; nuovo strumento che affianca fonte e
+  trascrizione ([esempio](docs/revisione/elijah-overture-57-77.pdf), provato su
+  una sola pagina); i PDF delle fonti, che git scartava in silenzio, ora sono
+  tracciati. Tutto portato su `main`.
+- **2026-11-22 · Elijah, finale: confronto tra due edizioni.** Battute 57–77
+  confrontate tra Novello e Peters: coincidono, salvo una legatura (aggiunta,
+  battute 64–65) e il sol della battuta 71 (**aperto**: naturale nella Peters,
+  diesis nella nostra lettura). Battuta 73 controllata solo in parte.
+- **2026-11-22 · Vivaldi RV 93, primo movimento.** Tutte le voci su un rigo di
+  chitarra, sesta corda in mi, un'ottava sotto, tempo ridotto a 76; ogni voce è
+  un layer che si può togliere. La rimozione automatica dei raddoppi **non è
+  riuscita**. Non confrontato con l'autografo, non provato sullo strumento.
+- **2026-11-21 · Elijah: verifica avversariale completa.** Tre revisori
+  indipendenti hanno trovato 11 errori (accordi del recitativo, alterazioni,
+  note mancanti nel basso), tutti corretti. Aggiunti gli accordi degli ottoni
+  del recitativo, con la linea interna che si muove.
+- **2026-11-20 · Elijah: Overture intera.** 77 battute; dalla 39 solo canto e
+  basso. Sigle degli accordi fino alla 38, dedotte e non lette.
+<!-- DIARIO:fine -->
+
 ## Le partiture, da scaricare
 
 Tutti i PDF prodotti finora, in ordine cronologico. Sono **bozze di lavoro**, non
@@ -94,8 +132,15 @@ e più sotto in [Come si compila](#come-si-compila).
   strati separati: si può aggiungere la propria senza cancellare quella che c'è.
 - **Proporre un brano** di pubblico dominio, con la fonte.
 
-Le fonti devono essere di pubblico dominio o con licenza compatibile, e va
-detto se una nota è *letta*, *dedotta* o *non verificata*.
+**Tre regole per ogni contributo**, di una persona o di un assistente AI:
+
+1. **Aggiorna [Ultimi lavori](#ultimi-lavori)** in testa a questo file con una
+   voce datata: che cosa hai cambiato, perché, e che cosa non hai verificato.
+   Deve bastare quella voce per capire l'ultimo lavoro fatto.
+2. Di' se ogni nota è *letta* (da quale fonte), *dedotta* o *non verificata*.
+3. Usa solo fonti di pubblico dominio o con licenza compatibile, e citale.
+
+Se hai rigenerato i PDF, lancia `make pubblica` così la tabella resta allineata.
 
 ---
 
