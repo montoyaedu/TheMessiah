@@ -18,6 +18,13 @@ Il bello è che con git e LilyPond tutto è testo: ogni scelta può essere
 tracciata, abbandonata, ripresa, anche da altri, come si fa con il software
 open source.
 
+## Ringraziamento
+
+Nulla di tutto questo sarebbe stato possibile senza il **maestro M. Vercesi**,
+che con molta pazienza ha guidato la trascrizione e ha condiviso il metodo, la
+tecnica, le scelte, il buon gusto, il rispetto del comportamento delle voci e i
+compromessi a cui obbliga la chitarra stessa.
+
 ## Ultimi lavori
 
 Il più recente in alto. **Ogni passo di lavoro aggiunge qui una voce**: che cosa
@@ -27,6 +34,8 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · Ringraziamento.** Aggiunto in testa al README il
+  ringraziamento al maestro M. Vercesi. *Nessuna nota è cambiata.*
 - **2026-11-27 · Elijah, finale: voci interne e accordi (battute 57–77).**
   Aggiunta la voce interna in 19 battute su 21 e gli accordi (sigle, gradi,
   colori) di tutte e 21. **Letti** sulla riduzione Novello da un lettore
@@ -341,6 +350,8 @@ elencate in `lib/opzioni.ly`. Per aggiungere un brano: vedi
 [brani/README.md](brani/README.md).
 
 ## Crediti e fonti
+
+Vedi anche il [ringraziamento](#ringraziamento) in testa.
 
 La trascrizione per chitarra è di **M. Vercesi**; questo repository la
 incide con LilyPond a partire dal suo manoscritto. Dove il manoscritto non
