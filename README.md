@@ -40,6 +40,11 @@ scendono in [docs/diario.md](docs/diario.md). L'ultima voce ha una tabellina
 con i file toccati: sorgente, strumenti usati, PDF generato.
 
 <!-- DIARIO:inizio -->
+- **2026-11-27 · README: buone pratiche da studiare.** Aggiunta la sezione
+  «Da fare: imparare da chi l'ha già fatto»: confrontare i nostri sorgenti con
+  i manuali di LilyPond, openLilyLib, Mutopia e le edizioni di manoscritti, e
+  ricavarne regole per noi e per i modelli. *Solo un proposito: niente è
+  ancora stato studiato né cambiato.*
 - **2026-11-27 · Vivaldi RV 93, primo movimento rifatto dall'autografo.**
   51 battute, quattro parti (liuto, violino I e II, basso), **lette**
   dall'autografo da un lettore che non ha visto altre edizioni. **Il controllo
@@ -88,8 +93,6 @@ con i file toccati: sorgente, strumenti usati, PDF generato.
   git** perché non restino nei commit passati. Avviata una lettura del primo
   movimento direttamente dall'autografo di Vivaldi, fatta da un lettore che non
   ha visto l'arrangiamento. *Niente di nuovo ancora nella partitura.*
-- **2026-11-27 · Diario dei lavori.** Aggiunta questa sezione e la regola che
-  ogni passo la aggiorna. Nessuna partitura è cambiata.
 <!-- DIARIO:fine -->
 
 ## Le partiture, da scaricare
@@ -255,6 +258,33 @@ minimo: che il passo si possa eseguire.
 - **Quanta libertà?** Una riduzione fedele nota per nota spesso non è
   chitarristica. Dove finisce la trascrizione e dove comincia una nuova
   scrittura è una decisione musicale, non tecnica.
+
+## Da fare: imparare da chi l'ha già fatto
+
+La struttura di questi sorgenti (note, diteggiature, armonia, impaginazioni ed
+edizioni in file separati) è nata strada facendo. **Non è ancora stata
+confrontata con le buone pratiche** di chi pubblica con LilyPond da anni, e va
+fatto, per due scopi: rendere i sorgenti più manutenibili, componibili e a
+strati, in modo che ognuno incida la versione che vuole; e dare ai modelli
+esempi e regole da cui imparare gli schemi giusti, invece di reinventarli.
+
+Da dove partire (elenco da verificare e completare, non ancora studiato):
+
+- i manuali di LilyPond: *Learning Manual* e *Notation Reference*, in
+  particolare i consigli su come organizzare i file, le variabili, i `\tag` e
+  le parti estratte da una stessa musica;
+- [openLilyLib](https://github.com/openlilylib) e il suo *edition-engraver*,
+  che applica correzioni e ritocchi a una partitura senza toccare le note: è
+  la stessa idea dei nostri layer, fatta da chi la usa per edizioni vere;
+- i sorgenti pubblicati su [Mutopia](https://www.mutopiaproject.org) e i
+  progetti di edizione che tengono la musica sotto git, per vedere come
+  nominano le voci, dividono i file e segnano le fonti;
+- le edizioni di manoscritti (segni editoriali, note critiche, che cosa è
+  letto e che cosa è congettura), per dare una forma a quello che qui
+  scriviamo nei commenti.
+
+Il risultato atteso è un documento di regole (`docs/`), da applicare ai brani
+esistenti e da far leggere all'assistente prima di ogni lavoro.
 
 ## I brani in corso
 

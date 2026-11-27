@@ -3,6 +3,8 @@
 Le voci recenti sono in testa al [README](../README.md#ultimi-lavori). Qui
 scendono quelle più vecchie, sempre dalla più recente.
 
+- **2026-11-27 · Diario dei lavori.** Aggiunta questa sezione e la regola che
+  ogni passo la aggiorna. Nessuna partitura è cambiata.
 - **2026-11-27 · Elijah, finale: voci interne (in corso).** Avviata la lettura
   delle voci interne e dell'armonia delle battute 57–77 sull'ultima pagina
   della Novello. *Non ancora nella partitura.* Salvati in `strumenti/` la
